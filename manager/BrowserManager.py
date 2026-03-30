@@ -18,7 +18,13 @@ class BrowserManager:
                 fix_hairline=True,
             )
 
+            self.driver.execute_cdp_cmd("Page.setDownloadBehavior", {
+                "behavior": "allow",
+                "downloadPath": PATH_DOWNLOAD,
+            })
+
     def _config(self):
+
         option = webdriver.ChromeOptions()
         option.add_argument("--headless=new")
         option.add_argument("--disable-gpu")

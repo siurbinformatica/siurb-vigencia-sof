@@ -1,12 +1,11 @@
 
 from config.settings import PATH_DOWNLOAD
+from util.DateUtil import DateUtil
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import ElementNotInteractableException,ElementNotVisibleException,ElementClickInterceptedException,TimeoutException
-from datetime import date
-from datetime import timedelta
 from time import sleep
 
 import os
@@ -17,7 +16,7 @@ class MainPage():
     def __init__(self,driver):
         self.driver = driver
         self.wait = WebDriverWait(self.driver, 10)
-        self.today = date.today()
+        self.dateutil = DateUtil()
 
     def enterDetailedReservation(self): 
         try:
@@ -53,18 +52,28 @@ class MainPage():
 
     def downloadExcel(self):
         try:
-            yesterday = (self.today - timedelta(days=+1)).strftime("%d/%m/%G")
-
+            
+            yesterday = self.dateutil.previousDate()
+            today = self.dateutil.todayDate()
+            
             periodInitials = self.wait.until(
                 EC.presence_of_all_elements_located((By.ID, "UCData"))
             )
-            periodInitials[0].send_keys(str(yesterday))
+
+            #Coloca a data anterior e atual
+            periodInitials[0].send_keys(yesterday)
             periodInitials[1].click()
-            periodInitials[1].send_keys(str(self.today.strftime("%d/%m/%G")))
+            periodInitials[1].send_keys(today)
 
-            selectRadio = self.driver.find_element(by=By.XPATH, value="//div[@class='v-input--selection-controls__ripple']")
-            selectRadio.click()
+            #Clica no botão reserva
+            selectRadioReserve = self.driver.find_element(by=By.XPATH, value="//div[@class='v-input--selection-controls__ripple']")
+            selectRadioReserve.click()
 
+            #Clica no radio do executor
+            selectRadioExecute = self.driver.find_elements(by=By.XPATH, value="//div[@class='v-input--selection-controls__ripple']")
+            selectRadioExecute[2].click()
+
+            #Pega a autenticação para fazer o download
             self.driver.execute_script("""
                 window._fileBase64 = null;
                 const origOpen = XMLHttpRequest.prototype.open;
@@ -90,6 +99,7 @@ class MainPage():
                 };
             """)
 
+            #clica no botão de download
             selectExcel = self.driver.find_elements(by=By.XPATH, value="//button[@class='ma-2 v-btn v-btn--outlined v-btn--tile theme--light v-size--default indigo--text']")
             self.driver.execute_script("arguments[0].click();", selectExcel[2])
 
@@ -103,7 +113,7 @@ class MainPage():
 
             if file_base64:
                 import base64
-                filename = f"SFN064R__{self.today.strftime('%d_%m_%Y')}.csv"
+                filename = f"SFN064R__{today.replace("/","_")}.csv"
                 filepath = os.path.join(PATH_DOWNLOAD, filename)
                 with open(filepath, "wb") as f:
                     f.write(base64.b64decode(file_base64))

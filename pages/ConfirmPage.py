@@ -21,5 +21,5 @@ class ConfirmPage():
         )
 
         button.click()
-        sleep(6)
+        sleep(8)
         
