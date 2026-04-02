@@ -17,7 +17,7 @@ class ConfirmPage():
         sleep(12)
 
         button = self.wait.until(
-            EC.element_to_be_clickable((By.XPATH, "//button[contains(@class, 'button')]"))
+            EC.element_to_be_clickable((By.XPATH, "//button[contains(@class, 'button') and text()='CONFIRMAR']"))
         )
 
         button.click()

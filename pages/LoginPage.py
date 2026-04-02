@@ -15,9 +15,11 @@ class LoginPage():
         
         self.driver.get(SITE_URL)
 
-        userLogin = self.wait.until(
-            EC.presence_of_element_located((By.ID, "usuario"))
-        )
+        # userLogin = self.wait.until(
+        #     EC.presence_of_element_located((By.ID, "usuario"))
+        # )
+
+        userLogin = self.driver.find_element(by=By.ID, value="usuario")
 
         sleep(0.25)
 
