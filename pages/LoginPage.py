@@ -22,7 +22,9 @@ class LoginPage():
         sleep(0.25)
 
         userPasswd = self.driver.find_element(by=By.ID, value="senha")
-        button = self.driver.find_element(by=By.ID, value="confirmar")
+        button = self.wait.until(
+            EC.element_to_be_clickable((By.ID, "confirmar"))
+        )
 
         userLogin.send_keys(USER)
         userPasswd.send_keys(PASSWD)

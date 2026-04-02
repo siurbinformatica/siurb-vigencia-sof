@@ -113,11 +113,13 @@ class MainPage():
 
             if file_base64:
                 import base64
-                filename = f"SFN064R__{today.replace("/","_")}.csv"
+                filename = f"SFN064R.csv"
                 filepath = os.path.join(PATH_DOWNLOAD, filename)
                 with open(filepath, "wb") as f:
                     f.write(base64.b64decode(file_base64))
-                    
+            
+            sleep(7)
+
         except TimeoutException as e:
             raise TimeoutException(f"Erro de timeout, {e}")
         except ElementClickInterceptedException:
@@ -133,7 +135,7 @@ class MainPage():
         try:
             exit = self.driver.find_element(by=By.XPATH, value="//i[@class='vsm--icon fas fa-door-open']")
             exit.click()
-            sleep(2)
+            sleep(4)
         except Exception as e:
             print(f"Error ao sair da conta: {e}")
             
