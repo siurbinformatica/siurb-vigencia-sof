@@ -1,6 +1,5 @@
 from selenium import webdriver
 from config.settings import PATH_DOWNLOAD
-import os
 
 class BrowserManager:
 

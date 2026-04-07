@@ -10,16 +10,16 @@ class ConfirmPage():
     def __init__(self,driver):
         
         self.driver = driver    
-        self.wait = WebDriverWait(self.driver, 10)
+        self.wait = WebDriverWait(self.driver, 30)
 
     def confirm(self):
         
         sleep(12)
 
         button = self.wait.until(
-            EC.element_to_be_clickable((By.XPATH, "//button[contains(@class, 'button') and text()='CONFIRMAR']"))
+            EC.element_to_be_clickable((By.XPATH, "//button[contains(@class, 'field-input')]"))
         )
 
-        button.click()
-        sleep(8)
+        self.driver.execute_script("arguments[0].click()", button)
+        sleep(10)
         

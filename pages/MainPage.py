@@ -15,7 +15,7 @@ class MainPage():
 
     def __init__(self,driver):
         self.driver = driver
-        self.wait = WebDriverWait(self.driver, 10)
+        self.wait = WebDriverWait(self.driver, 30)
         self.dateutil = DateUtil()
 
     def enterDetailedReservation(self): 
@@ -40,7 +40,7 @@ class MainPage():
             bttMenuItem[0].click()
         
         except TimeoutException as e:
-            raise TimeoutException(f"Erro de timeout, {e}")
+            raise TimeoutException(f"Erro de timeout em enterDetailedReservation, {e}")
         except ElementClickInterceptedException:
             raise ElementClickInterceptedException("Não foi possivel clicar no elemento")
         except ElementNotInteractableException:
@@ -73,55 +73,14 @@ class MainPage():
             selectRadioExecute = self.driver.find_elements(by=By.XPATH, value="//div[@class='v-input--selection-controls__ripple']")
             selectRadioExecute[2].click()
 
-            #Pega a autenticação para fazer o download
-            self.driver.execute_script("""
-                window._fileBase64 = null;
-                const origOpen = XMLHttpRequest.prototype.open;
-                const origSend = XMLHttpRequest.prototype.send;
-
-                XMLHttpRequest.prototype.open = function(method, url) {
-                    this._url = url;
-                    return origOpen.apply(this, arguments);
-                };
-
-                XMLHttpRequest.prototype.send = function() {
-                    if (this._url && this._url.includes('SFN064R')) {
-                        this.responseType = 'blob';
-                        this.addEventListener('load', function() {
-                            const reader = new FileReader();
-                            reader.onloadend = function() {
-                                window._fileBase64 = reader.result.split(',')[1];
-                            };
-                            reader.readAsDataURL(this.response);
-                        });
-                    }
-                    return origSend.apply(this, arguments);
-                };
-            """)
-
             #clica no botão de download
             selectExcel = self.driver.find_elements(by=By.XPATH, value="//button[@class='ma-2 v-btn v-btn--outlined v-btn--tile theme--light v-size--default indigo--text']")
             self.driver.execute_script("arguments[0].click();", selectExcel[2])
 
-            # Aguarda o XHR completar e o base64 ficar disponível
-            file_base64 = None
-            for _ in range(30):
-                sleep(0.5)
-                file_base64 = self.driver.execute_script("return window._fileBase64;")
-                if file_base64:
-                    break
-
-            if file_base64:
-                import base64
-                filename = f"SFN064R.csv"
-                filepath = os.path.join(PATH_DOWNLOAD, filename)
-                with open(filepath, "wb") as f:
-                    f.write(base64.b64decode(file_base64))
-            
-            sleep(7)
+            sleep(12)
 
         except TimeoutException as e:
-            raise TimeoutException(f"Erro de timeout, {e}")
+            raise TimeoutException(f"Erro de timeout em downloadExcel, {e}")
         except ElementClickInterceptedException:
             raise ElementClickInterceptedException("Não foi possivel clicar no elemento")
         except ElementNotInteractableException:
