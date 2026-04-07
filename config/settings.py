@@ -1,11 +1,11 @@
 import dotenv
 import os
 
-PATH = os.path.join("C:/Project/AutomaticSOF/", ".env")
+PATH = os.path.join("/root/siurbAutoSOF/", ".env")
 
 dotenv.load_dotenv(PATH)
 
-USER = os.getenv("USER")
-PASSWD = os.getenv("PASSWD")
+APP_USER = os.getenv("APP_USER")
+APP_PASSWD = os.getenv("APP_PASSWD")
 SITE_URL = os.getenv("SITE_URL")
 PATH_DOWNLOAD = os.getenv("PATH_DOWNLOAD")

@@ -1,12 +1,11 @@
 
 from config.settings import PATH_DOWNLOAD
+from util.DateUtil import DateUtil
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import ElementNotInteractableException,ElementNotVisibleException,ElementClickInterceptedException,TimeoutException
-from datetime import date
-from datetime import timedelta
 from time import sleep
 
 import os
@@ -16,8 +15,8 @@ class MainPage():
 
     def __init__(self,driver):
         self.driver = driver
-        self.wait = WebDriverWait(self.driver, 10)
-        self.today = date.today()
+        self.wait = WebDriverWait(self.driver, 30)
+        self.dateutil = DateUtil()
 
     def enterDetailedReservation(self): 
         try:
@@ -41,7 +40,7 @@ class MainPage():
             bttMenuItem[0].click()
         
         except TimeoutException as e:
-            raise TimeoutException(f"Erro de timeout, {e}")
+            raise TimeoutException(f"Erro de timeout em enterDetailedReservation, {e}")
         except ElementClickInterceptedException:
             raise ElementClickInterceptedException("Não foi possivel clicar no elemento")
         except ElementNotInteractableException:
@@ -53,63 +52,35 @@ class MainPage():
 
     def downloadExcel(self):
         try:
-            yesterday = (self.today - timedelta(days=+1)).strftime("%d/%m/%G")
-
+            
+            yesterday = self.dateutil.previousDate()
+            today = self.dateutil.todayDate()
+            
             periodInitials = self.wait.until(
                 EC.presence_of_all_elements_located((By.ID, "UCData"))
             )
-            periodInitials[0].send_keys(str(yesterday))
+
+            #Coloca a data anterior e atual
+            periodInitials[0].send_keys(yesterday)
             periodInitials[1].click()
-            periodInitials[1].send_keys(str(self.today.strftime("%d/%m/%G")))
+            periodInitials[1].send_keys(today)
 
-            selectRadio = self.driver.find_element(by=By.XPATH, value="//div[@class='v-input--selection-controls__ripple']")
-            selectRadio.click()
+            #Clica no botão reserva
+            selectRadioReserve = self.driver.find_element(by=By.XPATH, value="//div[@class='v-input--selection-controls__ripple']")
+            selectRadioReserve.click()
 
-            self.driver.execute_script("""
-                window._fileBase64 = null;
-                const origOpen = XMLHttpRequest.prototype.open;
-                const origSend = XMLHttpRequest.prototype.send;
+            #Clica no radio do executor
+            selectRadioExecute = self.driver.find_elements(by=By.XPATH, value="//div[@class='v-input--selection-controls__ripple']")
+            selectRadioExecute[2].click()
 
-                XMLHttpRequest.prototype.open = function(method, url) {
-                    this._url = url;
-                    return origOpen.apply(this, arguments);
-                };
-
-                XMLHttpRequest.prototype.send = function() {
-                    if (this._url && this._url.includes('SFN064R')) {
-                        this.responseType = 'blob';
-                        this.addEventListener('load', function() {
-                            const reader = new FileReader();
-                            reader.onloadend = function() {
-                                window._fileBase64 = reader.result.split(',')[1];
-                            };
-                            reader.readAsDataURL(this.response);
-                        });
-                    }
-                    return origSend.apply(this, arguments);
-                };
-            """)
-
+            #clica no botão de download
             selectExcel = self.driver.find_elements(by=By.XPATH, value="//button[@class='ma-2 v-btn v-btn--outlined v-btn--tile theme--light v-size--default indigo--text']")
             self.driver.execute_script("arguments[0].click();", selectExcel[2])
 
-            # Aguarda o XHR completar e o base64 ficar disponível
-            file_base64 = None
-            for _ in range(30):
-                sleep(0.5)
-                file_base64 = self.driver.execute_script("return window._fileBase64;")
-                if file_base64:
-                    break
+            sleep(12)
 
-            if file_base64:
-                import base64
-                filename = f"SFN064R__{self.today.strftime('%d_%m_%Y')}.csv"
-                filepath = os.path.join(PATH_DOWNLOAD, filename)
-                with open(filepath, "wb") as f:
-                    f.write(base64.b64decode(file_base64))
-                    
         except TimeoutException as e:
-            raise TimeoutException(f"Erro de timeout, {e}")
+            raise TimeoutException(f"Erro de timeout em downloadExcel, {e}")
         except ElementClickInterceptedException:
             raise ElementClickInterceptedException("Não foi possivel clicar no elemento")
         except ElementNotInteractableException:
@@ -123,7 +94,7 @@ class MainPage():
         try:
             exit = self.driver.find_element(by=By.XPATH, value="//i[@class='vsm--icon fas fa-door-open']")
             exit.click()
-            sleep(2)
+            sleep(4)
         except Exception as e:
             print(f"Error ao sair da conta: {e}")
             
