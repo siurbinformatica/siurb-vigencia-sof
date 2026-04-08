@@ -1,7 +1,7 @@
 import dotenv
 import os
 
-PATH = os.path.join("/root/siurbAutoSOF/", ".env")
+PATH = os.path.join("/root/SiurbAutoSOF/", ".env")
 
 dotenv.load_dotenv(PATH)
 
