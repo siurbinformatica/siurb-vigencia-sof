@@ -17,3 +17,12 @@ class EditFile:
             return
 
         raise Exception("Não foi possivel alterar o nome")
+    
+    def remove(self):
+
+        archive = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SFN064R.csv"))
+
+        if (archive != [] and os.path.exists(archive[0])):
+            os.remove(archive[0])
+        
+        raise Exception("Não foi possivel deletar o arquivo")

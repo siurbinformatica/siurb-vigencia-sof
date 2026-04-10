@@ -20,6 +20,7 @@ class Program:
             self.confirmPage.confirm()
             self.mainPage.enterDetailedReservation()
             self.mainPage.downloadExcel()
+            self.editFile.remove()
             self.editFile.rename()
         except Exception as e:
             print(e)
