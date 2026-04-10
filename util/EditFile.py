@@ -22,7 +22,10 @@ class EditFile:
 
         archive = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SFN064R.csv"))
 
-        if (archive != [] and os.path.exists(archive[0])):
+        if (archive == []):return
+
+        if (os.path.exists(archive[0])):
             os.remove(archive[0])
+            return
         
         raise Exception("Não foi possivel deletar o arquivo")
