@@ -26,4 +26,5 @@ class Program:
             print(e)
         finally:
             self.mainPage.exit() 
+            self.browser.quit()
         
