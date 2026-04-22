@@ -1,5 +1,6 @@
 
 from config.settings import PATH_DOWNLOAD
+from config.logger import get_logger
 from util.DateUtil import DateUtil
 
 from selenium.webdriver.common.by import By
@@ -17,6 +18,7 @@ class MainPage():
         self.driver = driver
         self.wait = WebDriverWait(self.driver, 30)
         self.dateutil = DateUtil()
+        self.logger = get_logger(__name__)
 
     def enterDetailedReservation(self): 
         try:
@@ -53,7 +55,7 @@ class MainPage():
     def downloadExcel(self):
         try:
             
-            yesterday = self.dateutil.previousDate()
+            yesterday = self.dateutil.previousDate("%d/%m/%G")
             today = self.dateutil.todayDate()
             
             periodInitials = self.wait.until(
@@ -96,5 +98,5 @@ class MainPage():
             exit.click()
             sleep(4)
         except Exception as e:
-            print(f"Error ao sair da conta: {e}")
+            self.logger.error("Não foi possivel sair da conta")
             
