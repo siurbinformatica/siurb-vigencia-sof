@@ -1,0 +1,289 @@
+2026-04-16 12:29:28 - Program - INFO - Bot iniciado
+2026-04-16 12:30:04 - util.EditFile - INFO - Arquivo criado com sucesso!
+2026-04-16 12:30:08 - Program - INFO - Bot terminou sua tarefa
+2026-04-16 14:06:11 - Program - INFO - Bot iniciado
+2026-04-16 14:06:51 - Program - INFO - Bot terminou sua tarefa
+2026-04-16 14:09:36 - Program - INFO - Bot iniciado
+2026-04-16 14:10:12 - util.EditFile - INFO - Não foi encontrado o arquivo
+2026-04-16 14:10:16 - Program - INFO - Bot terminou sua tarefa
+2026-04-16 14:11:42 - Program - INFO - Bot iniciado
+2026-04-16 14:12:18 - util.EditFile - INFO - Não foi encontrado o arquivo
+2026-04-16 14:12:22 - Program - INFO - Bot terminou sua tarefa
+2026-04-16 15:20:29 - Program - INFO - Bot iniciado
+2026-04-16 15:21:06 - util.EditFile - INFO - arquivo nao encontrado
+2026-04-16 15:21:10 - Program - INFO - Bot terminou sua tarefa
+2026-04-16 15:26:01 - Program - INFO - Bot iniciado
+2026-04-16 15:26:37 - util.EditFile - INFO - 15/04/2026
+2026-04-16 15:26:37 - util.EditFile - INFO - arquivo nao encontrado
+2026-04-16 15:26:41 - Program - INFO - Bot terminou sua tarefa
+2026-04-16 15:30:07 - Program - INFO - Bot iniciado
+2026-04-16 15:30:44 - Program - ERROR - Erro inesperado: 'str' object has no attribute 'strftime'
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 27, in run
+    self.editFile.rename()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/util/EditFile.py", line 25, in rename
+    self.delete_last_log()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/util/EditFile.py", line 45, in delete_last_log
+    yesterday = self.date_util.previousDate().strftime("%Y-%m-%d")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'strftime'
+2026-04-16 15:35:08 - Program - INFO - Bot iniciado
+2026-04-16 15:35:09 - Program - ERROR - Erro inesperado: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x566d8eac1afa <unknown>
+#1 0x566d8e4c3070 <unknown>
+#2 0x566d8e5115a1 <unknown>
+#3 0x566d8e50f85b <unknown>
+#4 0x566d8e50ae07 <unknown>
+#5 0x566d8e55e969 <unknown>
+#6 0x566d8e5095cf <unknown>
+#7 0x566d8e50a391 <unknown>
+#8 0x566d8ea86fdb <unknown>
+#9 0x566d8ea89f9d <unknown>
+#10 0x566d8ea73798 <unknown>
+#11 0x566d8ea8ab30 <unknown>
+#12 0x566d8ea5a210 <unknown>
+#13 0x566d8eaaed48 <unknown>
+#14 0x566d8eaaef18 <unknown>
+#15 0x566d8eac056e <unknown>
+#16 0x7e2b79b47b7b <unknown>
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 22, in run
+    self.loginPage.login()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/LoginPage.py", line 29, in login
+    userLogin.send_keys(APP_USER)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x566d8eac1afa <unknown>
+#1 0x566d8e4c3070 <unknown>
+#2 0x566d8e5115a1 <unknown>
+#3 0x566d8e50f85b <unknown>
+#4 0x566d8e50ae07 <unknown>
+#5 0x566d8e55e969 <unknown>
+#6 0x566d8e5095cf <unknown>
+#7 0x566d8e50a391 <unknown>
+#8 0x566d8ea86fdb <unknown>
+#9 0x566d8ea89f9d <unknown>
+#10 0x566d8ea73798 <unknown>
+#11 0x566d8ea8ab30 <unknown>
+#12 0x566d8ea5a210 <unknown>
+#13 0x566d8eaaed48 <unknown>
+#14 0x566d8eaaef18 <unknown>
+#15 0x566d8eac056e <unknown>
+#16 0x7e2b79b47b7b <unknown>
+
+2026-04-16 15:41:11 - Program - INFO - Bot iniciado
+2026-04-16 15:42:05 - Program - ERROR - Erro inesperado: Message: Erro de timeout em enterDetailedReservation, Message: 
+Stacktrace:
+#0 0x5d4540ab8afa <unknown>
+#1 0x5d45404ba265 <unknown>
+#2 0x5d454050cf76 <unknown>
+#3 0x5d454050d1b1 <unknown>
+#4 0x5d45405587d4 <unknown>
+#5 0x5d4540555969 <unknown>
+#6 0x5d45405005cf <unknown>
+#7 0x5d4540501391 <unknown>
+#8 0x5d4540a7dfdb <unknown>
+#9 0x5d4540a80f9d <unknown>
+#10 0x5d4540a6a798 <unknown>
+#11 0x5d4540a81b30 <unknown>
+#12 0x5d4540a51210 <unknown>
+#13 0x5d4540aa5d48 <unknown>
+#14 0x5d4540aa5f18 <unknown>
+#15 0x5d4540ab756e <unknown>
+#16 0x7547908f4b7b <unknown>
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 24, in enterDetailedReservation
+    bttExecution = self.wait.until(
+        EC.presence_of_element_located((By.XPATH, "//i[contains(@class, 'fa-running')]"))
+    )
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x5d4540ab8afa <unknown>
+#1 0x5d45404ba265 <unknown>
+#2 0x5d454050cf76 <unknown>
+#3 0x5d454050d1b1 <unknown>
+#4 0x5d45405587d4 <unknown>
+#5 0x5d4540555969 <unknown>
+#6 0x5d45405005cf <unknown>
+#7 0x5d4540501391 <unknown>
+#8 0x5d4540a7dfdb <unknown>
+#9 0x5d4540a80f9d <unknown>
+#10 0x5d4540a6a798 <unknown>
+#11 0x5d4540a81b30 <unknown>
+#12 0x5d4540a51210 <unknown>
+#13 0x5d4540aa5d48 <unknown>
+#14 0x5d4540aa5f18 <unknown>
+#15 0x5d4540ab756e <unknown>
+#16 0x7547908f4b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 24, in run
+    self.mainPage.enterDetailedReservation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 43, in enterDetailedReservation
+    raise TimeoutException(f"Erro de timeout em enterDetailedReservation, {e}")
+selenium.common.exceptions.TimeoutException: Message: Erro de timeout em enterDetailedReservation, Message: 
+Stacktrace:
+#0 0x5d4540ab8afa <unknown>
+#1 0x5d45404ba265 <unknown>
+#2 0x5d454050cf76 <unknown>
+#3 0x5d454050d1b1 <unknown>
+#4 0x5d45405587d4 <unknown>
+#5 0x5d4540555969 <unknown>
+#6 0x5d45405005cf <unknown>
+#7 0x5d4540501391 <unknown>
+#8 0x5d4540a7dfdb <unknown>
+#9 0x5d4540a80f9d <unknown>
+#10 0x5d4540a6a798 <unknown>
+#11 0x5d4540a81b30 <unknown>
+#12 0x5d4540a51210 <unknown>
+#13 0x5d4540aa5d48 <unknown>
+#14 0x5d4540aa5f18 <unknown>
+#15 0x5d4540ab756e <unknown>
+#16 0x7547908f4b7b <unknown>
+
+
+2026-04-16 16:09:32 - Program - INFO - Bot iniciado
+2026-04-16 16:10:12 - Program - INFO - Bot terminou sua tarefa
+2026-04-17 05:00:02 - Program - INFO - Bot iniciado
+2026-04-17 05:00:39 - Program - ERROR - Erro inesperado: Não foi possivel alterar o nome
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 27, in run
+    self.editFile.rename()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/util/EditFile.py", line 30, in rename
+    raise Exception("Não foi possivel alterar o nome")
+Exception: Não foi possivel alterar o nome
+2026-04-17 11:47:14 - Program - INFO - Bot iniciado
+2026-04-17 11:47:45 - Program - ERROR - Erro inesperado: Message: 
+Stacktrace:
+#0 0x5d9230e47afa <unknown>
+#1 0x5d9230849265 <unknown>
+#2 0x5d923089bf76 <unknown>
+#3 0x5d923089c1b1 <unknown>
+#4 0x5d92308e77d4 <unknown>
+#5 0x5d92308e4969 <unknown>
+#6 0x5d923088f5cf <unknown>
+#7 0x5d9230890391 <unknown>
+#8 0x5d9230e0cfdb <unknown>
+#9 0x5d9230e0ff9d <unknown>
+#10 0x5d9230df9798 <unknown>
+#11 0x5d9230e10b30 <unknown>
+#12 0x5d9230de0210 <unknown>
+#13 0x5d9230e34d48 <unknown>
+#14 0x5d9230e34f18 <unknown>
+#15 0x5d9230e4656e <unknown>
+#16 0x7976de4c7b7b <unknown>
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 22, in run
+    self.loginPage.login()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/LoginPage.py", line 18, in login
+    userLogin = self.wait.until(
+        EC.presence_of_element_located((By.ID, "usuario"))
+    )
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x5d9230e47afa <unknown>
+#1 0x5d9230849265 <unknown>
+#2 0x5d923089bf76 <unknown>
+#3 0x5d923089c1b1 <unknown>
+#4 0x5d92308e77d4 <unknown>
+#5 0x5d92308e4969 <unknown>
+#6 0x5d923088f5cf <unknown>
+#7 0x5d9230890391 <unknown>
+#8 0x5d9230e0cfdb <unknown>
+#9 0x5d9230e0ff9d <unknown>
+#10 0x5d9230df9798 <unknown>
+#11 0x5d9230e10b30 <unknown>
+#12 0x5d9230de0210 <unknown>
+#13 0x5d9230e34d48 <unknown>
+#14 0x5d9230e34f18 <unknown>
+#15 0x5d9230e4656e <unknown>
+#16 0x7976de4c7b7b <unknown>
+
+2026-04-17 11:50:27 - Program - INFO - Bot iniciado
+2026-04-17 11:51:07 - Program - INFO - Bot terminou sua tarefa
+2026-04-17 11:51:07 - pages.MainPage - ERROR - Não foi possivel sair da conta
+2026-04-20 05:00:07 - Program - INFO - Bot iniciado
+2026-04-20 05:00:46 - Program - ERROR - Erro inesperado: [Errno 21] Is a directory: '/'
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 26, in run
+    self.editFile.remove()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/util/EditFile.py", line 39, in remove
+    os.remove(archive[0])
+    ~~~~~~~~~^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: '/'
+2026-04-20 05:00:47 - pages.MainPage - ERROR - Não foi possivel sair da conta
+2026-04-21 05:00:02 - Program - INFO - Bot iniciado
+2026-04-21 05:00:39 - Program - ERROR - Erro inesperado: [Errno 21] Is a directory: '/'
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 26, in run
+    self.editFile.remove()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/util/EditFile.py", line 39, in remove
+    os.remove(archive[0])
+    ~~~~~~~~~^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: '/'
+2026-04-21 05:00:40 - pages.MainPage - ERROR - Não foi possivel sair da conta
+2026-04-22 05:00:02 - Program - INFO - Bot iniciado
+2026-04-22 05:00:39 - Program - ERROR - Erro inesperado: [Errno 21] Is a directory: '/'
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 26, in run
+    self.editFile.remove()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/util/EditFile.py", line 39, in remove
+    os.remove(archive[0])
+    ~~~~~~~~~^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: '/'
+2026-04-22 11:44:02 - Program - INFO - Bot iniciado
+2026-04-22 11:44:38 - Program - ERROR - Erro inesperado: [Errno 21] Is a directory: '/'
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 26, in run
+    self.editFile.remove()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/util/EditFile.py", line 39, in remove
+    os.remove(archive[0])
+    ~~~~~~~~~^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: '/'
+2026-04-22 11:47:47 - Program - INFO - Bot iniciado
+2026-04-22 11:51:20 - Program - ERROR - Erro inesperado: [Errno 21] Is a directory: '/'
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 26, in run
+    self.editFile.remove()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/util/EditFile.py", line 39, in remove
+    os.remove(archive[0])
+    ~~~~~~~~~^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: '/'

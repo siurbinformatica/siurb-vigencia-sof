@@ -5,14 +5,14 @@ class DateUtil:
 
     data = date
 
-    def previousDate(self):
+    def previousDate(self,format_date:str):
         
         yesterday = ""
         
         if (str(self.data.today().strftime('%A')) == "Monday"):
-            yesterday = (self.data.today() - timedelta(days=+3)).strftime("%d/%m/%G")
+            yesterday = (self.data.today() - timedelta(days=+3)).strftime(format_date)
         else:
-            yesterday = (self.data.today() - timedelta(days=+1)).strftime("%d/%m/%G")
+            yesterday = (self.data.today() - timedelta(days=+1)).strftime(format_date)
 
         return str(yesterday)
     
