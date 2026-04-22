@@ -1,7 +1,7 @@
 import dotenv
 import os
 
-PATH = os.path.join("/root/SiurbAutoSOF/", ".env")
+PATH = os.path.join(os.path.dirname(__file__),"..",".env")
 
 dotenv.load_dotenv(PATH)
 
@@ -9,3 +9,4 @@ APP_USER = os.getenv("APP_USER")
 APP_PASSWD = os.getenv("APP_PASSWD")
 SITE_URL = os.getenv("SITE_URL")
 PATH_DOWNLOAD = os.getenv("PATH_DOWNLOAD")
+LOG_PATH = os.getenv("LOG_PATH")

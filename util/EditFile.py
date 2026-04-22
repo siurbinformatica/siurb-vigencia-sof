@@ -6,7 +6,6 @@ class EditFile:
     def __init__(self, PATH_DOWNLOAD):
         self.PATH_DOWNLOAD = PATH_DOWNLOAD
 
-
     def rename(self):
         archive = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SFN064R__*.csv"))
 
@@ -29,3 +28,10 @@ class EditFile:
             return
         
         raise Exception("Não foi possivel deletar o arquivo")
+
+    def hasArchiveInPathArchive(self) -> bool:
+        archives = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SFN064R__*.csv"))
+
+        if (archives == []): return False
+
+        return True
