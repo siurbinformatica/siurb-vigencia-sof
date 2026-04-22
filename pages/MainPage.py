@@ -2,6 +2,7 @@
 from config.settings import PATH_DOWNLOAD
 from config.logger import get_logger
 from util.DateUtil import DateUtil
+from util.EditFile import EditFile
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -19,6 +20,7 @@ class MainPage():
         self.wait = WebDriverWait(self.driver, 30)
         self.dateutil = DateUtil()
         self.logger = get_logger(__name__)
+        self.edit_file = EditFile(PATH_DOWNLOAD)
 
     def enterDetailedReservation(self): 
         try:
@@ -55,7 +57,7 @@ class MainPage():
     def downloadExcel(self):
         try:
             
-            yesterday = self.dateutil.previousDate("%d/%m/%G")
+            yesterday = self.dateutil.previousDate()
             today = self.dateutil.todayDate()
             
             periodInitials = self.wait.until(
@@ -75,11 +77,32 @@ class MainPage():
             selectRadioExecute = self.driver.find_elements(by=By.XPATH, value="//div[@class='v-input--selection-controls__ripple']")
             selectRadioExecute[2].click()
 
-            #clica no botão de download
-            selectExcel = self.driver.find_elements(by=By.XPATH, value="//button[@class='ma-2 v-btn v-btn--outlined v-btn--tile theme--light v-size--default indigo--text']")
-            self.driver.execute_script("arguments[0].click();", selectExcel[2])
+            self.driver.execute_script("""
+                window._fileBase64 = null;
+                const origOpen = XMLHttpRequest.prototype.open;
+                const origSend = XMLHttpRequest.prototype.send;
 
-            sleep(12)
+                XMLHttpRequest.prototype.open = function(method, url) {
+                    this._url = url;
+                    return origOpen.apply(this, arguments);
+                };
+
+                XMLHttpRequest.prototype.send = function() {
+                    if (this._url && this._url.includes('SFN064R')) {
+                        this.responseType = 'blob';
+                        this.addEventListener('load', function() {
+                            const reader = new FileReader();
+                            reader.onloadend = function() {
+                                window._fileBase64 = reader.result.split(',')[1];
+                            };
+                            reader.readAsDataURL(this.response);
+                        });
+                    }
+                    return origSend.apply(this, arguments);
+                };
+            """)
+
+            self.download_archive(today)
 
         except TimeoutException as e:
             raise TimeoutException(f"Erro de timeout em downloadExcel, {e}")
@@ -91,7 +114,34 @@ class MainPage():
             raise ElementNotVisibleException("Não foi possivel visualizar o elemento")
         except Exception as e:
             raise Exception(f"Erro inesperado: {e}")
-            
+    
+    def download_archive(self,today):
+
+        #clica no botão de download
+        selectExcel = self.driver.find_elements(by=By.XPATH, value="//button[@class='ma-2 v-btn v-btn--outlined v-btn--tile theme--light v-size--default indigo--text']")
+        self.driver.execute_script("arguments[0].click();", selectExcel[2])
+
+        sleep(12)
+
+        if (self.edit_file.hasArchiveInPathArchive()): return
+
+        # Aguarda o XHR completar e o base64 ficar disponível
+        file_base64 = None
+        for _ in range(30):
+            sleep(0.5)
+            file_base64 = self.driver.execute_script("return window._fileBase64;")
+            if file_base64:
+                break
+
+        if file_base64:
+            import base64
+            filename = f"SFN064R__{today.replace("/","-")}.csv"
+            filepath = os.path.join(PATH_DOWNLOAD, filename)
+            with open(filepath, "wb") as f:
+                f.write(base64.b64decode(file_base64))
+
+        sleep(12)
+
     def exit(self):
         try:
             exit = self.driver.find_element(by=By.XPATH, value="//i[@class='vsm--icon fas fa-door-open']")

@@ -5,18 +5,18 @@ class DateUtil:
 
     data = date
 
-    def previousDate(self,format_date:str):
+    def previousDate(self) -> str:
         
-        yesterday = ""
+        yesterday = "01/01/2026"
         
-        if (str(self.data.today().strftime('%A')) == "Monday"):
-            yesterday = (self.data.today() - timedelta(days=+3)).strftime(format_date)
-        else:
-            yesterday = (self.data.today() - timedelta(days=+1)).strftime(format_date)
+        # if (str(self.data.today().strftime('%A')) == "Monday"):
+        #     yesterday = (self.data.today() - timedelta(days=+3)).strftime("%d/%m/%G")
+        # else:
+        #     yesterday = (self.data.today() - timedelta(days=+1)).strftime("%d/%m/%G")
 
         return str(yesterday)
     
-    def todayDate(self):
+    def todayDate(self) -> str:
 
         today = self.data.today().strftime("%d/%m/%G")
 

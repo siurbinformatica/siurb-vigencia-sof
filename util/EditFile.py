@@ -50,3 +50,10 @@ class EditFile:
             os.remove(path)
         else:
             self.logger.info("arquivo nao encontrado")
+            
+    def hasArchiveInPathArchive(self) -> bool:
+        archives = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SFN064R__*.csv"))
+
+        if (archives == []): return False
+
+        return True
