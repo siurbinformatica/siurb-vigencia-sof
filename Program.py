@@ -23,7 +23,8 @@ class Program:
             self.confirmPage.confirm()
             self.mainPage.enterDetailedReservation()
             self.mainPage.downloadExcel()
-            self.editFile.remove()
+            while(not self.editFile.is_remove_archive_in_path()):
+                self.editFile.remove()
             self.editFile.rename()
             self.mainPage.exit() 
             self.logger.info("Bot terminou sua tarefa")
