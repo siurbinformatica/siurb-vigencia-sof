@@ -121,7 +121,7 @@ class MainPage():
         selectExcel = self.driver.find_elements(by=By.XPATH, value="//button[@class='ma-2 v-btn v-btn--outlined v-btn--tile theme--light v-size--default indigo--text']")
         self.driver.execute_script("arguments[0].click();", selectExcel[2])
 
-        sleep(12)
+        sleep(15)
 
         if (self.edit_file.hasArchiveInPathArchive()): return
 
@@ -140,7 +140,7 @@ class MainPage():
             with open(filepath, "wb") as f:
                 f.write(base64.b64decode(file_base64))
 
-        sleep(12)
+        sleep(15)
 
     def exit(self):
         try:

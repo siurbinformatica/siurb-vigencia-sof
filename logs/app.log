@@ -287,3 +287,136 @@ Traceback (most recent call last):
     os.remove(archive[0])
     ~~~~~~~~~^^^^^^^^^^^^
 IsADirectoryError: [Errno 21] Is a directory: '/'
+2026-04-22 14:16:33 - Program - INFO - Bot iniciado
+2026-04-22 14:17:10 - Program - ERROR - Erro inesperado: [Errno 21] Is a directory: '/'
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 26, in run
+    self.editFile.remove()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/util/EditFile.py", line 39, in remove
+    os.remove(archive[0])
+    ~~~~~~~~~^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: '/'
+2026-04-22 14:20:33 - Program - INFO - Bot iniciado
+2026-04-22 14:22:10 - Program - ERROR - Erro inesperado: [Errno 21] Is a directory: '/'
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 26, in run
+    self.editFile.remove()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/util/EditFile.py", line 39, in remove
+    os.remove(archive[0])
+    ~~~~~~~~~^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: '/'
+2026-04-22 14:26:41 - Program - INFO - Bot iniciado
+2026-04-22 14:27:18 - Program - ERROR - Erro inesperado: DateUtil.previousDate() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 27, in run
+    self.editFile.rename()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/util/EditFile.py", line 26, in rename
+    self.delete_last_log()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/util/EditFile.py", line 44, in delete_last_log
+    yesterday = self.date_util.previousDate("%Y-%m-%d")
+TypeError: DateUtil.previousDate() takes 1 positional argument but 2 were given
+2026-04-22 14:30:11 - Program - INFO - Bot iniciado
+2026-04-22 14:30:52 - Program - INFO - Bot terminou sua tarefa
+2026-04-22 14:32:37 - Program - INFO - Bot iniciado
+2026-04-22 14:33:18 - Program - INFO - Bot terminou sua tarefa
+2026-04-22 14:36:01 - Program - INFO - Bot iniciado
+2026-04-22 14:36:38 - util.EditFile - INFO - arquivo nao encontrado
+2026-04-22 14:36:42 - Program - INFO - Bot terminou sua tarefa
+2026-04-23 05:00:03 - Program - INFO - Bot iniciado
+2026-04-23 05:00:44 - Program - INFO - Bot terminou sua tarefa
+2026-04-24 05:00:02 - Program - INFO - Bot iniciado
+2026-04-24 05:00:43 - Program - INFO - Bot terminou sua tarefa
+2026-04-27 05:00:18 - Program - INFO - Bot iniciado
+2026-04-27 05:01:12 - util.EditFile - INFO - arquivo nao encontrado
+2026-04-27 05:01:16 - Program - INFO - Bot terminou sua tarefa
+2026-04-28 05:00:02 - Program - INFO - Bot iniciado
+2026-04-28 05:00:43 - Program - INFO - Bot terminou sua tarefa
+2026-04-28 11:58:45 - Program - INFO - Bot iniciado
+2026-04-28 11:59:40 - Program - ERROR - Erro inesperado: Message: Erro de timeout em enterDetailedReservation, Message: 
+Stacktrace:
+#0 0x5e66c976279a <unknown>
+#1 0x5e66c915e215 <unknown>
+#2 0x5e66c91b0f06 <unknown>
+#3 0x5e66c91b1141 <unknown>
+#4 0x5e66c91fc634 <unknown>
+#5 0x5e66c91f97d0 <unknown>
+#6 0x5e66c91a455f <unknown>
+#7 0x5e66c91a5321 <unknown>
+#8 0x5e66c972606b <unknown>
+#9 0x5e66c972901d <unknown>
+#10 0x5e66c9712718 <unknown>
+#11 0x5e66c9729bb0 <unknown>
+#12 0x5e66c96f9150 <unknown>
+#13 0x5e66c974f5e8 <unknown>
+#14 0x5e66c974f7b8 <unknown>
+#15 0x5e66c97611de <unknown>
+#16 0x70b12c3b1b7b <unknown>
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 28, in enterDetailedReservation
+    bttExecution = self.wait.until(
+        EC.presence_of_element_located((By.XPATH, "//i[contains(@class, 'fa-running')]"))
+    )
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x5e66c976279a <unknown>
+#1 0x5e66c915e215 <unknown>
+#2 0x5e66c91b0f06 <unknown>
+#3 0x5e66c91b1141 <unknown>
+#4 0x5e66c91fc634 <unknown>
+#5 0x5e66c91f97d0 <unknown>
+#6 0x5e66c91a455f <unknown>
+#7 0x5e66c91a5321 <unknown>
+#8 0x5e66c972606b <unknown>
+#9 0x5e66c972901d <unknown>
+#10 0x5e66c9712718 <unknown>
+#11 0x5e66c9729bb0 <unknown>
+#12 0x5e66c96f9150 <unknown>
+#13 0x5e66c974f5e8 <unknown>
+#14 0x5e66c974f7b8 <unknown>
+#15 0x5e66c97611de <unknown>
+#16 0x70b12c3b1b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 24, in run
+    self.mainPage.enterDetailedReservation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 47, in enterDetailedReservation
+    raise TimeoutException(f"Erro de timeout em enterDetailedReservation, {e}")
+selenium.common.exceptions.TimeoutException: Message: Erro de timeout em enterDetailedReservation, Message: 
+Stacktrace:
+#0 0x5e66c976279a <unknown>
+#1 0x5e66c915e215 <unknown>
+#2 0x5e66c91b0f06 <unknown>
+#3 0x5e66c91b1141 <unknown>
+#4 0x5e66c91fc634 <unknown>
+#5 0x5e66c91f97d0 <unknown>
+#6 0x5e66c91a455f <unknown>
+#7 0x5e66c91a5321 <unknown>
+#8 0x5e66c972606b <unknown>
+#9 0x5e66c972901d <unknown>
+#10 0x5e66c9712718 <unknown>
+#11 0x5e66c9729bb0 <unknown>
+#12 0x5e66c96f9150 <unknown>
+#13 0x5e66c974f5e8 <unknown>
+#14 0x5e66c974f7b8 <unknown>
+#15 0x5e66c97611de <unknown>
+#16 0x70b12c3b1b7b <unknown>
+
+
+2026-04-28 11:59:40 - pages.MainPage - ERROR - Não foi possivel sair da conta
+2026-04-28 13:04:25 - Program - INFO - Bot iniciado
+2026-04-28 13:05:02 - util.EditFile - INFO - arquivo nao encontrado
+2026-04-28 13:05:06 - Program - INFO - Bot terminou sua tarefa
+2026-04-28 13:06:53 - Program - INFO - Bot iniciado
+2026-04-28 13:07:29 - util.EditFile - INFO - arquivo nao encontrado
+2026-04-28 13:07:33 - Program - INFO - Bot terminou sua tarefa

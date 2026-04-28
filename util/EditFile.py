@@ -31,29 +31,30 @@ class EditFile:
     
     def remove(self):
 
-        archive = os.path.join(self.PATH_DOWNLOAD, "SFN064R.csv")
-
-        if (archive == []):return
-
-        if (os.path.exists(archive[0])):
-            os.remove(archive[0])
+        archive = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SFN064R.csv"))
+        
+        if (archive == []):
+            self.logger.info("Não foi possivel deletar o arquivo")
             return
         
-        raise Exception("Não foi possivel deletar o arquivo")
-
+        os.remove(archive[0])
+        
     def delete_last_log(self):
 
-        yesterday = self.date_util.previousDate("%Y-%m-%d")
+        yesterday = self.date_util.previousDateLog("%Y-%m-%d")
         path = os.path.join(LOG_PATH, f"log-archive-{yesterday}.log")
 
         if (os.path.exists(path)):
             os.remove(path)
         else:
             self.logger.info("arquivo nao encontrado")
-            
+
     def hasArchiveInPathArchive(self) -> bool:
         archives = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SFN064R__*.csv"))
-
         if (archives == []): return False
+        return True
 
+    def is_remove_archive_in_path(self) -> bool:
+        path_archive = os.path.join(self.PATH_DOWNLOAD, "SFN064R.csv")
+        if (os.path.exists(path_archive)): return False
         return True

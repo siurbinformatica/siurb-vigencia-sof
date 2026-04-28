@@ -16,6 +16,12 @@ class DateUtil:
 
         return str(yesterday)
     
+    def previousDateLog(self,format_date) -> str:
+        
+        yesterday = ""
+        yesterday = (self.data.today() - timedelta(days=+1)).strftime(format_date)
+        return str(yesterday)
+    
     def todayDate(self) -> str:
 
         today = self.data.today().strftime("%d/%m/%G")
