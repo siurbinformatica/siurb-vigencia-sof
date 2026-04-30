@@ -420,3 +420,181 @@ Stacktrace:
 2026-04-28 13:06:53 - Program - INFO - Bot iniciado
 2026-04-28 13:07:29 - util.EditFile - INFO - arquivo nao encontrado
 2026-04-28 13:07:33 - Program - INFO - Bot terminou sua tarefa
+2026-04-28 18:00:46 - Program - INFO - Bot iniciado
+2026-04-28 18:01:12 - Program - ERROR - Erro inesperado: Erro inesperado: DateUtil.previousDate() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 60, in downloadExcel
+    yesterday = self.dateutil.previousDate("%d/%m/%G")
+TypeError: DateUtil.previousDate() takes 1 positional argument but 2 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 25, in run
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 116, in downloadExcel
+    raise Exception(f"Erro inesperado: {e}")
+Exception: Erro inesperado: DateUtil.previousDate() takes 1 positional argument but 2 were given
+2026-04-28 18:02:49 - Program - INFO - Bot iniciado
+2026-04-28 18:03:43 - Program - ERROR - Erro inesperado: Message: Erro de timeout em enterDetailedReservation, Message: 
+Stacktrace:
+#0 0x6448af77e79a <unknown>
+#1 0x6448af17a215 <unknown>
+#2 0x6448af1ccf06 <unknown>
+#3 0x6448af1cd141 <unknown>
+#4 0x6448af218634 <unknown>
+#5 0x6448af2157d0 <unknown>
+#6 0x6448af1c055f <unknown>
+#7 0x6448af1c1321 <unknown>
+#8 0x6448af74206b <unknown>
+#9 0x6448af74501d <unknown>
+#10 0x6448af72e718 <unknown>
+#11 0x6448af745bb0 <unknown>
+#12 0x6448af715150 <unknown>
+#13 0x6448af76b5e8 <unknown>
+#14 0x6448af76b7b8 <unknown>
+#15 0x6448af77d1de <unknown>
+#16 0x713913688b7b <unknown>
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 28, in enterDetailedReservation
+    bttExecution = self.wait.until(
+        EC.presence_of_element_located((By.XPATH, "//i[contains(@class, 'fa-running')]"))
+    )
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x6448af77e79a <unknown>
+#1 0x6448af17a215 <unknown>
+#2 0x6448af1ccf06 <unknown>
+#3 0x6448af1cd141 <unknown>
+#4 0x6448af218634 <unknown>
+#5 0x6448af2157d0 <unknown>
+#6 0x6448af1c055f <unknown>
+#7 0x6448af1c1321 <unknown>
+#8 0x6448af74206b <unknown>
+#9 0x6448af74501d <unknown>
+#10 0x6448af72e718 <unknown>
+#11 0x6448af745bb0 <unknown>
+#12 0x6448af715150 <unknown>
+#13 0x6448af76b5e8 <unknown>
+#14 0x6448af76b7b8 <unknown>
+#15 0x6448af77d1de <unknown>
+#16 0x713913688b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 24, in run
+    self.mainPage.enterDetailedReservation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 47, in enterDetailedReservation
+    raise TimeoutException(f"Erro de timeout em enterDetailedReservation, {e}")
+selenium.common.exceptions.TimeoutException: Message: Erro de timeout em enterDetailedReservation, Message: 
+Stacktrace:
+#0 0x6448af77e79a <unknown>
+#1 0x6448af17a215 <unknown>
+#2 0x6448af1ccf06 <unknown>
+#3 0x6448af1cd141 <unknown>
+#4 0x6448af218634 <unknown>
+#5 0x6448af2157d0 <unknown>
+#6 0x6448af1c055f <unknown>
+#7 0x6448af1c1321 <unknown>
+#8 0x6448af74206b <unknown>
+#9 0x6448af74501d <unknown>
+#10 0x6448af72e718 <unknown>
+#11 0x6448af745bb0 <unknown>
+#12 0x6448af715150 <unknown>
+#13 0x6448af76b5e8 <unknown>
+#14 0x6448af76b7b8 <unknown>
+#15 0x6448af77d1de <unknown>
+#16 0x713913688b7b <unknown>
+
+
+2026-04-28 18:03:43 - pages.MainPage - ERROR - Não foi possivel sair da conta
+2026-04-29 05:00:02 - Program - INFO - Bot iniciado
+2026-04-29 05:01:02 - Program - INFO - Bot terminou sua tarefa
+2026-04-30 05:00:02 - Program - INFO - Bot iniciado
+2026-04-30 05:00:46 - Program - INFO - Bot terminou sua tarefa
+2026-04-30 11:56:07 - Program - INFO - Bot iniciado
+2026-04-30 11:57:00 - Program - ERROR - Erro inesperado: Message: Erro de timeout em enterDetailedReservation, Message: 
+Stacktrace:
+#0 0x60414caad79a <unknown>
+#1 0x60414c4a9215 <unknown>
+#2 0x60414c4fbf06 <unknown>
+#3 0x60414c4fc141 <unknown>
+#4 0x60414c547634 <unknown>
+#5 0x60414c5447d0 <unknown>
+#6 0x60414c4ef55f <unknown>
+#7 0x60414c4f0321 <unknown>
+#8 0x60414ca7106b <unknown>
+#9 0x60414ca7401d <unknown>
+#10 0x60414ca5d718 <unknown>
+#11 0x60414ca74bb0 <unknown>
+#12 0x60414ca44150 <unknown>
+#13 0x60414ca9a5e8 <unknown>
+#14 0x60414ca9a7b8 <unknown>
+#15 0x60414caac1de <unknown>
+#16 0x7ac871f3db7b <unknown>
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 28, in enterDetailedReservation
+    bttExecution = self.wait.until(
+        EC.presence_of_element_located((By.XPATH, "//i[contains(@class, 'fa-running')]"))
+    )
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x60414caad79a <unknown>
+#1 0x60414c4a9215 <unknown>
+#2 0x60414c4fbf06 <unknown>
+#3 0x60414c4fc141 <unknown>
+#4 0x60414c547634 <unknown>
+#5 0x60414c5447d0 <unknown>
+#6 0x60414c4ef55f <unknown>
+#7 0x60414c4f0321 <unknown>
+#8 0x60414ca7106b <unknown>
+#9 0x60414ca7401d <unknown>
+#10 0x60414ca5d718 <unknown>
+#11 0x60414ca74bb0 <unknown>
+#12 0x60414ca44150 <unknown>
+#13 0x60414ca9a5e8 <unknown>
+#14 0x60414ca9a7b8 <unknown>
+#15 0x60414caac1de <unknown>
+#16 0x7ac871f3db7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 24, in run
+    self.mainPage.enterDetailedReservation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 47, in enterDetailedReservation
+    raise TimeoutException(f"Erro de timeout em enterDetailedReservation, {e}")
+selenium.common.exceptions.TimeoutException: Message: Erro de timeout em enterDetailedReservation, Message: 
+Stacktrace:
+#0 0x60414caad79a <unknown>
+#1 0x60414c4a9215 <unknown>
+#2 0x60414c4fbf06 <unknown>
+#3 0x60414c4fc141 <unknown>
+#4 0x60414c547634 <unknown>
+#5 0x60414c5447d0 <unknown>
+#6 0x60414c4ef55f <unknown>
+#7 0x60414c4f0321 <unknown>
+#8 0x60414ca7106b <unknown>
+#9 0x60414ca7401d <unknown>
+#10 0x60414ca5d718 <unknown>
+#11 0x60414ca74bb0 <unknown>
+#12 0x60414ca44150 <unknown>
+#13 0x60414ca9a5e8 <unknown>
+#14 0x60414ca9a7b8 <unknown>
+#15 0x60414caac1de <unknown>
+#16 0x7ac871f3db7b <unknown>
+
+
+2026-04-30 11:57:00 - pages.MainPage - ERROR - Não foi possivel sair da conta

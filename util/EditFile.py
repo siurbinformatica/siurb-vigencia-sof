@@ -2,6 +2,7 @@
 from util.DateUtil import DateUtil
 from datetime import date
 from config.settings import LOG_PATH
+import time
 import glob
 import os
 
@@ -54,7 +55,33 @@ class EditFile:
         if (archives == []): return False
         return True
 
-    def is_remove_archive_in_path(self) -> bool:
-        path_archive = os.path.join(self.PATH_DOWNLOAD, "SFN064R.csv")
-        if (os.path.exists(path_archive)): return False
-        return True
+    def wait_for_download(self, timeout: int = 30) -> bool:
+
+        elapsed = 0
+        last_size = -1
+
+        while elapsed < timeout:
+            time.sleep(1)
+            elapsed += 1
+
+            if not self.hasArchiveInPathArchive():
+                continue
+
+            # Garante que não há arquivo temporário do Chrome ainda ativo
+            tmp_files = (
+                glob.glob(os.path.join(self.PATH_DOWNLOAD, "*.crdownload")) +
+                glob.glob(os.path.join(self.PATH_DOWNLOAD, "*.tmp"))
+            )
+            if tmp_files:
+                continue
+
+            # Garante que o tamanho do arquivo está estável (não está sendo escrito)
+            archives = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SFN064R__*.csv"))
+            current_size = os.path.getsize(archives[0])
+
+            if current_size == last_size and current_size > 0:
+                return True
+
+            last_size = current_size
+
+        return False
