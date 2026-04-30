@@ -614,3 +614,76 @@ Exception: Timeout: arquivo SFN064R__*.csv não encontrado após 60s
 2026-04-30 15:12:56 - Program - INFO - Bot iniciado
 2026-04-30 15:13:37 - util.EditFile - INFO - arquivo nao encontrado
 2026-04-30 15:13:41 - Program - INFO - Bot terminou sua tarefa
+2026-04-30 15:33:02 - Program - INFO - Bot iniciado
+2026-04-30 15:33:04 - Program - ERROR - Erro inesperado: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x57fee4efc79a <unknown>
+#1 0x57fee48f8020 <unknown>
+#2 0x57fee4946531 <unknown>
+#3 0x57fee49447eb <unknown>
+#4 0x57fee493fd97 <unknown>
+#5 0x57fee49937d0 <unknown>
+#6 0x57fee493e55f <unknown>
+#7 0x57fee493f321 <unknown>
+#8 0x57fee4ec006b <unknown>
+#9 0x57fee4ec301d <unknown>
+#10 0x57fee4eac718 <unknown>
+#11 0x57fee4ec3bb0 <unknown>
+#12 0x57fee4e93150 <unknown>
+#13 0x57fee4ee95e8 <unknown>
+#14 0x57fee4ee97b8 <unknown>
+#15 0x57fee4efb1de <unknown>
+#16 0x7c72d58f0b7b <unknown>
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 23, in run
+    self.loginPage.login()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/LoginPage.py", line 29, in login
+    userLogin.send_keys(APP_USER)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x57fee4efc79a <unknown>
+#1 0x57fee48f8020 <unknown>
+#2 0x57fee4946531 <unknown>
+#3 0x57fee49447eb <unknown>
+#4 0x57fee493fd97 <unknown>
+#5 0x57fee49937d0 <unknown>
+#6 0x57fee493e55f <unknown>
+#7 0x57fee493f321 <unknown>
+#8 0x57fee4ec006b <unknown>
+#9 0x57fee4ec301d <unknown>
+#10 0x57fee4eac718 <unknown>
+#11 0x57fee4ec3bb0 <unknown>
+#12 0x57fee4e93150 <unknown>
+#13 0x57fee4ee95e8 <unknown>
+#14 0x57fee4ee97b8 <unknown>
+#15 0x57fee4efb1de <unknown>
+#16 0x7c72d58f0b7b <unknown>
+
+2026-04-30 15:33:04 - pages.MainPage - ERROR - Não foi possivel sair da conta
+2026-04-30 15:33:21 - Program - INFO - Bot iniciado
+2026-04-30 15:33:21 - util.EditFile - INFO - Não foi possivel deletar o arquivo
+2026-04-30 15:34:03 - util.EditFile - INFO - arquivo nao encontrado
+2026-04-30 15:34:07 - Program - INFO - Bot terminou sua tarefa
+2026-04-30 15:53:03 - Program - INFO - Bot iniciado
+2026-04-30 15:53:03 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-04-30 15:53:46 - util.EditFile - INFO - arquivo nao encontrado
+2026-04-30 15:53:50 - Program - INFO - Bot terminou sua tarefa
