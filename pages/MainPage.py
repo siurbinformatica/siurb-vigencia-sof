@@ -57,7 +57,7 @@ class MainPage():
     def downloadExcel(self):
         try:
             
-            yesterday = self.dateutil.previousDate(=)
+            yesterday = self.dateutil.previousDate()
             today = self.dateutil.todayDate()
             
             periodInitials = self.wait.until(

@@ -630,3 +630,10 @@ Traceback (most recent call last):
   File "/root/SiurbAutoSOF/pages/MainPage.py", line 116, in downloadExcel
     raise Exception(f"Erro inesperado: {e}")
 Exception: Erro inesperado: DateUtil.previousDate() takes 1 positional argument but 2 were given
+2026-04-30 15:27:02 - Program - INFO - Bot iniciado
+2026-04-30 15:27:02 - util.EditFile - INFO - Não foi possivel deletar o arquivo
+2026-04-30 15:27:44 - util.EditFile - INFO - arquivo nao encontrado
+2026-04-30 15:27:48 - Program - INFO - Bot terminou sua tarefa
+2026-04-30 15:28:41 - Program - INFO - Bot iniciado
+2026-04-30 15:29:24 - util.EditFile - INFO - arquivo nao encontrado
+2026-04-30 15:29:28 - Program - INFO - Bot terminou sua tarefa
