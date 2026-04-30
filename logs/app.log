@@ -598,3 +598,19 @@ Stacktrace:
 
 
 2026-04-30 11:57:00 - pages.MainPage - ERROR - Não foi possivel sair da conta
+2026-04-30 13:49:22 - Program - INFO - Bot iniciado
+2026-04-30 13:51:02 - Program - ERROR - Erro inesperado: Timeout: arquivo SFN064R__*.csv não encontrado após 60s
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 28, in run
+    raise Exception("Timeout: arquivo SFN064R__*.csv não encontrado após 60s")
+Exception: Timeout: arquivo SFN064R__*.csv não encontrado após 60s
+2026-04-30 15:09:08 - Program - INFO - Bot iniciado
+2026-04-30 15:09:50 - util.EditFile - INFO - Não foi possivel deletar o arquivo
+2026-04-30 15:09:50 - util.EditFile - INFO - arquivo nao encontrado
+2026-04-30 15:09:54 - Program - INFO - Bot terminou sua tarefa
+2026-04-30 15:10:56 - Program - INFO - Bot iniciado
+2026-04-30 15:11:38 - util.EditFile - INFO - arquivo nao encontrado
+2026-04-30 15:11:42 - Program - INFO - Bot terminou sua tarefa
+2026-04-30 15:12:56 - Program - INFO - Bot iniciado
+2026-04-30 15:13:37 - util.EditFile - INFO - arquivo nao encontrado
+2026-04-30 15:13:41 - Program - INFO - Bot terminou sua tarefa
