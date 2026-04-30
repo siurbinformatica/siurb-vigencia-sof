@@ -23,8 +23,11 @@ class Program:
             self.confirmPage.confirm()
             self.mainPage.enterDetailedReservation()
             self.mainPage.downloadExcel()
-            while(not self.editFile.is_remove_archive_in_path()):
-                self.editFile.remove()
+
+            if not self.editFile.wait_for_download(timeout=60):
+                raise Exception("Timeout: arquivo SFN064R__*.csv não encontrado após 30s")
+            
+            self.editFile.remove()
             self.editFile.rename()
             self.mainPage.exit() 
             self.logger.info("Bot terminou sua tarefa")
