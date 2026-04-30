@@ -19,15 +19,15 @@ class Program:
     def run(self):
         try:    
             self.logger.info("Bot iniciado")
+            self.editFile.remove()
             self.loginPage.login()
             self.confirmPage.confirm()
             self.mainPage.enterDetailedReservation()
             self.mainPage.downloadExcel()
 
             if not self.editFile.wait_for_download(timeout=60):
-                raise Exception("Timeout: arquivo SFN064R__*.csv não encontrado após 30s")
+                raise Exception("Timeout: arquivo SFN064R__*.csv não encontrado após 60s")
             
-            self.editFile.remove()
             self.editFile.rename()
             self.mainPage.exit() 
             self.logger.info("Bot terminou sua tarefa")
