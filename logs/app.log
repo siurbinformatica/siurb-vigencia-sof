@@ -614,3 +614,19 @@ Exception: Timeout: arquivo SFN064R__*.csv não encontrado após 60s
 2026-04-30 15:12:56 - Program - INFO - Bot iniciado
 2026-04-30 15:13:37 - util.EditFile - INFO - arquivo nao encontrado
 2026-04-30 15:13:41 - Program - INFO - Bot terminou sua tarefa
+2026-04-30 15:18:37 - Program - INFO - Bot iniciado
+2026-04-30 15:19:01 - Program - ERROR - Erro inesperado: Erro inesperado: DateUtil.previousDate() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 60, in downloadExcel
+    yesterday = self.dateutil.previousDate("%d/%m/%G")
+TypeError: DateUtil.previousDate() takes 1 positional argument but 2 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 26, in run
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 116, in downloadExcel
+    raise Exception(f"Erro inesperado: {e}")
+Exception: Erro inesperado: DateUtil.previousDate() takes 1 positional argument but 2 were given
