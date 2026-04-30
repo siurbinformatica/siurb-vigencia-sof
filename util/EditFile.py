@@ -34,12 +34,13 @@ class EditFile:
 
         archive = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SFN064R.csv"))
         
-        if (archive == []):
-            self.logger.info("Não foi possivel deletar o arquivo")
+        if not archive:
+            self.logger.info("Arquivo SFN064R.csv não encontrado, nada a remover.")
             return
         
         os.remove(archive[0])
-        
+        self.logger.info("Arquivo SFN064R.csv removido com sucesso.")
+
     def delete_last_log(self):
 
         yesterday = self.date_util.previousDateLog("%Y-%m-%d")
