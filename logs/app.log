@@ -687,3 +687,1117 @@ Stacktrace:
 2026-04-30 15:53:03 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
 2026-04-30 15:53:46 - util.EditFile - INFO - arquivo nao encontrado
 2026-04-30 15:53:50 - Program - INFO - Bot terminou sua tarefa
+2026-05-01 05:00:02 - Program - INFO - Bot iniciado
+2026-05-01 05:00:02 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-01 05:00:48 - Program - INFO - Bot terminou sua tarefa
+2026-05-04 05:00:11 - Program - INFO - Bot iniciado
+2026-05-04 05:00:11 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-04 05:01:14 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-04 05:01:18 - Program - INFO - Bot terminou sua tarefa
+2026-05-04 11:57:05 - Program - INFO - Bot iniciado
+2026-05-04 11:57:05 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-04 11:57:05 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-04 11:57:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-04 11:57:58 - Program - INFO - Bot terminou sua tarefa
+2026-05-04 11:59:04 - Program - INFO - Bot iniciado
+2026-05-04 11:59:04 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-04 11:59:04 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-04 11:59:45 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-04 11:59:50 - Program - INFO - Bot terminou sua tarefa
+2026-05-04 12:13:48 - Program - INFO - Bot iniciado
+2026-05-04 12:13:48 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-04 12:13:48 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-04 12:13:48 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-04 12:13:48 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-04 12:14:30 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-04 12:14:34 - Program - INFO - Bot terminou sua tarefa
+2026-05-04 12:18:03 - Program - INFO - Bot iniciado
+2026-05-04 12:18:03 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-04 12:18:03 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-04 12:18:03 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-04 12:18:03 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-04 12:18:44 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-04 12:18:48 - Program - INFO - Bot terminou sua tarefa
+2026-05-05 05:00:02 - Program - INFO - Bot iniciado
+2026-05-05 05:00:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-05 05:00:02 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-05 05:00:02 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-05 05:00:02 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-05 05:00:47 - Program - INFO - Bot terminou sua tarefa
+2026-05-06 05:00:03 - Program - INFO - Bot iniciado
+2026-05-06 05:00:03 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-06 05:00:03 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-06 05:00:03 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-06 05:00:03 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-06 05:00:49 - Program - INFO - Bot terminou sua tarefa
+2026-05-07 05:00:01 - Program - INFO - Bot iniciado
+2026-05-07 05:00:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-07 05:00:01 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-07 05:00:01 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-07 05:00:01 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-07 05:01:05 - Program - INFO - Bot terminou sua tarefa
+2026-05-08 05:00:01 - Program - INFO - Bot iniciado
+2026-05-08 05:00:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 05:00:01 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 05:00:01 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-08 05:00:01 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-08 05:00:47 - Program - INFO - Bot terminou sua tarefa
+2026-05-08 12:14:50 - Program - INFO - Bot iniciado
+2026-05-08 12:14:50 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 12:14:50 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 12:14:50 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-08 12:14:50 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-08 12:15:31 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-08 12:15:35 - Program - INFO - Bot terminou sua tarefa
+2026-05-08 12:17:03 - Program - INFO - Bot iniciado
+2026-05-08 12:17:03 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 12:17:03 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 12:17:03 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-08 12:17:03 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-08 12:17:45 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-08 12:17:49 - Program - INFO - Bot terminou sua tarefa
+2026-05-08 12:17:51 - Program - INFO - Bot iniciado
+2026-05-08 12:17:51 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 12:17:51 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 12:17:51 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-08 12:17:51 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-08 12:18:32 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-08 12:18:36 - Program - INFO - Bot terminou sua tarefa
+2026-05-08 12:19:12 - Program - INFO - Bot iniciado
+2026-05-08 12:19:12 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 12:19:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 12:19:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-08 12:19:12 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-08 12:19:54 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-08 12:19:58 - Program - INFO - Bot terminou sua tarefa
+2026-05-08 12:26:55 - Program - INFO - Bot iniciado
+2026-05-08 12:26:55 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 12:26:55 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 12:26:55 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-08 12:26:55 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-08 12:27:18 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 36, in enterDetailedReservation
+    bttMenuBars[4].click()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x60ca01db179a <unknown>
+#1 0x60ca017ad020 <unknown>
+#2 0x60ca018010a5 <unknown>
+#3 0x60ca017f5452 <unknown>
+#4 0x60ca017f4d97 <unknown>
+#5 0x60ca018487d0 <unknown>
+#6 0x60ca017f355f <unknown>
+#7 0x60ca017f4321 <unknown>
+#8 0x60ca01d7506b <unknown>
+#9 0x60ca01d7801d <unknown>
+#10 0x60ca01d61718 <unknown>
+#11 0x60ca01d78bb0 <unknown>
+#12 0x60ca01d48150 <unknown>
+#13 0x60ca01d9e5e8 <unknown>
+#14 0x60ca01d9e7b8 <unknown>
+#15 0x60ca01db01de <unknown>
+#16 0x7bddebce7b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 26, in run
+    self.mainPage.enterDetailedReservation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 51, in enterDetailedReservation
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-05-08 12:27:26 - Program - INFO - Bot iniciado
+2026-05-08 12:27:26 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 12:27:26 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 12:27:26 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-05-08 12:27:26 - util.EditFile - INFO - Arquivo SFN064R.csv não encontrado, nada a remover.
+2026-05-08 12:28:07 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-08 12:28:12 - Program - INFO - Bot terminou sua tarefa
+2026-05-08 12:29:30 - Program - INFO - Bot iniciado
+2026-05-08 12:29:30 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 12:29:30 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 12:29:30 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-08 12:29:30 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-08 12:29:53 - Program - ERROR - Erro inesperado: Erro inesperado: list index out of range
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 36, in enterDetailedReservation
+    bttMenuBars[4].click()
+    ~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 26, in run
+    self.mainPage.enterDetailedReservation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 55, in enterDetailedReservation
+    raise Exception(f"Erro inesperado: {e}")
+Exception: Erro inesperado: list index out of range
+2026-05-08 12:32:11 - Program - INFO - Bot iniciado
+2026-05-08 12:32:11 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 12:32:11 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 12:32:11 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-05-08 12:32:11 - util.EditFile - INFO - Arquivo SFN064R.csv não encontrado, nada a remover.
+2026-05-08 12:32:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-08 12:32:57 - Program - INFO - Bot terminou sua tarefa
+2026-05-08 12:44:44 - Program - INFO - Bot iniciado
+2026-05-08 12:44:44 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 12:44:44 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 12:44:44 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-08 12:44:44 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-08 12:45:25 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-08 12:45:29 - Program - INFO - Bot terminou sua tarefa
+2026-05-08 12:45:41 - Program - INFO - Bot iniciado
+2026-05-08 12:45:41 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 12:45:41 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 12:45:41 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-08 12:45:41 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-08 12:46:23 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-08 12:46:27 - Program - INFO - Bot terminou sua tarefa
+2026-05-08 13:01:06 - Program - INFO - Bot iniciado
+2026-05-08 13:01:06 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 13:01:06 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 13:01:06 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-08 13:01:06 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-08 13:01:47 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-08 13:01:51 - Program - INFO - Bot terminou sua tarefa
+2026-05-08 13:04:18 - Program - INFO - Bot iniciado
+2026-05-08 13:04:18 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 13:04:18 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 13:04:18 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-08 13:04:18 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-08 13:05:00 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-08 13:05:04 - Program - INFO - Bot terminou sua tarefa
+2026-05-08 13:14:32 - Program - INFO - Bot iniciado
+2026-05-08 13:14:32 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 13:14:32 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 13:14:32 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-08 13:14:32 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-08 13:15:14 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-08 13:15:18 - Program - INFO - Bot terminou sua tarefa
+2026-05-08 14:03:28 - Program - INFO - Bot iniciado
+2026-05-08 14:03:28 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 14:03:28 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 14:03:28 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-08 14:03:28 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-08 14:04:09 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-08 14:04:13 - Program - INFO - Bot terminou sua tarefa
+2026-05-08 14:06:54 - Program - INFO - Bot iniciado
+2026-05-08 14:06:54 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 14:06:54 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 14:06:54 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-08 14:06:54 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-08 14:07:35 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-08 14:07:39 - Program - INFO - Bot terminou sua tarefa
+2026-05-08 15:02:51 - Program - INFO - Bot iniciado
+2026-05-08 15:02:51 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 15:02:51 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 15:02:51 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-08 15:02:51 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-08 15:03:32 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-08 15:03:36 - Program - INFO - Bot terminou sua tarefa
+2026-05-08 15:03:57 - Program - INFO - Bot iniciado
+2026-05-08 15:03:57 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-08 15:03:57 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-08 15:03:57 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-08 15:03:57 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-08 15:04:39 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-08 15:04:43 - Program - INFO - Bot terminou sua tarefa
+2026-05-11 05:00:10 - Program - INFO - Bot iniciado
+2026-05-11 05:00:10 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-11 05:00:10 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-11 05:00:10 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-11 05:00:10 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-11 05:01:14 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-11 05:01:18 - Program - INFO - Bot terminou sua tarefa
+2026-05-11 05:15:01 - Program - INFO - Bot iniciado
+2026-05-11 05:15:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-11 05:15:01 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-11 05:15:01 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-11 05:15:01 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-11 05:15:43 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-11 05:15:47 - Program - INFO - Bot terminou sua tarefa
+2026-05-12 05:00:02 - Program - INFO - Bot iniciado
+2026-05-12 05:00:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-12 05:00:02 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-12 05:00:02 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-12 05:00:02 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-12 05:00:03 - Program - ERROR - Erro inesperado: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5af07087279a <unknown>
+#1 0x5af07026e020 <unknown>
+#2 0x5af0702bc531 <unknown>
+#3 0x5af0702ba7eb <unknown>
+#4 0x5af0702b5d97 <unknown>
+#5 0x5af0703097d0 <unknown>
+#6 0x5af0702b455f <unknown>
+#7 0x5af0702b5321 <unknown>
+#8 0x5af07083606b <unknown>
+#9 0x5af07083901d <unknown>
+#10 0x5af070822718 <unknown>
+#11 0x5af070839bb0 <unknown>
+#12 0x5af070809150 <unknown>
+#13 0x5af07085f5e8 <unknown>
+#14 0x5af07085f7b8 <unknown>
+#15 0x5af0708711de <unknown>
+#16 0x743eceeb2b7b <unknown>
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 24, in run
+    self.loginPage.login()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/LoginPage.py", line 29, in login
+    userLogin.send_keys(APP_USER)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5af07087279a <unknown>
+#1 0x5af07026e020 <unknown>
+#2 0x5af0702bc531 <unknown>
+#3 0x5af0702ba7eb <unknown>
+#4 0x5af0702b5d97 <unknown>
+#5 0x5af0703097d0 <unknown>
+#6 0x5af0702b455f <unknown>
+#7 0x5af0702b5321 <unknown>
+#8 0x5af07083606b <unknown>
+#9 0x5af07083901d <unknown>
+#10 0x5af070822718 <unknown>
+#11 0x5af070839bb0 <unknown>
+#12 0x5af070809150 <unknown>
+#13 0x5af07085f5e8 <unknown>
+#14 0x5af07085f7b8 <unknown>
+#15 0x5af0708711de <unknown>
+#16 0x743eceeb2b7b <unknown>
+
+2026-05-12 05:00:03 - pages.MainPage - ERROR - Não foi possivel sair da conta
+2026-05-12 05:15:01 - Program - INFO - Bot iniciado
+2026-05-12 05:15:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-12 05:15:01 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-12 05:15:01 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-05-12 05:15:01 - util.EditFile - INFO - Arquivo SFN064R.csv não encontrado, nada a remover.
+2026-05-12 05:16:06 - Program - INFO - Bot terminou sua tarefa
+2026-05-13 05:00:01 - Program - INFO - Bot iniciado
+2026-05-13 05:00:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-13 05:00:01 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-13 05:00:01 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-13 05:00:01 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-13 05:00:47 - Program - INFO - Bot terminou sua tarefa
+2026-05-13 05:15:02 - Program - INFO - Bot iniciado
+2026-05-13 05:15:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-13 05:15:02 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-13 05:15:02 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-13 05:15:02 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-13 05:15:43 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-13 05:15:47 - Program - INFO - Bot terminou sua tarefa
+2026-05-14 05:00:02 - Program - INFO - Bot iniciado
+2026-05-14 05:00:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-14 05:00:02 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-14 05:00:02 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-14 05:00:02 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-14 05:00:49 - Program - INFO - Bot terminou sua tarefa
+2026-05-14 05:15:01 - Program - INFO - Bot iniciado
+2026-05-14 05:15:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-14 05:15:01 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-14 05:15:01 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-14 05:15:01 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-14 05:15:43 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-14 05:15:44 - pages.MainPage - ERROR - Não foi possivel sair da conta
+2026-05-14 05:15:44 - Program - INFO - Bot terminou sua tarefa
+2026-05-15 05:00:05 - Program - INFO - Bot iniciado
+2026-05-15 05:00:05 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-15 05:00:05 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-15 05:00:05 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-15 05:00:05 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-15 05:00:50 - Program - INFO - Bot terminou sua tarefa
+2026-05-15 05:15:02 - Program - INFO - Bot iniciado
+2026-05-15 05:15:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-15 05:15:02 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-15 05:15:02 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-15 05:15:02 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-15 05:15:44 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-15 05:15:48 - Program - INFO - Bot terminou sua tarefa
+2026-05-18 05:00:18 - Program - INFO - Bot iniciado
+2026-05-18 05:00:18 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-18 05:00:18 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-18 05:00:18 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-18 05:00:18 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-18 05:01:20 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-18 05:01:24 - Program - INFO - Bot terminou sua tarefa
+2026-05-18 05:15:01 - Program - INFO - Bot iniciado
+2026-05-18 05:15:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-18 05:15:01 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-18 05:15:01 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-18 05:15:01 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-18 05:15:43 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-18 05:15:47 - Program - INFO - Bot terminou sua tarefa
+2026-05-19 05:00:02 - Program - INFO - Bot iniciado
+2026-05-19 05:00:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-19 05:00:02 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-19 05:00:02 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-19 05:00:02 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-19 05:00:49 - Program - INFO - Bot terminou sua tarefa
+2026-05-19 05:15:01 - Program - INFO - Bot iniciado
+2026-05-19 05:15:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-19 05:15:01 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-19 05:15:01 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-19 05:15:01 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-19 05:15:42 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-19 05:15:47 - Program - INFO - Bot terminou sua tarefa
+2026-05-20 05:00:02 - Program - INFO - Bot iniciado
+2026-05-20 05:00:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-20 05:00:02 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-20 05:00:02 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-20 05:00:02 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-20 05:00:48 - Program - INFO - Bot terminou sua tarefa
+2026-05-20 05:15:01 - Program - INFO - Bot iniciado
+2026-05-20 05:15:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-20 05:15:01 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-20 05:15:01 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-20 05:15:01 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-20 05:15:43 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-20 05:15:47 - Program - INFO - Bot terminou sua tarefa
+2026-05-21 05:00:02 - Program - INFO - Bot iniciado
+2026-05-21 05:00:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-21 05:00:02 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-21 05:00:02 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-21 05:00:02 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-21 05:00:49 - Program - INFO - Bot terminou sua tarefa
+2026-05-21 05:15:01 - Program - INFO - Bot iniciado
+2026-05-21 05:15:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-21 05:15:01 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-21 05:15:01 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-21 05:15:01 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-21 05:15:43 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-21 05:15:47 - Program - INFO - Bot terminou sua tarefa
+2026-05-22 05:00:02 - Program - INFO - Bot iniciado
+2026-05-22 05:00:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-22 05:00:02 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-22 05:00:02 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-22 05:00:02 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-22 05:00:03 - Program - ERROR - Erro inesperado: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5db2b978b79a <unknown>
+#1 0x5db2b9187020 <unknown>
+#2 0x5db2b91d5531 <unknown>
+#3 0x5db2b91d37eb <unknown>
+#4 0x5db2b91ced97 <unknown>
+#5 0x5db2b92227d0 <unknown>
+#6 0x5db2b91cd55f <unknown>
+#7 0x5db2b91ce321 <unknown>
+#8 0x5db2b974f06b <unknown>
+#9 0x5db2b975201d <unknown>
+#10 0x5db2b973b718 <unknown>
+#11 0x5db2b9752bb0 <unknown>
+#12 0x5db2b9722150 <unknown>
+#13 0x5db2b97785e8 <unknown>
+#14 0x5db2b97787b8 <unknown>
+#15 0x5db2b978a1de <unknown>
+#16 0x76c5e0ebcb7b <unknown>
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 24, in run
+    self.loginPage.login()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/LoginPage.py", line 29, in login
+    userLogin.send_keys(APP_USER)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5db2b978b79a <unknown>
+#1 0x5db2b9187020 <unknown>
+#2 0x5db2b91d5531 <unknown>
+#3 0x5db2b91d37eb <unknown>
+#4 0x5db2b91ced97 <unknown>
+#5 0x5db2b92227d0 <unknown>
+#6 0x5db2b91cd55f <unknown>
+#7 0x5db2b91ce321 <unknown>
+#8 0x5db2b974f06b <unknown>
+#9 0x5db2b975201d <unknown>
+#10 0x5db2b973b718 <unknown>
+#11 0x5db2b9752bb0 <unknown>
+#12 0x5db2b9722150 <unknown>
+#13 0x5db2b97785e8 <unknown>
+#14 0x5db2b97787b8 <unknown>
+#15 0x5db2b978a1de <unknown>
+#16 0x76c5e0ebcb7b <unknown>
+
+2026-05-22 05:00:03 - pages.MainPage - ERROR - Não foi possivel sair da conta
+2026-05-22 05:15:01 - Program - INFO - Bot iniciado
+2026-05-22 05:15:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-22 05:15:01 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-22 05:15:01 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-05-22 05:15:01 - util.EditFile - INFO - Arquivo SFN064R.csv não encontrado, nada a remover.
+2026-05-22 05:15:47 - Program - INFO - Bot terminou sua tarefa
+2026-05-25 05:00:09 - Program - INFO - Bot iniciado
+2026-05-25 05:00:09 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-25 05:00:09 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-25 05:00:09 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-25 05:00:09 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-25 05:00:51 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-25 05:00:55 - Program - INFO - Bot terminou sua tarefa
+2026-05-25 05:15:01 - Program - INFO - Bot iniciado
+2026-05-25 05:15:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-25 05:15:01 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-25 05:15:01 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-25 05:15:01 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-25 05:15:43 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-25 05:15:47 - Program - INFO - Bot terminou sua tarefa
+2026-05-26 05:00:02 - Program - INFO - Bot iniciado
+2026-05-26 05:00:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-26 05:00:02 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-26 05:00:02 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-26 05:00:02 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-26 05:00:48 - Program - INFO - Bot terminou sua tarefa
+2026-05-26 05:15:01 - Program - INFO - Bot iniciado
+2026-05-26 05:15:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-26 05:15:01 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-26 05:15:01 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-26 05:15:01 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-26 05:15:42 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-26 05:15:46 - Program - INFO - Bot terminou sua tarefa
+2026-05-27 05:00:01 - Program - INFO - Bot iniciado
+2026-05-27 05:00:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-27 05:00:01 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-27 05:00:01 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-27 05:00:01 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-27 05:00:55 - Program - ERROR - Erro inesperado: Message: Erro de timeout em enterDetailedReservation, Message: 
+Stacktrace:
+#0 0x5c91b0c6979a <unknown>
+#1 0x5c91b0665215 <unknown>
+#2 0x5c91b06b7f06 <unknown>
+#3 0x5c91b06b8141 <unknown>
+#4 0x5c91b0703634 <unknown>
+#5 0x5c91b07007d0 <unknown>
+#6 0x5c91b06ab55f <unknown>
+#7 0x5c91b06ac321 <unknown>
+#8 0x5c91b0c2d06b <unknown>
+#9 0x5c91b0c3001d <unknown>
+#10 0x5c91b0c19718 <unknown>
+#11 0x5c91b0c30bb0 <unknown>
+#12 0x5c91b0c00150 <unknown>
+#13 0x5c91b0c565e8 <unknown>
+#14 0x5c91b0c567b8 <unknown>
+#15 0x5c91b0c681de <unknown>
+#16 0x787a7c4b1b7b <unknown>
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 28, in enterDetailedReservation
+    bttExecution = self.wait.until(
+        EC.presence_of_element_located((By.XPATH, "//i[contains(@class, 'fa-running')]"))
+    )
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x5c91b0c6979a <unknown>
+#1 0x5c91b0665215 <unknown>
+#2 0x5c91b06b7f06 <unknown>
+#3 0x5c91b06b8141 <unknown>
+#4 0x5c91b0703634 <unknown>
+#5 0x5c91b07007d0 <unknown>
+#6 0x5c91b06ab55f <unknown>
+#7 0x5c91b06ac321 <unknown>
+#8 0x5c91b0c2d06b <unknown>
+#9 0x5c91b0c3001d <unknown>
+#10 0x5c91b0c19718 <unknown>
+#11 0x5c91b0c30bb0 <unknown>
+#12 0x5c91b0c00150 <unknown>
+#13 0x5c91b0c565e8 <unknown>
+#14 0x5c91b0c567b8 <unknown>
+#15 0x5c91b0c681de <unknown>
+#16 0x787a7c4b1b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 26, in run
+    self.mainPage.enterDetailedReservation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 47, in enterDetailedReservation
+    raise TimeoutException(f"Erro de timeout em enterDetailedReservation, {e}")
+selenium.common.exceptions.TimeoutException: Message: Erro de timeout em enterDetailedReservation, Message: 
+Stacktrace:
+#0 0x5c91b0c6979a <unknown>
+#1 0x5c91b0665215 <unknown>
+#2 0x5c91b06b7f06 <unknown>
+#3 0x5c91b06b8141 <unknown>
+#4 0x5c91b0703634 <unknown>
+#5 0x5c91b07007d0 <unknown>
+#6 0x5c91b06ab55f <unknown>
+#7 0x5c91b06ac321 <unknown>
+#8 0x5c91b0c2d06b <unknown>
+#9 0x5c91b0c3001d <unknown>
+#10 0x5c91b0c19718 <unknown>
+#11 0x5c91b0c30bb0 <unknown>
+#12 0x5c91b0c00150 <unknown>
+#13 0x5c91b0c565e8 <unknown>
+#14 0x5c91b0c567b8 <unknown>
+#15 0x5c91b0c681de <unknown>
+#16 0x787a7c4b1b7b <unknown>
+
+
+2026-05-27 05:00:55 - pages.MainPage - ERROR - Não foi possivel sair da conta
+2026-05-27 05:15:01 - Program - INFO - Bot iniciado
+2026-05-27 05:15:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-27 05:15:01 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-27 05:15:01 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-05-27 05:15:01 - util.EditFile - INFO - Arquivo SFN064R.csv não encontrado, nada a remover.
+2026-05-27 05:15:54 - Program - ERROR - Erro inesperado: Message: Erro de timeout em enterDetailedReservation, Message: 
+Stacktrace:
+#0 0x610a9d1c779a <unknown>
+#1 0x610a9cbc3215 <unknown>
+#2 0x610a9cc15f06 <unknown>
+#3 0x610a9cc16141 <unknown>
+#4 0x610a9cc61634 <unknown>
+#5 0x610a9cc5e7d0 <unknown>
+#6 0x610a9cc0955f <unknown>
+#7 0x610a9cc0a321 <unknown>
+#8 0x610a9d18b06b <unknown>
+#9 0x610a9d18e01d <unknown>
+#10 0x610a9d177718 <unknown>
+#11 0x610a9d18ebb0 <unknown>
+#12 0x610a9d15e150 <unknown>
+#13 0x610a9d1b45e8 <unknown>
+#14 0x610a9d1b47b8 <unknown>
+#15 0x610a9d1c61de <unknown>
+#16 0x705b4494bb7b <unknown>
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 28, in enterDetailedReservation
+    bttExecution = self.wait.until(
+        EC.presence_of_element_located((By.XPATH, "//i[contains(@class, 'fa-running')]"))
+    )
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x610a9d1c779a <unknown>
+#1 0x610a9cbc3215 <unknown>
+#2 0x610a9cc15f06 <unknown>
+#3 0x610a9cc16141 <unknown>
+#4 0x610a9cc61634 <unknown>
+#5 0x610a9cc5e7d0 <unknown>
+#6 0x610a9cc0955f <unknown>
+#7 0x610a9cc0a321 <unknown>
+#8 0x610a9d18b06b <unknown>
+#9 0x610a9d18e01d <unknown>
+#10 0x610a9d177718 <unknown>
+#11 0x610a9d18ebb0 <unknown>
+#12 0x610a9d15e150 <unknown>
+#13 0x610a9d1b45e8 <unknown>
+#14 0x610a9d1b47b8 <unknown>
+#15 0x610a9d1c61de <unknown>
+#16 0x705b4494bb7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 26, in run
+    self.mainPage.enterDetailedReservation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 47, in enterDetailedReservation
+    raise TimeoutException(f"Erro de timeout em enterDetailedReservation, {e}")
+selenium.common.exceptions.TimeoutException: Message: Erro de timeout em enterDetailedReservation, Message: 
+Stacktrace:
+#0 0x610a9d1c779a <unknown>
+#1 0x610a9cbc3215 <unknown>
+#2 0x610a9cc15f06 <unknown>
+#3 0x610a9cc16141 <unknown>
+#4 0x610a9cc61634 <unknown>
+#5 0x610a9cc5e7d0 <unknown>
+#6 0x610a9cc0955f <unknown>
+#7 0x610a9cc0a321 <unknown>
+#8 0x610a9d18b06b <unknown>
+#9 0x610a9d18e01d <unknown>
+#10 0x610a9d177718 <unknown>
+#11 0x610a9d18ebb0 <unknown>
+#12 0x610a9d15e150 <unknown>
+#13 0x610a9d1b45e8 <unknown>
+#14 0x610a9d1b47b8 <unknown>
+#15 0x610a9d1c61de <unknown>
+#16 0x705b4494bb7b <unknown>
+
+
+2026-05-27 05:15:54 - pages.MainPage - ERROR - Não foi possivel sair da conta
+2026-05-28 05:00:02 - Program - INFO - Bot iniciado
+2026-05-28 05:00:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-28 05:00:02 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-28 05:00:02 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-05-28 05:00:02 - util.EditFile - INFO - Arquivo SFN064R.csv não encontrado, nada a remover.
+2026-05-28 05:00:56 - Program - ERROR - Erro inesperado: Message: Erro de timeout em enterDetailedReservation, Message: 
+Stacktrace:
+#0 0x5ae6e882079a <unknown>
+#1 0x5ae6e821c215 <unknown>
+#2 0x5ae6e826ef06 <unknown>
+#3 0x5ae6e826f141 <unknown>
+#4 0x5ae6e82ba634 <unknown>
+#5 0x5ae6e82b77d0 <unknown>
+#6 0x5ae6e826255f <unknown>
+#7 0x5ae6e8263321 <unknown>
+#8 0x5ae6e87e406b <unknown>
+#9 0x5ae6e87e701d <unknown>
+#10 0x5ae6e87d0718 <unknown>
+#11 0x5ae6e87e7bb0 <unknown>
+#12 0x5ae6e87b7150 <unknown>
+#13 0x5ae6e880d5e8 <unknown>
+#14 0x5ae6e880d7b8 <unknown>
+#15 0x5ae6e881f1de <unknown>
+#16 0x7019d2501b7b <unknown>
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 28, in enterDetailedReservation
+    bttExecution = self.wait.until(
+        EC.presence_of_element_located((By.XPATH, "//i[contains(@class, 'fa-running')]"))
+    )
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x5ae6e882079a <unknown>
+#1 0x5ae6e821c215 <unknown>
+#2 0x5ae6e826ef06 <unknown>
+#3 0x5ae6e826f141 <unknown>
+#4 0x5ae6e82ba634 <unknown>
+#5 0x5ae6e82b77d0 <unknown>
+#6 0x5ae6e826255f <unknown>
+#7 0x5ae6e8263321 <unknown>
+#8 0x5ae6e87e406b <unknown>
+#9 0x5ae6e87e701d <unknown>
+#10 0x5ae6e87d0718 <unknown>
+#11 0x5ae6e87e7bb0 <unknown>
+#12 0x5ae6e87b7150 <unknown>
+#13 0x5ae6e880d5e8 <unknown>
+#14 0x5ae6e880d7b8 <unknown>
+#15 0x5ae6e881f1de <unknown>
+#16 0x7019d2501b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 26, in run
+    self.mainPage.enterDetailedReservation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 47, in enterDetailedReservation
+    raise TimeoutException(f"Erro de timeout em enterDetailedReservation, {e}")
+selenium.common.exceptions.TimeoutException: Message: Erro de timeout em enterDetailedReservation, Message: 
+Stacktrace:
+#0 0x5ae6e882079a <unknown>
+#1 0x5ae6e821c215 <unknown>
+#2 0x5ae6e826ef06 <unknown>
+#3 0x5ae6e826f141 <unknown>
+#4 0x5ae6e82ba634 <unknown>
+#5 0x5ae6e82b77d0 <unknown>
+#6 0x5ae6e826255f <unknown>
+#7 0x5ae6e8263321 <unknown>
+#8 0x5ae6e87e406b <unknown>
+#9 0x5ae6e87e701d <unknown>
+#10 0x5ae6e87d0718 <unknown>
+#11 0x5ae6e87e7bb0 <unknown>
+#12 0x5ae6e87b7150 <unknown>
+#13 0x5ae6e880d5e8 <unknown>
+#14 0x5ae6e880d7b8 <unknown>
+#15 0x5ae6e881f1de <unknown>
+#16 0x7019d2501b7b <unknown>
+
+
+2026-05-28 05:00:56 - pages.MainPage - ERROR - Não foi possivel sair da conta
+2026-05-28 05:15:01 - Program - INFO - Bot iniciado
+2026-05-28 05:15:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-28 05:15:01 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-28 05:15:01 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-05-28 05:15:01 - util.EditFile - INFO - Arquivo SFN064R.csv não encontrado, nada a remover.
+2026-05-28 05:15:54 - Program - ERROR - Erro inesperado: Message: Erro de timeout em enterDetailedReservation, Message: 
+Stacktrace:
+#0 0x58158e28579a <unknown>
+#1 0x58158dc81215 <unknown>
+#2 0x58158dcd3f06 <unknown>
+#3 0x58158dcd4141 <unknown>
+#4 0x58158dd1f634 <unknown>
+#5 0x58158dd1c7d0 <unknown>
+#6 0x58158dcc755f <unknown>
+#7 0x58158dcc8321 <unknown>
+#8 0x58158e24906b <unknown>
+#9 0x58158e24c01d <unknown>
+#10 0x58158e235718 <unknown>
+#11 0x58158e24cbb0 <unknown>
+#12 0x58158e21c150 <unknown>
+#13 0x58158e2725e8 <unknown>
+#14 0x58158e2727b8 <unknown>
+#15 0x58158e2841de <unknown>
+#16 0x700dd7dfbb7b <unknown>
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 28, in enterDetailedReservation
+    bttExecution = self.wait.until(
+        EC.presence_of_element_located((By.XPATH, "//i[contains(@class, 'fa-running')]"))
+    )
+  File "/root/SiurbAutoSOF/.venv/lib/python3.13/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x58158e28579a <unknown>
+#1 0x58158dc81215 <unknown>
+#2 0x58158dcd3f06 <unknown>
+#3 0x58158dcd4141 <unknown>
+#4 0x58158dd1f634 <unknown>
+#5 0x58158dd1c7d0 <unknown>
+#6 0x58158dcc755f <unknown>
+#7 0x58158dcc8321 <unknown>
+#8 0x58158e24906b <unknown>
+#9 0x58158e24c01d <unknown>
+#10 0x58158e235718 <unknown>
+#11 0x58158e24cbb0 <unknown>
+#12 0x58158e21c150 <unknown>
+#13 0x58158e2725e8 <unknown>
+#14 0x58158e2727b8 <unknown>
+#15 0x58158e2841de <unknown>
+#16 0x700dd7dfbb7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 26, in run
+    self.mainPage.enterDetailedReservation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 47, in enterDetailedReservation
+    raise TimeoutException(f"Erro de timeout em enterDetailedReservation, {e}")
+selenium.common.exceptions.TimeoutException: Message: Erro de timeout em enterDetailedReservation, Message: 
+Stacktrace:
+#0 0x58158e28579a <unknown>
+#1 0x58158dc81215 <unknown>
+#2 0x58158dcd3f06 <unknown>
+#3 0x58158dcd4141 <unknown>
+#4 0x58158dd1f634 <unknown>
+#5 0x58158dd1c7d0 <unknown>
+#6 0x58158dcc755f <unknown>
+#7 0x58158dcc8321 <unknown>
+#8 0x58158e24906b <unknown>
+#9 0x58158e24c01d <unknown>
+#10 0x58158e235718 <unknown>
+#11 0x58158e24cbb0 <unknown>
+#12 0x58158e21c150 <unknown>
+#13 0x58158e2725e8 <unknown>
+#14 0x58158e2727b8 <unknown>
+#15 0x58158e2841de <unknown>
+#16 0x700dd7dfbb7b <unknown>
+
+
+2026-05-28 05:15:54 - pages.MainPage - ERROR - Não foi possivel sair da conta
+2026-05-28 12:04:57 - Program - INFO - Bot iniciado
+2026-05-28 12:04:57 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-28 12:04:57 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-28 12:04:57 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-05-28 12:04:57 - util.EditFile - INFO - Arquivo SFN064R.csv não encontrado, nada a remover.
+2026-05-28 12:05:42 - Program - INFO - Bot terminou sua tarefa
+2026-05-29 05:00:02 - Program - INFO - Bot iniciado
+2026-05-29 05:00:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-29 05:00:02 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-29 05:00:02 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-29 05:00:02 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-29 05:01:07 - Program - INFO - Bot terminou sua tarefa
+2026-05-29 05:15:01 - Program - INFO - Bot iniciado
+2026-05-29 05:15:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-29 05:15:01 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-29 05:15:01 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-29 05:15:01 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-29 05:15:24 - Program - ERROR - Erro inesperado: Erro inesperado: list index out of range
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 36, in enterDetailedReservation
+    bttMenuBars[4].click()
+    ~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 26, in run
+    self.mainPage.enterDetailedReservation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 55, in enterDetailedReservation
+    raise Exception(f"Erro inesperado: {e}")
+Exception: Erro inesperado: list index out of range
+2026-05-29 13:01:06 - Program - INFO - Bot iniciado
+2026-05-29 13:01:06 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-29 13:01:06 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-29 13:01:08 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-05-29 13:01:08 - util.EditFile - INFO - Arquivo SFN064R.csv não encontrado, nada a remover.
+2026-05-29 13:01:18 - Program - ERROR - Erro inesperado: Usuário com sessão ativa no sistema
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 27, in run
+    raise Exception(isLogged[1])
+Exception: Usuário com sessão ativa no sistema
+2026-05-29 13:01:18 - pages.MainPage - ERROR - Não foi possivel sair da conta
+2026-05-29 13:16:16 - Program - INFO - Bot iniciado
+2026-05-29 13:16:16 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-29 13:16:16 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-29 13:16:16 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-05-29 13:16:16 - util.EditFile - INFO - Arquivo SFN064R.csv não encontrado, nada a remover.
+2026-05-29 13:16:19 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 24, in run
+    self.login()
+    ~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/Program.py", line 36, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-05-29 13:17:13 - Program - INFO - Bot iniciado
+2026-05-29 13:17:13 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-29 13:17:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-29 13:17:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-05-29 13:17:13 - util.EditFile - INFO - Arquivo SFN064R.csv não encontrado, nada a remover.
+2026-05-29 13:17:19 - Program - ERROR - Erro inesperado: 'bool' object is not subscriptable
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 24, in run
+    self.login()
+    ~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/Program.py", line 35, in login
+    if (not isLogged[0]):
+            ~~~~~~~~^^^
+TypeError: 'bool' object is not subscriptable
+2026-05-29 13:17:58 - Program - INFO - Bot iniciado
+2026-05-29 13:17:58 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-29 13:17:58 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-29 13:17:58 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-05-29 13:17:58 - util.EditFile - INFO - Arquivo SFN064R.csv não encontrado, nada a remover.
+2026-05-29 13:18:51 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-29 13:18:55 - Program - INFO - Bot terminou sua tarefa
+2026-05-29 13:25:34 - Program - INFO - Bot iniciado
+2026-05-29 13:25:34 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-29 13:25:44 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-29 13:25:44 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-05-29 13:25:44 - util.EditFile - INFO - Arquivo SFN064R.csv não encontrado, nada a remover.
+2026-05-29 13:26:25 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-29 13:26:29 - Program - INFO - Bot terminou sua tarefa
+2026-05-29 13:30:47 - Program - INFO - Bot iniciado
+2026-05-29 13:30:47 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-29 13:30:55 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-29 13:30:55 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-29 13:30:55 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-29 13:31:35 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-29 13:31:39 - Program - INFO - Bot terminou sua tarefa
+2026-05-29 13:33:58 - Program - INFO - Bot iniciado
+2026-05-29 13:33:58 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-29 13:34:01 - Program - ERROR - Erro inesperado: Usuário com sessão ativa no sistema
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 23, in run
+    self.login()
+    ~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário com sessão ativa no sistema
+2026-05-29 13:46:47 - Program - INFO - Bot iniciado
+2026-05-29 13:46:47 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-29 13:46:54 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-29 13:46:54 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-29 13:46:54 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-29 13:47:35 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-29 13:47:39 - Program - INFO - Bot terminou sua tarefa
+2026-05-29 13:48:23 - Program - INFO - Bot iniciado
+2026-05-29 13:48:23 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-29 13:48:24 - Program - ERROR - Usuário com sessão ativa no sistema
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário com sessão ativa no sistema
+2026-05-29 13:48:24 - Program - ERROR - Erro inesperado: Usuário com sessão ativa no sistema
+2026-05-29 13:49:02 - Program - INFO - Bot iniciado
+2026-05-29 13:49:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-29 13:49:04 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-05-29 13:49:04 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-05-29 13:51:03 - Program - INFO - Bot iniciado
+2026-05-29 13:51:03 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-29 13:51:09 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-29 13:51:09 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-29 13:51:09 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-29 13:51:49 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-29 13:51:54 - Program - INFO - Bot terminou sua tarefa
+2026-05-29 13:54:07 - Program - INFO - Bot iniciado
+2026-05-29 13:54:07 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-29 13:54:08 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-05-29 13:54:08 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-05-29 13:56:02 - Program - INFO - Bot iniciado
+2026-05-29 13:56:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-29 13:56:03 - Program - ERROR - Usuário com sessão ativa no sistema
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário com sessão ativa no sistema
+2026-05-29 13:56:03 - Program - ERROR - Erro inesperado: Usuário com sessão ativa no sistema
+2026-05-29 13:57:02 - Program - INFO - Bot iniciado
+2026-05-29 13:57:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-05-29 13:57:08 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-05-29 13:57:08 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-05-29 13:57:08 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-05-29 13:57:49 - util.EditFile - INFO - arquivo nao encontrado
+2026-05-29 13:57:53 - Program - INFO - Bot terminou sua tarefa
+2026-06-01 05:01:12 - Program - INFO - Bot iniciado
+2026-06-01 05:01:12 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-06-01 05:01:24 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-06-01 05:01:24 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-06-01 05:01:24 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-06-01 05:02:21 - util.EditFile - INFO - arquivo nao encontrado
+2026-06-01 05:02:25 - Program - INFO - Bot terminou sua tarefa
+2026-06-01 05:15:02 - Program - INFO - Bot iniciado
+2026-06-01 05:15:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-06-01 05:15:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-06-01 05:15:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-06-01 05:15:13 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-06-01 05:15:54 - util.EditFile - INFO - arquivo nao encontrado
+2026-06-01 05:15:58 - Program - INFO - Bot terminou sua tarefa
+2026-06-02 05:00:02 - Program - INFO - Bot iniciado
+2026-06-02 05:00:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-06-02 05:00:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-06-02 05:00:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-06-02 05:00:13 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-06-02 05:00:58 - Program - INFO - Bot terminou sua tarefa
+2026-06-02 05:15:01 - Program - INFO - Bot iniciado
+2026-06-02 05:15:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-06-02 05:15:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-06-02 05:15:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-06-02 05:15:12 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-06-02 05:15:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-06-02 05:15:57 - Program - INFO - Bot terminou sua tarefa
+2026-06-03 05:00:02 - Program - INFO - Bot iniciado
+2026-06-03 05:00:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-06-03 05:00:14 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-06-03 05:00:14 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-06-03 05:00:14 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-06-03 05:00:59 - Program - INFO - Bot terminou sua tarefa
+2026-06-03 05:15:01 - Program - INFO - Bot iniciado
+2026-06-03 05:15:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-06-03 05:15:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-06-03 05:15:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-06-03 05:15:12 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-06-03 05:15:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-06-03 05:15:57 - Program - INFO - Bot terminou sua tarefa
+2026-06-04 05:00:09 - Program - INFO - Bot iniciado
+2026-06-04 05:00:11 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-06-04 05:00:22 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-06-04 05:00:22 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-06-04 05:00:22 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-06-04 05:01:08 - Program - INFO - Bot terminou sua tarefa
+2026-06-04 05:15:02 - Program - INFO - Bot iniciado
+2026-06-04 05:15:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-06-04 05:15:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-06-04 05:15:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-06-04 05:15:13 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-06-04 05:15:54 - util.EditFile - INFO - arquivo nao encontrado
+2026-06-04 05:15:55 - pages.MainPage - ERROR - Não foi possivel sair da conta
+2026-06-04 05:15:55 - Program - INFO - Bot terminou sua tarefa
+2026-06-05 05:00:02 - Program - INFO - Bot iniciado
+2026-06-05 05:00:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-06-05 05:00:14 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-06-05 05:00:14 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-06-05 05:00:14 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-06-05 05:01:16 - Program - INFO - Bot terminou sua tarefa
+2026-06-05 05:15:01 - Program - INFO - Bot iniciado
+2026-06-05 05:15:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-06-05 05:15:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-06-05 05:15:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-06-05 05:15:13 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-06-05 05:15:54 - util.EditFile - INFO - arquivo nao encontrado
+2026-06-05 05:15:58 - Program - INFO - Bot terminou sua tarefa
+2026-06-08 05:01:11 - Program - INFO - Bot iniciado
+2026-06-08 05:01:11 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-06-08 05:01:23 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-06-08 05:01:23 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-06-08 05:01:23 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-06-08 05:02:04 - util.EditFile - INFO - arquivo nao encontrado
+2026-06-08 05:02:08 - Program - INFO - Bot terminou sua tarefa
+2026-06-08 05:15:02 - Program - INFO - Bot iniciado
+2026-06-08 05:15:02 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-06-08 05:15:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-06-08 05:15:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-06-08 05:15:13 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-06-08 05:15:54 - util.EditFile - INFO - arquivo nao encontrado
+2026-06-08 05:15:58 - Program - INFO - Bot terminou sua tarefa
+2026-06-09 05:00:04 - Program - INFO - Bot iniciado
+2026-06-09 05:00:04 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-06-09 05:00:17 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-06-09 05:00:17 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/root/SiurbAutoSOF-aws/archives/SFN064R.csv']
+2026-06-09 05:00:17 - util.EditFile - INFO - Arquivo SFN064R.csv removido com sucesso.
+2026-06-09 05:00:43 - Program - ERROR - Erro inesperado: list index out of range
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 36, in enterDetailedReservation
+    bttMenuBars[4].click()
+    ~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/SiurbAutoSOF/Program.py", line 45, in downloadArchive
+    self.mainPage.enterDetailedReservation()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/root/SiurbAutoSOF/pages/MainPage.py", line 55, in enterDetailedReservation
+    raise Exception(f"Erro inesperado: {e}")
+Exception: Erro inesperado: list index out of range
+2026-06-09 05:00:43 - Program - ERROR - Erro inesperado: Erro inesperado: list index out of range
+2026-06-09 05:15:01 - Program - INFO - Bot iniciado
+2026-06-09 05:15:01 - Program - INFO - PATH_DOWNLOAD: /root/SiurbAutoSOF-aws/archives/
+2026-06-09 05:15:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/root/SiurbAutoSOF-aws/archives/'
+2026-06-09 05:15:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-06-09 05:15:13 - util.EditFile - INFO - Arquivo SFN064R.csv não encontrado, nada a remover.
+2026-06-09 05:15:58 - Program - INFO - Bot terminou sua tarefa

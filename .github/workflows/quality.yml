@@ -1,0 +1,20 @@
+name: Quality Gate (SonarQube)
+
+on:
+  push:
+    branches: [ "dev-hajime" ]
+
+jobs:
+  qualidade:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: SonarQube Scan + Quality Gate
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN_DEV }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        run: /opt/sonar-scanner-venv/bin/pysonar -Dsonar.qualitygate.wait=true
