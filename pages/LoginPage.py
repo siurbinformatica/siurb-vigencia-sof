@@ -29,3 +29,18 @@ class LoginPage():
         userLogin.send_keys(APP_USER)
         userPasswd.send_keys(APP_PASSWD)
         button.click()
+
+    def isLogged(self) -> tuple:
+        try:
+            field_text = WebDriverWait(self.driver,10).until(
+                    EC.presence_of_element_located((By.CLASS_NAME, "v-card__text"))
+                ) 
+
+            if ("Usuário e/ou senha inválido." in field_text.text):
+                return False, "Usuário e/ou senha inválido."
+            
+            if ("Usuário com sessão ativa no sistema" in field_text.text):
+                return False, "Usuário com sessão ativa no sistema"
+
+        except:
+            return True,

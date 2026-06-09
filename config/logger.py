@@ -15,7 +15,8 @@ def get_logger(name: str) -> logging.Logger:
     logger.setLevel(logging.DEBUG)
 
     stream_formatter = logging.Formatter(
-        fmt="%(name)s - %(levelname)s - %(message)s",
+        fmt="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S"
     )
 
     file_formatter = logging.Formatter(

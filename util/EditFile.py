@@ -31,8 +31,9 @@ class EditFile:
         raise Exception("Não foi possivel alterar o nome")
     
     def remove(self):
-
+        self.logger.info(f"[DEBUG] PATH_DOWNLOAD = '{self.PATH_DOWNLOAD}'")
         archive = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SFN064R.csv"))
+        self.logger.info(f"[DEBUG] Arquivos encontrados: {archive}")
         
         if not archive:
             self.logger.info("Arquivo SFN064R.csv não encontrado, nada a remover.")

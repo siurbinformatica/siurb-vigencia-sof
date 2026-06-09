@@ -1,9 +1,10 @@
 import dotenv
+from pathlib import Path
 import os
 
-PATH = os.path.join(os.path.dirname(__file__),"..",".env")
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-dotenv.load_dotenv(PATH)
+dotenv.load_dotenv(BASE_DIR / ".env")
 
 APP_USER = os.getenv("APP_USER")
 APP_PASSWD = os.getenv("APP_PASSWD")
