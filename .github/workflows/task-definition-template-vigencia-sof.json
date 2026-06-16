@@ -1,0 +1,24 @@
+{
+  "family": "siurb-vigencia-sof",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::054037115983:role/ecsTaskExecutionRole-vigencia-sof",
+  "taskRoleArn": "arn:aws:iam::054037115983:role/ecsTaskRole-vigencia-sof",
+  "containerDefinitions": [
+    {
+      "name": "siurb-vigencia-sof",
+      "image": "IMAGE_PLACEHOLDER",
+      "essential": true,
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/siurb-vigencia-sof",
+          "awslogs-region": "sa-east-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ]
+}
