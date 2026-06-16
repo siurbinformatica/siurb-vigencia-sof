@@ -15,7 +15,7 @@ db_config = {
     'port': os.getenv('DB_PORT'),
 }
 
-CSV_PATH= 'SCN009P.csv'
+CSV_PATH = os.path.join('archives', 'SCN009P.csv')
 
 # nomes das colunas no CSV
 COL_CONTRATO = 'COD_COTC'
