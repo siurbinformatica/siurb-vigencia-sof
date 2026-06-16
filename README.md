@@ -28,11 +28,6 @@ linhas foram efetivamente atualizadas.
 pip install -r requirements.txt
 ```
 
-## Uso
-
-```bash
-python app.py
-```
 
 ## Mapeamento de colunas (CSV → banco)
 
