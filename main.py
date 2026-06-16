@@ -26,7 +26,6 @@ def get_db_secret():
     return json.loads(response["SecretString"])
 
 
-# mapeamento coluna no CSV -> coluna no banco
 COL_CONTRATO = "cod_cotc"
 COL_ANO = "ano_cotc"
 COL_INICIO = "dt_inic_vig"
@@ -106,7 +105,6 @@ class Conversor:
                 "ALTER TABLE tb_contratos ADD COLUMN IF NOT EXISTS cod_situ text"
             )
 
-            # UPDATE em massa via tabela temporária de valores
             query = """
                 UPDATE tb_contratos AS t
                    SET inicio_vigencia = v.inicio_vigencia,
