@@ -28,20 +28,6 @@ linhas foram efetivamente atualizadas.
 pip install -r requirements.txt
 ```
 
-## Configuração
-
-As credenciais ficam no arquivo `.env` (não versionado). Use o `.env` de
-exemplo incluído como base e ajuste os valores:
-
-```
-DB_HOST=10.68.100.15
-DB_NAME=siurb-sof
-DB_USER=postgres
-DB_PASSWORD=********
-DB_PORT=5432
-CSV_PATH=SCN009P.csv
-```
-
 ## Uso
 
 ```bash
@@ -62,6 +48,5 @@ Se o relatório mudar os nomes dessas colunas, ajuste as constantes no topo do
 
 ## Observações
 
-- O `.env` contém credenciais e está listado no `.gitignore`. Não faça commit dele.
 - `cod_situ` foi criada como `text` para aceitar qualquer formato de código de
   situação. Se for sempre numérico, dá para trocar para `integer`.
