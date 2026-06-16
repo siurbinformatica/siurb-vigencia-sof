@@ -1,4 +1,5 @@
 import os
+import glob
 import json
 import logging
 
@@ -26,29 +27,44 @@ def get_db_secret():
     return json.loads(response["SecretString"])
 
 
+# mapeamento coluna no CSV -> coluna no banco
 COL_CONTRATO = "cod_cotc"
 COL_ANO = "ano_cotc"
 COL_INICIO = "dt_inic_vig"
 COL_SITU = "cod_situ_cotc_atu"
 
+PADRAO_ARQUIVO = "SCN009P*.csv"
+
 
 class Conversor:
 
-    def __init__(self, arquivo=None):
-        self.arquivo = arquivo
+    def __init__(self, arquivos=None):
+        self.arquivos = arquivos
 
-    def encontrar_csv(self):
-        if self.arquivo and os.path.isfile(self.arquivo):
-            log.info(f"Usando arquivo informado: {self.arquivo}")
-            return self.arquivo
+    def encontrar_csvs(self):
+        if self.arquivos:
+            encontrados = [a for a in self.arquivos if os.path.isfile(a)]
+            log.info(f"Usando {len(encontrados)} arquivo(s) informado(s)")
+            return encontrados
 
-        caminho = os.path.join(PATH_DOWNLOAD, "SCN009P.csv")
-        if not os.path.isfile(caminho):
+        padrao = os.path.join(PATH_DOWNLOAD, PADRAO_ARQUIVO)
+        encontrados = sorted(glob.glob(padrao))
+        if not encontrados:
             raise FileNotFoundError(
-                f"Arquivo SCN009P.csv não encontrado em '{PATH_DOWNLOAD}/'"
+                f"Nenhum arquivo '{PADRAO_ARQUIVO}' encontrado em '{PATH_DOWNLOAD}/'"
             )
-        log.info(f"Arquivo encontrado: {caminho}")
-        return caminho
+        log.info(f"{len(encontrados)} arquivo(s) encontrado(s):")
+        for a in encontrados:
+            log.info(f"  - {os.path.basename(a)}")
+        return encontrados
+
+    def ler_arquivos(self, arquivos):
+        dfs = []
+        for arquivo in arquivos:
+            df = pd.read_csv(arquivo, sep=";", encoding="latin-1")
+            log.info(f"  {os.path.basename(arquivo)}: {len(df)} linhas")
+            dfs.append(df)
+        return pd.concat(dfs, ignore_index=True)
 
     def tratar_dados(self, df):
         df.columns = [col.strip().lower() for col in df.columns]
@@ -81,6 +97,9 @@ class Conversor:
         df = df.dropna(subset=[COL_INICIO, COL_ANO])
         df = df[df[COL_CONTRATO] != ""]
 
+        # remove duplicatas de (contrato, ano) — mantém a última ocorrência
+        df = df.drop_duplicates(subset=[COL_CONTRATO, COL_ANO], keep="last")
+
         df = df.where(pd.notnull(df), None)
         return df
 
@@ -105,6 +124,7 @@ class Conversor:
                 "ALTER TABLE tb_contratos ADD COLUMN IF NOT EXISTS cod_situ text"
             )
 
+            # UPDATE em massa via tabela temporária de valores
             query = """
                 UPDATE tb_contratos AS t
                    SET inicio_vigencia = v.inicio_vigencia,
@@ -147,15 +167,15 @@ class Conversor:
         log.info("=" * 60)
 
         try:
-            log.info("FASE 1 - Localizar CSV")
-            arquivo = self.encontrar_csv()
+            log.info("FASE 1 - Localizar CSVs")
+            arquivos = self.encontrar_csvs()
 
             log.info("FASE 2 - Leitura e tratamento")
-            df = pd.read_csv(arquivo, sep=";", encoding="latin-1")
-            log.info(f"Linhas encontradas: {len(df)}")
+            df = self.ler_arquivos(arquivos)
+            log.info(f"Total de linhas (todos os arquivos): {len(df)}")
 
             df = self.tratar_dados(df)
-            log.info(f"Linhas após tratamento: {len(df)}")
+            log.info(f"Linhas após tratamento e deduplicação: {len(df)}")
 
             log.info("FASE 3 - Update no banco")
             self.atualizar_no_banco(df)
