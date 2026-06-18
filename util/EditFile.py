@@ -18,11 +18,11 @@ class EditFile:
         self.date_util = DateUtil()
 
     def rename(self):
-        archive = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SFN064R__*.csv"))
+        archive = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SCN009P__*.csv"))
 
         if archive:
             filepath_origin = archive[0]
-            filepath_new = os.path.join(self.PATH_DOWNLOAD, "SFN064R.csv")
+            filepath_new = os.path.join(self.PATH_DOWNLOAD, "SCN009P.csv")
             os.rename(filepath_origin,filepath_new)
             self.delete_last_log()
             self.logger_archive.info("Arquivo criado com sucesso!")
@@ -32,15 +32,15 @@ class EditFile:
     
     def remove(self):
         self.logger.info(f"[DEBUG] PATH_DOWNLOAD = '{self.PATH_DOWNLOAD}'")
-        archive = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SFN064R.csv"))
+        archive = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SCN009P.csv"))
         self.logger.info(f"[DEBUG] Arquivos encontrados: {archive}")
         
         if not archive:
-            self.logger.info("Arquivo SFN064R.csv não encontrado, nada a remover.")
+            self.logger.info("Arquivo SCN009P.csv não encontrado, nada a remover.")
             return
         
         os.remove(archive[0])
-        self.logger.info("Arquivo SFN064R.csv removido com sucesso.")
+        self.logger.info("Arquivo SCN009P.csv removido com sucesso.")
 
     def delete_last_log(self):
 
@@ -53,7 +53,7 @@ class EditFile:
             self.logger.info("arquivo nao encontrado")
 
     def hasArchiveInPathArchive(self) -> bool:
-        archives = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SFN064R__*.csv"))
+        archives = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SCN009P__*.csv"))
         if (archives == []): return False
         return True
 
@@ -78,7 +78,7 @@ class EditFile:
                 continue
 
             # Garante que o tamanho do arquivo está estável (não está sendo escrito)
-            archives = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SFN064R__*.csv"))
+            archives = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SCN009P__*.csv"))
             current_size = os.path.getsize(archives[0])
 
             if current_size == last_size and current_size > 0:

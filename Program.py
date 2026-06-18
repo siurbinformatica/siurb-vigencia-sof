@@ -42,7 +42,7 @@ class Program:
     def downloadArchive(self):
         
         try:
-            self.mainPage.enterDetailedReservation()
+            self.mainPage.enterContract()
             self.mainPage.downloadExcel()
             if not self.editFile.wait_for_download(timeout=60):
                 raise Exception("Timeout: arquivo SFN064R__*.csv não encontrado após 60s")

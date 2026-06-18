@@ -22,29 +22,25 @@ class MainPage():
         self.logger = get_logger(__name__)
         self.edit_file = EditFile(PATH_DOWNLOAD)
 
-    def enterDetailedReservation(self): 
+    def enterContract(self): 
         try:
 
             bttExecution = self.wait.until(
-                EC.presence_of_element_located((By.XPATH, "//i[contains(@class, 'fa-running')]"))
+                EC.presence_of_element_located((By.XPATH, "//i[contains(@class, 'fa-file-signature')]"))
             )
-
             bttExecution.click()
             
             bttMenuBars = self.driver.find_elements(by=By.XPATH, value="//div[contains(text(), 'Relatório') and contains(@class, 'menubaritem')]")
 
-            bttMenuBars[4].click()
+            self.logger.info(bttMenuBars[1].text)
+            bttMenuBars[1].click()
 
-            bttMenuCategory = self.driver.find_elements(by=By.XPATH, value="//div[text()='Reserva']")
+            bttMenuCategory = self.driver.find_elements(by=By.XPATH, value="//div[text()='Extrato das Contratações']")
 
-            bttMenuCategory[1].click()
+            bttMenuCategory[0].click()
 
-            bttMenuItem = self.driver.find_elements(by=By.XPATH, value="//div[text()='Reserva Detalhada']")
-
-            bttMenuItem[0].click()
-        
         except TimeoutException as e:
-            raise TimeoutException(f"Erro de timeout em enterDetailedReservation, {e}")
+            raise TimeoutException(f"Erro de timeout em enterContract, {e}")
         except ElementClickInterceptedException:
             raise ElementClickInterceptedException("Não foi possivel clicar no elemento")
         except ElementNotInteractableException:
@@ -57,25 +53,14 @@ class MainPage():
     def downloadExcel(self):
         try:
             
-            yesterday = self.dateutil.previousDate()
-            today = self.dateutil.todayDate()
+            year = self.dateutil.year()
             
-            periodInitials = self.wait.until(
-                EC.presence_of_all_elements_located((By.ID, "UCData"))
+            exercise = self.wait.until(
+                EC.presence_of_all_elements_located((By.ID, "exercicio"))
             )
 
-            #Coloca a data anterior e atual
-            periodInitials[0].send_keys(yesterday)
-            periodInitials[1].click()
-            periodInitials[1].send_keys(today)
-
-            #Clica no botão reserva
-            selectRadioReserve = self.driver.find_element(by=By.XPATH, value="//div[@class='v-input--selection-controls__ripple']")
-            selectRadioReserve.click()
-
-            #Clica no radio do executor
-            selectRadioExecute = self.driver.find_elements(by=By.XPATH, value="//div[@class='v-input--selection-controls__ripple']")
-            selectRadioExecute[2].click()
+            #Coloca o exercicio
+            exercise[0].send_keys(year)
 
             self.driver.execute_script("""
                 window._fileBase64 = null;
@@ -102,7 +87,7 @@ class MainPage():
                 };
             """)
 
-            self.download_archive(today)
+            self.download_archive()
 
         except TimeoutException as e:
             raise TimeoutException(f"Erro de timeout em downloadExcel, {e}")
@@ -115,7 +100,7 @@ class MainPage():
         except Exception as e:
             raise Exception(f"Erro inesperado: {e}")
     
-    def download_archive(self,today):
+    def download_archive(self):
 
         #clica no botão de download
         selectExcel = self.driver.find_elements(by=By.XPATH, value="//button[@class='ma-2 v-btn v-btn--outlined v-btn--tile theme--light v-size--default indigo--text']")
@@ -135,7 +120,7 @@ class MainPage():
 
         if file_base64:
             import base64
-            filename = f"SFN064R__{today.replace("/","-")}.csv"
+            filename = "SCN009P.csv"
             filepath = os.path.join(PATH_DOWNLOAD, filename)
             with open(filepath, "wb") as f:
                 f.write(base64.b64decode(file_base64))
