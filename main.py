@@ -94,8 +94,6 @@ class Conversor:
         df[COL_CONTRATO] = df[COL_CONTRATO].map(_texto)
         df[COL_SITU] = df[COL_SITU].map(_texto)
 
-        # descarta apenas linhas sem chave: sem chave nao ha como casar no banco.
-        # linha sem inicio de vigencia PERMANECE, para gravar a situacao.
         antes = len(df)
         df = df.dropna(subset=[COL_ANO, COL_CONTRATO])
         if len(df) < antes:
@@ -145,9 +143,6 @@ class Conversor:
                 "ALTER TABLE tb_contratos ADD COLUMN IF NOT EXISTS cod_situ text"
             )
 
-            # COALESCE: valor ausente no CSV nao apaga o que ja existe na tabela.
-            # RETURNING + fetch=True: o execute_values pagina a execucao e o
-            # cur.rowcount reflete apenas a ultima pagina; o fetch junta todas.
             query = """
                 UPDATE tb_contratos AS t
                    SET inicio_vigencia = COALESCE(v.inicio_vigencia, t.inicio_vigencia),
@@ -162,8 +157,7 @@ class Conversor:
                 cur,
                 query,
                 valores,
-                # casts explicitos: sem eles o Postgres nao infere o tipo
-                # de uma coluna do VALUES cujo primeiro valor seja NULL
+
                 template="(%s::date, %s::text, %s::text, %s::int)",
                 page_size=500,
                 fetch=True,
@@ -210,9 +204,7 @@ class Conversor:
             arquivo = self.encontrar_csv()
 
             log.info("FASE 2 - Leitura e tratamento")
-            # dtype=str: impede o pandas de inferir int/float nas chaves.
-            # Uma coluna com celula vazia viraria float e o codigo do contrato
-            # sairia como '14943.0', que nunca casa com a tabela.
+
             df = pd.read_csv(arquivo, sep=";", encoding="latin-1", dtype=str)
             log.info(f"Linhas encontradas: {len(df)}")
 
