@@ -3,6 +3,7 @@ import csv
 import glob
 import json
 import logging
+from datetime import datetime
 
 import boto3
 import pandas as pd
@@ -35,13 +36,42 @@ COL_SITU = "cod_situ_cotc_atu"
 
 PADRAO_ARQUIVOS = "*.csv"
 
+# formatos aceitos, testados em ordem para cada celula
+FORMATOS_DATA = [
+    "%d/%m/%Y %H:%M:%S",
+    "%d/%m/%Y %H:%M",
+    "%d/%m/%Y",
+    "%Y-%m-%d %H:%M:%S",
+    "%Y-%m-%d",
+    "%d-%m-%Y",
+]
+
 
 def _texto(valor):
     """Normaliza celula do pandas em str limpa ou None."""
     if valor is None or pd.isna(valor):
         return None
     texto = str(valor).strip()
-    return texto or None
+    if not texto or texto.upper() in ("NULL", "NONE", "NAN"):
+        return None
+    return texto
+
+
+def _data(valor):
+    """Converte celula em date, testando cada formato. None se vazia ou invalida.
+
+    Nao usa pd.to_datetime na coluna inteira: ele infere UM formato a partir
+    da primeira celula e, com errors='coerce', zera silenciosamente todas as
+    celulas em outro formato (ex.: um arquivo com hora e outro sem)."""
+    texto = _texto(valor)
+    if texto is None:
+        return None
+    for fmt in FORMATOS_DATA:
+        try:
+            return datetime.strptime(texto, fmt).date()
+        except ValueError:
+            continue
+    return None
 
 
 def _detectar_separador(caminho):
@@ -64,7 +94,7 @@ class Conversor:
 
         pasta = self.arquivo if self.arquivo else PATH_DOWNLOAD
         if not os.path.isdir(pasta):
-            raise FileNotFoundError(f"Pasta não encontrada: '{pasta}'")
+            raise FileNotFoundError(f"Pasta não encontrada: '{os.path.abspath(pasta)}'")
 
         # ordem cronologica: o arquivo mais novo tem a ultima palavra
         arquivos = sorted(
@@ -73,10 +103,10 @@ class Conversor:
         )
         if not arquivos:
             raise FileNotFoundError(
-                f"Nenhum arquivo '{PADRAO_ARQUIVOS}' encontrado em '{pasta}/'"
+                f"Nenhum arquivo '{PADRAO_ARQUIVOS}' encontrado em '{os.path.abspath(pasta)}'"
             )
 
-        log.info(f"{len(arquivos)} arquivo(s) encontrado(s) em '{pasta}/':")
+        log.info(f"{len(arquivos)} arquivo(s) encontrado(s) em '{os.path.abspath(pasta)}':")
         for caminho in arquivos:
             log.info(f"  - {os.path.basename(caminho)}")
         return arquivos
@@ -129,14 +159,14 @@ class Conversor:
         # guarda o valor bruto para distinguir data ausente de data invalida
         bruta = df[COL_INICIO].map(_texto)
 
-        # data de inicio da vigencia (descarta hora)
-        df[COL_INICIO] = pd.to_datetime(
-            df[COL_INICIO], errors="coerce", dayfirst=True
-        ).dt.date
+        # data de inicio da vigencia (descarta hora), celula a celula
+        df[COL_INICIO] = df[COL_INICIO].map(_data)
 
         invalidas = bruta.notna() & df[COL_INICIO].isna()
         if invalidas.any():
-            exemplos = bruta[invalidas].head(5).tolist()
+            exemplos = (
+                df.loc[invalidas, "_arquivo"] + ": " + bruta[invalidas]
+            ).head(5).tolist()
             log.warning(
                 f"{int(invalidas.sum())} linhas com {COL_INICIO} em formato "
                 f"nao reconhecido (serao gravadas sem data): {exemplos}"
@@ -162,7 +192,7 @@ class Conversor:
         """Um contrato pode aparecer em varios arquivos. Mantem, para cada
         campo, o valor preenchido mais recente (groupby.last ignora nulos)."""
         antes = len(df)
-        df = df.sort_values("_ordem")
+        df = df.sort_values("_ordem", kind="stable")
 
         consolidado = (
             df.groupby([COL_CONTRATO, COL_ANO], as_index=False, sort=False)
@@ -210,10 +240,14 @@ class Conversor:
         return faltantes
 
     def atualizar_no_banco(self, df):
+        # _texto na situacao: um contrato com situacao vazia em todos os
+        # arquivos sai do groupby.last como NaN (float). O psycopg2 enviaria
+        # 'NaN', o ::text transformaria na string 'NaN' e o COALESCE gravaria
+        # isso por cima da situacao existente.
         valores = [
             (
                 row[COL_INICIO] if not pd.isna(row[COL_INICIO]) else None,
-                row[COL_SITU],
+                _texto(row[COL_SITU]),
                 row[COL_CONTRATO],
                 int(row[COL_ANO]),
             )
