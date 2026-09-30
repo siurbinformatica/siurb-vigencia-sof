@@ -1,6 +1,9 @@
 import os
+import csv
+import glob
 import json
 import logging
+from datetime import datetime
 
 import boto3
 import pandas as pd
@@ -31,60 +34,230 @@ COL_ANO = "ano_cotc"
 COL_INICIO = "dt_inic_vig"
 COL_SITU = "cod_situ_cotc_atu"
 
+PADRAO_ARQUIVOS = "*.csv"
+
+# formatos aceitos, testados em ordem para cada celula
+FORMATOS_DATA = [
+    "%d/%m/%Y %H:%M:%S",
+    "%d/%m/%Y %H:%M",
+    "%d/%m/%Y",
+    "%Y-%m-%d %H:%M:%S",
+    "%Y-%m-%d",
+    "%d-%m-%Y",
+]
+
+
+def _texto(valor):
+    """Normaliza celula do pandas em str limpa ou None."""
+    if valor is None or pd.isna(valor):
+        return None
+    texto = str(valor).strip()
+    if not texto or texto.upper() in ("NULL", "NONE", "NAN"):
+        return None
+    return texto
+
+
+def _data(valor):
+    """Converte celula em date, testando cada formato. None se vazia ou invalida.
+
+    Nao usa pd.to_datetime na coluna inteira: ele infere UM formato a partir
+    da primeira celula e, com errors='coerce', zera silenciosamente todas as
+    celulas em outro formato (ex.: um arquivo com hora e outro sem)."""
+    texto = _texto(valor)
+    if texto is None:
+        return None
+    for fmt in FORMATOS_DATA:
+        try:
+            return datetime.strptime(texto, fmt).date()
+        except ValueError:
+            continue
+    return None
+
+
+def _detectar_separador(caminho):
+    """Le o inicio do arquivo e decide entre ';' e ','."""
+    with open(caminho, newline="", encoding="latin-1") as f:
+        amostra = f.read(4096)
+    return ";" if amostra.count(";") > amostra.count(",") else ","
+
 
 class Conversor:
 
     def __init__(self, arquivo=None):
+        # aceita um arquivo, uma pasta, ou None (usa PATH_DOWNLOAD)
         self.arquivo = arquivo
 
-    def encontrar_csv(self):
+    def encontrar_csvs(self):
         if self.arquivo and os.path.isfile(self.arquivo):
             log.info(f"Usando arquivo informado: {self.arquivo}")
-            return self.arquivo
+            return [self.arquivo]
 
-        caminho = os.path.join(PATH_DOWNLOAD, "SCN009P.csv")
-        if not os.path.isfile(caminho):
+        pasta = self.arquivo if self.arquivo else PATH_DOWNLOAD
+        if not os.path.isdir(pasta):
+            raise FileNotFoundError(f"Pasta não encontrada: '{os.path.abspath(pasta)}'")
+
+        # ordem cronologica: o arquivo mais novo tem a ultima palavra
+        arquivos = sorted(
+            glob.glob(os.path.join(pasta, PADRAO_ARQUIVOS)),
+            key=lambda p: (os.path.getmtime(p), os.path.basename(p)),
+        )
+        if not arquivos:
             raise FileNotFoundError(
-                f"Arquivo SCN009P.csv não encontrado em '{PATH_DOWNLOAD}/'"
+                f"Nenhum arquivo '{PADRAO_ARQUIVOS}' encontrado em '{os.path.abspath(pasta)}'"
             )
-        log.info(f"Arquivo encontrado: {caminho}")
-        return caminho
+
+        log.info(f"{len(arquivos)} arquivo(s) encontrado(s) em '{os.path.abspath(pasta)}':")
+        for caminho in arquivos:
+            log.info(f"  - {os.path.basename(caminho)}")
+        return arquivos
+
+    def ler_arquivos(self, arquivos):
+        """Le todos os CSVs e devolve um unico DataFrame."""
+        partes = []
+        obrigatorias = [COL_CONTRATO, COL_ANO, COL_INICIO]
+
+        for ordem, caminho in enumerate(arquivos):
+            nome = os.path.basename(caminho)
+            try:
+                # dtype=str: impede o pandas de inferir int/float nas chaves.
+                # Uma coluna com celula vazia viraria float e o codigo do
+                # contrato sairia como '14943.0', que nunca casa com a tabela.
+                df = pd.read_csv(
+                    caminho,
+                    sep=_detectar_separador(caminho),
+                    encoding="latin-1",
+                    dtype=str,
+                )
+            except Exception as e:
+                log.warning(f"  {nome}: falha na leitura, arquivo ignorado ({e})")
+                continue
+
+            df.columns = [col.strip().lower() for col in df.columns]
+
+            faltando = [c for c in obrigatorias if c not in df.columns]
+            if faltando:
+                log.warning(
+                    f"  {nome}: ignorado, colunas obrigatórias ausentes {faltando}"
+                )
+                continue
+
+            if COL_SITU not in df.columns:
+                df[COL_SITU] = None
+
+            df = df[[COL_INICIO, COL_SITU, COL_CONTRATO, COL_ANO]].copy()
+            df["_ordem"] = ordem
+            df["_arquivo"] = nome
+            partes.append(df)
+            log.info(f"  {nome}: {len(df)} linhas")
+
+        if not partes:
+            raise ValueError("Nenhum arquivo válido para processar.")
+
+        return pd.concat(partes, ignore_index=True)
 
     def tratar_dados(self, df):
-        df.columns = [col.strip().lower() for col in df.columns]
+        # guarda o valor bruto para distinguir data ausente de data invalida
+        bruta = df[COL_INICIO].map(_texto)
 
-        obrigatorias = [COL_CONTRATO, COL_ANO, COL_INICIO]
-        faltando = [c for c in obrigatorias if c not in df.columns]
-        if faltando:
-            raise ValueError(f"Colunas obrigatórias ausentes no CSV: {faltando}")
+        # data de inicio da vigencia (descarta hora), celula a celula
+        df[COL_INICIO] = df[COL_INICIO].map(_data)
 
-        colunas = [COL_INICIO, COL_SITU, COL_CONTRATO, COL_ANO]
-        colunas = [c for c in colunas if c in df.columns]
-        df = df[colunas].copy()
-
-        # data de início da vigência (descarta hora)
-        df[COL_INICIO] = pd.to_datetime(
-            df[COL_INICIO], errors="coerce", dayfirst=True
-        ).dt.date
+        invalidas = bruta.notna() & df[COL_INICIO].isna()
+        if invalidas.any():
+            exemplos = (
+                df.loc[invalidas, "_arquivo"] + ": " + bruta[invalidas]
+            ).head(5).tolist()
+            log.warning(
+                f"{int(invalidas.sum())} linhas com {COL_INICIO} em formato "
+                f"nao reconhecido (serao gravadas sem data): {exemplos}"
+            )
 
         # ano como inteiro
         df[COL_ANO] = pd.to_numeric(df[COL_ANO], errors="coerce").astype("Int64")
 
-        # contrato e situação como texto limpo
-        df[COL_CONTRATO] = df[COL_CONTRATO].astype(str).str.strip()
-        if COL_SITU in df.columns:
-            df[COL_SITU] = df[COL_SITU].astype(str).str.strip()
-        else:
-            df[COL_SITU] = None
+        # contrato e situacao como texto limpo (None quando vazio)
+        df[COL_CONTRATO] = df[COL_CONTRATO].map(_texto)
+        df[COL_SITU] = df[COL_SITU].map(_texto)
 
-        # descarta linhas sem início de vigência ou sem chave
-        df = df.dropna(subset=[COL_INICIO, COL_ANO])
-        df = df[df[COL_CONTRATO] != ""]
+        # descarta apenas linhas sem chave: sem chave nao ha como casar no banco.
+        # linha sem inicio de vigencia PERMANECE, para gravar a situacao.
+        antes = len(df)
+        df = df.dropna(subset=[COL_ANO, COL_CONTRATO])
+        if len(df) < antes:
+            log.warning(f"{antes - len(df)} linhas descartadas por falta de chave.")
 
-        df = df.where(pd.notnull(df), None)
         return df
 
+    def consolidar(self, df):
+        """Um contrato pode aparecer em varios arquivos. Mantem, para cada
+        campo, o valor preenchido mais recente (groupby.last ignora nulos)."""
+        antes = len(df)
+        df = df.sort_values("_ordem", kind="stable")
+
+        consolidado = (
+            df.groupby([COL_CONTRATO, COL_ANO], as_index=False, sort=False)
+              .last()[[COL_INICIO, COL_SITU, COL_CONTRATO, COL_ANO]]
+        )
+
+        if len(consolidado) < antes:
+            log.info(
+                f"{antes} linhas consolidadas em {len(consolidado)} contratos "
+                f"({antes - len(consolidado)} repetidos entre arquivos)."
+            )
+
+        anos = sorted(consolidado[COL_ANO].dropna().unique().tolist())
+        log.info(f"Anos presentes: {anos}")
+
+        sem_data = int(consolidado[COL_INICIO].isna().sum())
+        if sem_data:
+            log.info(
+                f"{sem_data} contratos sem inicio de vigencia: "
+                f"apenas a situacao sera gravada."
+            )
+
+        return consolidado
+
+    def _contratos_ausentes(self, cur, valores):
+        """Chaves do CSV que nao existem em tb_contratos, em lotes."""
+        faltantes = []
+        lote = 1000
+        for i in range(0, len(valores), lote):
+            bloco = valores[i:i + lote]
+            cur.execute(
+                """
+                SELECT v.cod, v.ano
+                  FROM (VALUES %s) AS v(cod, ano)
+                 WHERE NOT EXISTS (
+                       SELECT 1 FROM tb_contratos t
+                        WHERE t.cod_contrato = v.cod
+                          AND t.ano_contrato = v.ano)
+                """ % ",".join(
+                    cur.mogrify("(%s::text,%s::int)", (cod, ano)).decode()
+                    for _, _, cod, ano in bloco
+                )
+            )
+            faltantes.extend(cur.fetchall())
+        return faltantes
+
     def atualizar_no_banco(self, df):
+        # _texto na situacao: um contrato com situacao vazia em todos os
+        # arquivos sai do groupby.last como NaN (float). O psycopg2 enviaria
+        # 'NaN', o ::text transformaria na string 'NaN' e o COALESCE gravaria
+        # isso por cima da situacao existente.
+        valores = [
+            (
+                row[COL_INICIO] if not pd.isna(row[COL_INICIO]) else None,
+                _texto(row[COL_SITU]),
+                row[COL_CONTRATO],
+                int(row[COL_ANO]),
+            )
+            for _, row in df.iterrows()
+        ]
+
+        if not valores:
+            log.warning("Nenhuma linha valida para atualizar.")
+            return
+
         log.info("Obtendo credenciais do Secrets Manager...")
         db_secret = get_db_secret()
 
@@ -105,34 +278,40 @@ class Conversor:
                 "ALTER TABLE tb_contratos ADD COLUMN IF NOT EXISTS cod_situ text"
             )
 
+            # COALESCE: valor ausente no CSV nao apaga o que ja existe na tabela.
+            # RETURNING + fetch=True: o execute_values pagina a execucao e o
+            # cur.rowcount reflete apenas a ultima pagina; o fetch junta todas.
             query = """
                 UPDATE tb_contratos AS t
-                   SET inicio_vigencia = v.inicio_vigencia,
-                       cod_situ = v.cod_situ
+                   SET inicio_vigencia = COALESCE(v.inicio_vigencia, t.inicio_vigencia),
+                       cod_situ        = COALESCE(v.cod_situ, t.cod_situ)
                   FROM (VALUES %s) AS v(inicio_vigencia, cod_situ, cod_contrato, ano_contrato)
                  WHERE t.cod_contrato = v.cod_contrato
                    AND t.ano_contrato = v.ano_contrato
+                RETURNING t.cod_contrato, t.ano_contrato
             """
 
-            valores = [
-                (
-                    row[COL_INICIO],
-                    row[COL_SITU],
-                    row[COL_CONTRATO],
-                    int(row[COL_ANO]),
-                )
-                for _, row in df.iterrows()
-            ]
-
-            execute_values(
+            atualizadas = execute_values(
                 cur,
                 query,
                 valores,
-                template="(%s, %s, %s, %s)",
+                # casts explicitos: sem eles o Postgres nao infere o tipo
+                # de uma coluna do VALUES cujo primeiro valor seja NULL
+                template="(%s::date, %s::text, %s::text, %s::int)",
                 page_size=500,
+                fetch=True,
             )
+
+            log.info(f"Linhas atualizadas: {len(atualizadas)} de {len(valores)}")
+
+            if len(atualizadas) < len(valores):
+                faltantes = self._contratos_ausentes(cur, valores)
+                log.warning(
+                    f"{len(faltantes)} contratos do CSV nao existem em tb_contratos. "
+                    f"Primeiros: {[f'{c}/{a}' for c, a in faltantes[:10]]}"
+                )
+
             conn.commit()
-            log.info(f"Linhas atualizadas: {cur.rowcount} de {len(valores)}")
         except Exception as e:
             conn.rollback()
             log.error(f"Erro ao atualizar: {e}", exc_info=True)
@@ -147,15 +326,16 @@ class Conversor:
         log.info("=" * 60)
 
         try:
-            log.info("FASE 1 - Localizar CSV")
-            arquivo = self.encontrar_csv()
+            log.info("FASE 1 - Localizar CSVs")
+            arquivos = self.encontrar_csvs()
 
             log.info("FASE 2 - Leitura e tratamento")
-            df = pd.read_csv(arquivo, sep=";", encoding="latin-1")
+            df = self.ler_arquivos(arquivos)
             log.info(f"Linhas encontradas: {len(df)}")
 
             df = self.tratar_dados(df)
-            log.info(f"Linhas após tratamento: {len(df)}")
+            df = self.consolidar(df)
+            log.info(f"Contratos após tratamento: {len(df)}")
 
             log.info("FASE 3 - Update no banco")
             self.atualizar_no_banco(df)
