@@ -1,0 +1,2989 @@
+2026-06-19 04:30:02 - Program - INFO - Bot iniciado
+2026-06-19 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-06-19 04:30:14 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-06-19 04:30:14 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-06-19 04:30:14 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-06-19 04:30:36 - pages.MainPage - INFO - Relatório
+2026-06-19 04:30:58 - Program - INFO - Bot terminou sua tarefa
+2026-06-19 04:45:01 - Program - INFO - Bot iniciado
+2026-06-19 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-06-19 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-06-19 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-06-19 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-06-19 04:45:35 - pages.MainPage - INFO - Relatório
+2026-06-19 04:45:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-06-19 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-06-22 04:30:07 - Program - INFO - Bot iniciado
+2026-06-22 04:30:08 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-06-22 04:30:19 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-06-22 04:30:19 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-06-22 04:30:19 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-06-22 04:30:41 - pages.MainPage - INFO - Relatório
+2026-06-22 04:30:46 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5d4e0ef1a79a <unknown>
+#1 0x5d4e0e916020 <unknown>
+#2 0x5d4e0e964531 <unknown>
+#3 0x5d4e0e9627eb <unknown>
+#4 0x5d4e0e95dd97 <unknown>
+#5 0x5d4e0e9b17d0 <unknown>
+#6 0x5d4e0e95c55f <unknown>
+#7 0x5d4e0e95d321 <unknown>
+#8 0x5d4e0eede06b <unknown>
+#9 0x5d4e0eee101d <unknown>
+#10 0x5d4e0eeca718 <unknown>
+#11 0x5d4e0eee1bb0 <unknown>
+#12 0x5d4e0eeb1150 <unknown>
+#13 0x5d4e0ef075e8 <unknown>
+#14 0x5d4e0ef077b8 <unknown>
+#15 0x5d4e0ef191de <unknown>
+#16 0x7d2cc20f8b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-06-22 04:30:46 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-06-22 04:45:01 - Program - INFO - Bot iniciado
+2026-06-22 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-06-22 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-06-22 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-06-22 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-06-22 04:45:35 - pages.MainPage - INFO - Relatório
+2026-06-22 04:45:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-06-22 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-06-23 04:30:02 - Program - INFO - Bot iniciado
+2026-06-23 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-06-23 04:30:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-06-23 04:30:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-06-23 04:30:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-06-23 04:30:35 - pages.MainPage - INFO - Relatório
+2026-06-23 04:30:41 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5a7fd1aac79a <unknown>
+#1 0x5a7fd14a8020 <unknown>
+#2 0x5a7fd14f6531 <unknown>
+#3 0x5a7fd14f47eb <unknown>
+#4 0x5a7fd14efd97 <unknown>
+#5 0x5a7fd15437d0 <unknown>
+#6 0x5a7fd14ee55f <unknown>
+#7 0x5a7fd14ef321 <unknown>
+#8 0x5a7fd1a7006b <unknown>
+#9 0x5a7fd1a7301d <unknown>
+#10 0x5a7fd1a5c718 <unknown>
+#11 0x5a7fd1a73bb0 <unknown>
+#12 0x5a7fd1a43150 <unknown>
+#13 0x5a7fd1a995e8 <unknown>
+#14 0x5a7fd1a997b8 <unknown>
+#15 0x5a7fd1aab1de <unknown>
+#16 0x78392d1dfb7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-06-23 04:30:41 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-06-23 04:45:01 - Program - INFO - Bot iniciado
+2026-06-23 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-06-23 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-06-23 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-06-23 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-06-23 04:45:35 - pages.MainPage - INFO - Relatório
+2026-06-23 04:45:40 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x635a3718379a <unknown>
+#1 0x635a36b7f020 <unknown>
+#2 0x635a36bcd531 <unknown>
+#3 0x635a36bcb7eb <unknown>
+#4 0x635a36bc6d97 <unknown>
+#5 0x635a36c1a7d0 <unknown>
+#6 0x635a36bc555f <unknown>
+#7 0x635a36bc6321 <unknown>
+#8 0x635a3714706b <unknown>
+#9 0x635a3714a01d <unknown>
+#10 0x635a37133718 <unknown>
+#11 0x635a3714abb0 <unknown>
+#12 0x635a3711a150 <unknown>
+#13 0x635a371705e8 <unknown>
+#14 0x635a371707b8 <unknown>
+#15 0x635a371821de <unknown>
+#16 0x7fa4ee89fb7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-06-23 04:45:40 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-06-24 04:30:02 - Program - INFO - Bot iniciado
+2026-06-24 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-06-24 04:30:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-06-24 04:30:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-06-24 04:30:13 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-06-24 04:30:35 - pages.MainPage - INFO - Relatório
+2026-06-24 04:30:40 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5d46b989479a <unknown>
+#1 0x5d46b9290020 <unknown>
+#2 0x5d46b92de531 <unknown>
+#3 0x5d46b92dc7eb <unknown>
+#4 0x5d46b92d7d97 <unknown>
+#5 0x5d46b932b7d0 <unknown>
+#6 0x5d46b92d655f <unknown>
+#7 0x5d46b92d7321 <unknown>
+#8 0x5d46b985806b <unknown>
+#9 0x5d46b985b01d <unknown>
+#10 0x5d46b9844718 <unknown>
+#11 0x5d46b985bbb0 <unknown>
+#12 0x5d46b982b150 <unknown>
+#13 0x5d46b98815e8 <unknown>
+#14 0x5d46b98817b8 <unknown>
+#15 0x5d46b98931de <unknown>
+#16 0x74203faacb7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-06-24 04:30:40 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-06-24 04:45:01 - Program - INFO - Bot iniciado
+2026-06-24 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-06-24 04:45:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-06-24 04:45:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-06-24 04:45:12 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-06-24 04:45:34 - pages.MainPage - INFO - Relatório
+2026-06-24 04:45:56 - Program - INFO - Bot terminou sua tarefa
+2026-06-25 04:30:02 - Program - INFO - Bot iniciado
+2026-06-25 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-06-25 04:30:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-06-25 04:30:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-06-25 04:30:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-06-25 04:30:35 - pages.MainPage - INFO - Relatório
+2026-06-25 04:30:58 - Program - INFO - Bot terminou sua tarefa
+2026-06-25 04:45:01 - Program - INFO - Bot iniciado
+2026-06-25 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-06-25 04:45:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-06-25 04:45:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-06-25 04:45:12 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-06-25 04:45:34 - pages.MainPage - INFO - Relatório
+2026-06-25 04:45:52 - util.EditFile - INFO - arquivo nao encontrado
+2026-06-25 04:45:56 - Program - INFO - Bot terminou sua tarefa
+2026-06-26 04:30:05 - Program - INFO - Bot iniciado
+2026-06-26 04:30:05 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-06-26 04:30:16 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-06-26 04:30:16 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-06-26 04:30:16 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-06-26 04:30:38 - pages.MainPage - INFO - Relatório
+2026-06-26 04:30:43 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x63591234e79a <unknown>
+#1 0x635911d4a020 <unknown>
+#2 0x635911d98531 <unknown>
+#3 0x635911d967eb <unknown>
+#4 0x635911d91d97 <unknown>
+#5 0x635911de57d0 <unknown>
+#6 0x635911d9055f <unknown>
+#7 0x635911d91321 <unknown>
+#8 0x63591231206b <unknown>
+#9 0x63591231501d <unknown>
+#10 0x6359122fe718 <unknown>
+#11 0x635912315bb0 <unknown>
+#12 0x6359122e5150 <unknown>
+#13 0x63591233b5e8 <unknown>
+#14 0x63591233b7b8 <unknown>
+#15 0x63591234d1de <unknown>
+#16 0x7f9f3b9a5b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-06-26 04:30:43 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-06-26 04:45:01 - Program - INFO - Bot iniciado
+2026-06-26 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-06-26 04:45:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-06-26 04:45:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-06-26 04:45:12 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-06-26 04:45:34 - pages.MainPage - INFO - Relatório
+2026-06-26 04:45:56 - Program - INFO - Bot terminou sua tarefa
+2026-06-29 04:30:08 - Program - INFO - Bot iniciado
+2026-06-29 04:30:08 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-06-29 04:30:20 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-06-29 04:30:20 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-06-29 04:30:20 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-06-29 04:30:42 - pages.MainPage - INFO - Relatório
+2026-06-29 04:31:00 - util.EditFile - INFO - arquivo nao encontrado
+2026-06-29 04:31:04 - Program - INFO - Bot terminou sua tarefa
+2026-06-29 04:45:01 - Program - INFO - Bot iniciado
+2026-06-29 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-06-29 04:45:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-06-29 04:45:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-06-29 04:45:12 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-06-29 04:45:35 - pages.MainPage - INFO - Relatório
+2026-06-29 04:45:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-06-29 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-06-30 04:30:03 - Program - INFO - Bot iniciado
+2026-06-30 04:30:03 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-06-30 04:30:14 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-06-30 04:30:14 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-06-30 04:30:14 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-06-30 04:30:36 - pages.MainPage - INFO - Relatório
+2026-06-30 04:30:41 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5d565b43379a <unknown>
+#1 0x5d565ae2f020 <unknown>
+#2 0x5d565ae7d531 <unknown>
+#3 0x5d565ae7b7eb <unknown>
+#4 0x5d565ae76d97 <unknown>
+#5 0x5d565aeca7d0 <unknown>
+#6 0x5d565ae7555f <unknown>
+#7 0x5d565ae76321 <unknown>
+#8 0x5d565b3f706b <unknown>
+#9 0x5d565b3fa01d <unknown>
+#10 0x5d565b3e3718 <unknown>
+#11 0x5d565b3fabb0 <unknown>
+#12 0x5d565b3ca150 <unknown>
+#13 0x5d565b4205e8 <unknown>
+#14 0x5d565b4207b8 <unknown>
+#15 0x5d565b4321de <unknown>
+#16 0x7060de56db7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-06-30 04:30:41 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-06-30 04:45:01 - Program - INFO - Bot iniciado
+2026-06-30 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-06-30 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-06-30 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-06-30 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-06-30 04:45:35 - pages.MainPage - INFO - Relatório
+2026-06-30 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-07-01 04:30:02 - Program - INFO - Bot iniciado
+2026-07-01 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-01 04:30:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-01 04:30:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-01 04:30:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-01 04:30:36 - pages.MainPage - INFO - Relatório
+2026-07-01 04:30:58 - Program - INFO - Bot terminou sua tarefa
+2026-07-01 04:45:01 - Program - INFO - Bot iniciado
+2026-07-01 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-01 04:45:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-01 04:45:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-01 04:45:12 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-01 04:45:34 - pages.MainPage - INFO - Relatório
+2026-07-01 04:45:52 - util.EditFile - INFO - arquivo nao encontrado
+2026-07-01 04:45:56 - Program - INFO - Bot terminou sua tarefa
+2026-07-02 04:30:02 - Program - INFO - Bot iniciado
+2026-07-02 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-02 04:30:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-02 04:30:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-02 04:30:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-02 04:30:35 - pages.MainPage - INFO - Relatório
+2026-07-02 04:30:58 - Program - INFO - Bot terminou sua tarefa
+2026-07-02 04:45:01 - Program - INFO - Bot iniciado
+2026-07-02 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-02 04:45:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-02 04:45:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-02 04:45:12 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-02 04:45:34 - pages.MainPage - INFO - Relatório
+2026-07-02 04:45:52 - util.EditFile - INFO - arquivo nao encontrado
+2026-07-02 04:45:56 - Program - INFO - Bot terminou sua tarefa
+2026-07-03 04:30:02 - Program - INFO - Bot iniciado
+2026-07-03 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-03 04:30:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-03 04:30:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-03 04:30:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-03 04:30:36 - pages.MainPage - INFO - Relatório
+2026-07-03 04:30:58 - Program - INFO - Bot terminou sua tarefa
+2026-07-03 04:45:01 - Program - INFO - Bot iniciado
+2026-07-03 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-03 04:45:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-03 04:45:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-03 04:45:12 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-03 04:45:34 - pages.MainPage - INFO - Relatório
+2026-07-03 04:45:52 - util.EditFile - INFO - arquivo nao encontrado
+2026-07-03 04:45:56 - Program - INFO - Bot terminou sua tarefa
+2026-07-06 04:30:08 - Program - INFO - Bot iniciado
+2026-07-06 04:30:08 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-06 04:30:19 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-06 04:30:19 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-06 04:30:19 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-06 04:30:41 - pages.MainPage - INFO - Relatório
+2026-07-06 04:30:46 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5902f806579a <unknown>
+#1 0x5902f7a61020 <unknown>
+#2 0x5902f7aaf531 <unknown>
+#3 0x5902f7aad7eb <unknown>
+#4 0x5902f7aa8d97 <unknown>
+#5 0x5902f7afc7d0 <unknown>
+#6 0x5902f7aa755f <unknown>
+#7 0x5902f7aa8321 <unknown>
+#8 0x5902f802906b <unknown>
+#9 0x5902f802c01d <unknown>
+#10 0x5902f8015718 <unknown>
+#11 0x5902f802cbb0 <unknown>
+#12 0x5902f7ffc150 <unknown>
+#13 0x5902f80525e8 <unknown>
+#14 0x5902f80527b8 <unknown>
+#15 0x5902f80641de <unknown>
+#16 0x7db156855b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-06 04:30:46 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-06 04:45:02 - Program - INFO - Bot iniciado
+2026-07-06 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-06 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-06 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-07-06 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-07-06 04:45:35 - pages.MainPage - INFO - Relatório
+2026-07-06 04:45:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-07-06 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-07-07 04:30:01 - Program - INFO - Bot iniciado
+2026-07-07 04:30:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-07 04:30:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-07 04:30:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-07 04:30:12 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-07 04:30:34 - pages.MainPage - INFO - Relatório
+2026-07-07 04:30:39 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x63b360f1379a <unknown>
+#1 0x63b36090f020 <unknown>
+#2 0x63b36095d531 <unknown>
+#3 0x63b36095b7eb <unknown>
+#4 0x63b360956d97 <unknown>
+#5 0x63b3609aa7d0 <unknown>
+#6 0x63b36095555f <unknown>
+#7 0x63b360956321 <unknown>
+#8 0x63b360ed706b <unknown>
+#9 0x63b360eda01d <unknown>
+#10 0x63b360ec3718 <unknown>
+#11 0x63b360edabb0 <unknown>
+#12 0x63b360eaa150 <unknown>
+#13 0x63b360f005e8 <unknown>
+#14 0x63b360f007b8 <unknown>
+#15 0x63b360f121de <unknown>
+#16 0x7fef8af37b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-07 04:30:39 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-07 04:45:02 - Program - INFO - Bot iniciado
+2026-07-07 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-07 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-07 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-07-07 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-07-07 04:45:35 - pages.MainPage - INFO - Relatório
+2026-07-07 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-07-08 04:30:03 - Program - INFO - Bot iniciado
+2026-07-08 04:30:03 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-08 04:30:14 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-08 04:30:14 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-08 04:30:14 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-08 04:30:36 - pages.MainPage - INFO - 
+2026-07-08 04:30:40 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 36, in enterContract
+    bttMenuBars[1].click()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5790ba3d679a <unknown>
+#1 0x5790b9dd2020 <unknown>
+#2 0x5790b9e260a5 <unknown>
+#3 0x5790b9e1a452 <unknown>
+#4 0x5790b9e19d97 <unknown>
+#5 0x5790b9e6d7d0 <unknown>
+#6 0x5790b9e1855f <unknown>
+#7 0x5790b9e19321 <unknown>
+#8 0x5790ba39a06b <unknown>
+#9 0x5790ba39d01d <unknown>
+#10 0x5790ba386718 <unknown>
+#11 0x5790ba39dbb0 <unknown>
+#12 0x5790ba36d150 <unknown>
+#13 0x5790ba3c35e8 <unknown>
+#14 0x5790ba3c37b8 <unknown>
+#15 0x5790ba3d51de <unknown>
+#16 0x7a2c206f4b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 45, in downloadArchive
+    self.mainPage.enterContract()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 47, in enterContract
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-08 04:30:40 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-08 04:45:02 - Program - INFO - Bot iniciado
+2026-07-08 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-08 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-08 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-07-08 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-07-08 04:45:35 - pages.MainPage - INFO - Relatório
+2026-07-08 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-07-09 04:30:02 - Program - INFO - Bot iniciado
+2026-07-09 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-09 04:30:14 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-09 04:30:14 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-09 04:30:14 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-09 04:30:36 - pages.MainPage - INFO - Relatório
+2026-07-09 04:30:58 - Program - INFO - Bot terminou sua tarefa
+2026-07-09 04:45:01 - Program - INFO - Bot iniciado
+2026-07-09 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-09 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-09 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-09 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-09 04:45:35 - pages.MainPage - INFO - Relatório
+2026-07-09 04:45:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-07-09 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-07-10 04:30:02 - Program - INFO - Bot iniciado
+2026-07-10 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-10 04:30:14 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-10 04:30:14 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-10 04:30:14 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-10 04:30:36 - pages.MainPage - INFO - Relatório
+2026-07-10 04:30:58 - Program - INFO - Bot terminou sua tarefa
+2026-07-10 04:45:01 - Program - INFO - Bot iniciado
+2026-07-10 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-10 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-10 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-10 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-10 04:45:35 - pages.MainPage - INFO - Relatório
+2026-07-10 04:45:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-07-10 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-07-13 04:30:11 - Program - INFO - Bot iniciado
+2026-07-13 04:30:11 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-13 04:30:22 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-13 04:30:22 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-13 04:30:22 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-13 04:30:44 - pages.MainPage - INFO - Relatório
+2026-07-13 04:31:02 - util.EditFile - INFO - arquivo nao encontrado
+2026-07-13 04:31:06 - Program - INFO - Bot terminou sua tarefa
+2026-07-13 04:45:02 - Program - INFO - Bot iniciado
+2026-07-13 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-13 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-13 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-13 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-13 04:45:35 - pages.MainPage - INFO - Relatório
+2026-07-13 04:45:40 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x61dcf1e8979a <unknown>
+#1 0x61dcf1885020 <unknown>
+#2 0x61dcf18d3531 <unknown>
+#3 0x61dcf18d17eb <unknown>
+#4 0x61dcf18ccd97 <unknown>
+#5 0x61dcf19207d0 <unknown>
+#6 0x61dcf18cb55f <unknown>
+#7 0x61dcf18cc321 <unknown>
+#8 0x61dcf1e4d06b <unknown>
+#9 0x61dcf1e5001d <unknown>
+#10 0x61dcf1e39718 <unknown>
+#11 0x61dcf1e50bb0 <unknown>
+#12 0x61dcf1e20150 <unknown>
+#13 0x61dcf1e765e8 <unknown>
+#14 0x61dcf1e767b8 <unknown>
+#15 0x61dcf1e881de <unknown>
+#16 0x7175e71fbb7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-13 04:45:40 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-14 04:30:02 - Program - INFO - Bot iniciado
+2026-07-14 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-14 04:30:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-14 04:30:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-07-14 04:30:13 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-07-14 04:30:35 - pages.MainPage - INFO - Relatório
+2026-07-14 04:30:40 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x640504d3579a <unknown>
+#1 0x640504731020 <unknown>
+#2 0x64050477f531 <unknown>
+#3 0x64050477d7eb <unknown>
+#4 0x640504778d97 <unknown>
+#5 0x6405047cc7d0 <unknown>
+#6 0x64050477755f <unknown>
+#7 0x640504778321 <unknown>
+#8 0x640504cf906b <unknown>
+#9 0x640504cfc01d <unknown>
+#10 0x640504ce5718 <unknown>
+#11 0x640504cfcbb0 <unknown>
+#12 0x640504ccc150 <unknown>
+#13 0x640504d225e8 <unknown>
+#14 0x640504d227b8 <unknown>
+#15 0x640504d341de <unknown>
+#16 0x7a0cffe68b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-14 04:30:40 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-14 04:45:01 - Program - INFO - Bot iniciado
+2026-07-14 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-14 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-14 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-07-14 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-07-14 04:45:35 - pages.MainPage - INFO - Relatório
+2026-07-14 04:45:40 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x63333114979a <unknown>
+#1 0x633330b45020 <unknown>
+#2 0x633330b93531 <unknown>
+#3 0x633330b917eb <unknown>
+#4 0x633330b8cd97 <unknown>
+#5 0x633330be07d0 <unknown>
+#6 0x633330b8b55f <unknown>
+#7 0x633330b8c321 <unknown>
+#8 0x63333110d06b <unknown>
+#9 0x63333111001d <unknown>
+#10 0x6333310f9718 <unknown>
+#11 0x633331110bb0 <unknown>
+#12 0x6333310e0150 <unknown>
+#13 0x6333311365e8 <unknown>
+#14 0x6333311367b8 <unknown>
+#15 0x6333311481de <unknown>
+#16 0x75f7358b6b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-14 04:45:40 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-15 04:30:02 - Program - INFO - Bot iniciado
+2026-07-15 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-15 04:30:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-15 04:30:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-07-15 04:30:13 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-07-15 04:30:35 - pages.MainPage - INFO - Relatório
+2026-07-15 04:30:40 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x64cbc5cd979a <unknown>
+#1 0x64cbc56d5020 <unknown>
+#2 0x64cbc5723531 <unknown>
+#3 0x64cbc57217eb <unknown>
+#4 0x64cbc571cd97 <unknown>
+#5 0x64cbc57707d0 <unknown>
+#6 0x64cbc571b55f <unknown>
+#7 0x64cbc571c321 <unknown>
+#8 0x64cbc5c9d06b <unknown>
+#9 0x64cbc5ca001d <unknown>
+#10 0x64cbc5c89718 <unknown>
+#11 0x64cbc5ca0bb0 <unknown>
+#12 0x64cbc5c70150 <unknown>
+#13 0x64cbc5cc65e8 <unknown>
+#14 0x64cbc5cc67b8 <unknown>
+#15 0x64cbc5cd81de <unknown>
+#16 0x7a53f42b7b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-15 04:30:40 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-15 04:45:02 - Program - INFO - Bot iniciado
+2026-07-15 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-15 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-15 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-07-15 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-07-15 04:45:35 - pages.MainPage - INFO - Relatório
+2026-07-15 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-07-16 04:30:02 - Program - INFO - Bot iniciado
+2026-07-16 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-16 04:30:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-16 04:30:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-16 04:30:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-16 04:30:39 - Program - ERROR - Erro inesperado: list index out of range
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 35, in enterContract
+    self.logger.info(bttMenuBars[1].text)
+                     ~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 45, in downloadArchive
+    self.mainPage.enterContract()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 51, in enterContract
+    raise Exception(f"Erro inesperado: {e}")
+Exception: Erro inesperado: list index out of range
+2026-07-16 04:30:39 - Program - ERROR - Erro inesperado: Erro inesperado: list index out of range
+2026-07-16 04:45:01 - Program - INFO - Bot iniciado
+2026-07-16 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-16 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-16 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-07-16 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-07-16 04:45:35 - pages.MainPage - INFO - Relatório
+2026-07-16 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-07-17 04:30:02 - Program - INFO - Bot iniciado
+2026-07-17 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-17 04:30:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-17 04:30:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-17 04:30:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-17 04:30:35 - pages.MainPage - INFO - Relatório
+2026-07-17 04:30:58 - Program - INFO - Bot terminou sua tarefa
+2026-07-17 04:45:01 - Program - INFO - Bot iniciado
+2026-07-17 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-17 04:45:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-17 04:45:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-17 04:45:12 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-17 04:45:34 - pages.MainPage - INFO - Relatório
+2026-07-17 04:45:52 - util.EditFile - INFO - arquivo nao encontrado
+2026-07-17 04:45:56 - Program - INFO - Bot terminou sua tarefa
+2026-07-20 04:30:08 - Program - INFO - Bot iniciado
+2026-07-20 04:30:08 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-20 04:30:19 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-20 04:30:19 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-20 04:30:19 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-20 04:30:41 - pages.MainPage - INFO - Relatório
+2026-07-20 04:31:00 - util.EditFile - INFO - arquivo nao encontrado
+2026-07-20 04:31:04 - Program - INFO - Bot terminou sua tarefa
+2026-07-20 04:45:01 - Program - INFO - Bot iniciado
+2026-07-20 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-20 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-20 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-20 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-20 04:45:35 - pages.MainPage - INFO - Relatório
+2026-07-20 04:45:40 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5b7126e0a79a <unknown>
+#1 0x5b7126806020 <unknown>
+#2 0x5b7126854531 <unknown>
+#3 0x5b71268527eb <unknown>
+#4 0x5b712684dd97 <unknown>
+#5 0x5b71268a17d0 <unknown>
+#6 0x5b712684c55f <unknown>
+#7 0x5b712684d321 <unknown>
+#8 0x5b7126dce06b <unknown>
+#9 0x5b7126dd101d <unknown>
+#10 0x5b7126dba718 <unknown>
+#11 0x5b7126dd1bb0 <unknown>
+#12 0x5b7126da1150 <unknown>
+#13 0x5b7126df75e8 <unknown>
+#14 0x5b7126df77b8 <unknown>
+#15 0x5b7126e091de <unknown>
+#16 0x7e269fa21b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-20 04:45:40 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-21 04:30:02 - Program - INFO - Bot iniciado
+2026-07-21 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-21 04:30:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-21 04:30:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-07-21 04:30:13 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-07-21 04:30:35 - pages.MainPage - INFO - Relatório
+2026-07-21 04:30:58 - Program - INFO - Bot terminou sua tarefa
+2026-07-21 04:45:01 - Program - INFO - Bot iniciado
+2026-07-21 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-21 04:45:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-21 04:45:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-21 04:45:12 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-21 04:45:34 - pages.MainPage - INFO - Relatório
+2026-07-21 04:45:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-07-21 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-07-22 04:30:02 - Program - INFO - Bot iniciado
+2026-07-22 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-22 04:30:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-22 04:30:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-22 04:30:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-22 04:30:35 - pages.MainPage - INFO - Relatório
+2026-07-22 04:30:58 - Program - INFO - Bot terminou sua tarefa
+2026-07-22 04:45:01 - Program - INFO - Bot iniciado
+2026-07-22 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-22 04:45:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-22 04:45:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-22 04:45:12 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-22 04:45:34 - pages.MainPage - INFO - Relatório
+2026-07-22 04:45:52 - util.EditFile - INFO - arquivo nao encontrado
+2026-07-22 04:45:56 - Program - INFO - Bot terminou sua tarefa
+2026-07-23 04:30:02 - Program - INFO - Bot iniciado
+2026-07-23 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-23 04:30:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-23 04:30:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-23 04:30:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-23 04:30:35 - pages.MainPage - INFO - Relatório
+2026-07-23 04:30:57 - Program - INFO - Bot terminou sua tarefa
+2026-07-23 04:45:02 - Program - INFO - Bot iniciado
+2026-07-23 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-23 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-23 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-23 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-23 04:45:35 - pages.MainPage - INFO - Relatório
+2026-07-23 04:45:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-07-23 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-07-24 04:30:02 - Program - INFO - Bot iniciado
+2026-07-24 04:30:03 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-24 04:30:14 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-24 04:30:14 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-24 04:30:14 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-24 04:30:36 - pages.MainPage - INFO - Relatório
+2026-07-24 04:30:58 - Program - INFO - Bot terminou sua tarefa
+2026-07-24 04:45:02 - Program - INFO - Bot iniciado
+2026-07-24 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-24 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-24 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-24 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-24 04:45:35 - pages.MainPage - INFO - Relatório
+2026-07-24 04:45:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-07-24 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-07-27 04:30:09 - Program - INFO - Bot iniciado
+2026-07-27 04:30:09 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-27 04:30:12 - Program - ERROR - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 34, in login
+    if (not isLogged[0]):
+            ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2026-07-27 04:30:12 - Program - ERROR - Erro inesperado: 'NoneType' object is not subscriptable
+2026-07-27 04:45:01 - Program - INFO - Bot iniciado
+2026-07-27 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-27 04:45:31 - Program - ERROR - Message: 
+Stacktrace:
+#0 0x56ba8dccd79a <unknown>
+#1 0x56ba8d6c9215 <unknown>
+#2 0x56ba8d71bf06 <unknown>
+#3 0x56ba8d71c141 <unknown>
+#4 0x56ba8d767634 <unknown>
+#5 0x56ba8d7647d0 <unknown>
+#6 0x56ba8d70f55f <unknown>
+#7 0x56ba8d710321 <unknown>
+#8 0x56ba8dc9106b <unknown>
+#9 0x56ba8dc9401d <unknown>
+#10 0x56ba8dc7d718 <unknown>
+#11 0x56ba8dc94bb0 <unknown>
+#12 0x56ba8dc64150 <unknown>
+#13 0x56ba8dcba5e8 <unknown>
+#14 0x56ba8dcba7b8 <unknown>
+#15 0x56ba8dccc1de <unknown>
+#16 0x7a438eceab7b <unknown>
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 32, in login
+    self.loginPage.login()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/LoginPage.py", line 18, in login
+    userLogin = self.wait.until(
+        EC.presence_of_element_located((By.ID, "usuario"))
+    )
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x56ba8dccd79a <unknown>
+#1 0x56ba8d6c9215 <unknown>
+#2 0x56ba8d71bf06 <unknown>
+#3 0x56ba8d71c141 <unknown>
+#4 0x56ba8d767634 <unknown>
+#5 0x56ba8d7647d0 <unknown>
+#6 0x56ba8d70f55f <unknown>
+#7 0x56ba8d710321 <unknown>
+#8 0x56ba8dc9106b <unknown>
+#9 0x56ba8dc9401d <unknown>
+#10 0x56ba8dc7d718 <unknown>
+#11 0x56ba8dc94bb0 <unknown>
+#12 0x56ba8dc64150 <unknown>
+#13 0x56ba8dcba5e8 <unknown>
+#14 0x56ba8dcba7b8 <unknown>
+#15 0x56ba8dccc1de <unknown>
+#16 0x7a438eceab7b <unknown>
+
+2026-07-27 04:45:31 - Program - ERROR - Erro inesperado: Message: 
+Stacktrace:
+#0 0x56ba8dccd79a <unknown>
+#1 0x56ba8d6c9215 <unknown>
+#2 0x56ba8d71bf06 <unknown>
+#3 0x56ba8d71c141 <unknown>
+#4 0x56ba8d767634 <unknown>
+#5 0x56ba8d7647d0 <unknown>
+#6 0x56ba8d70f55f <unknown>
+#7 0x56ba8d710321 <unknown>
+#8 0x56ba8dc9106b <unknown>
+#9 0x56ba8dc9401d <unknown>
+#10 0x56ba8dc7d718 <unknown>
+#11 0x56ba8dc94bb0 <unknown>
+#12 0x56ba8dc64150 <unknown>
+#13 0x56ba8dcba5e8 <unknown>
+#14 0x56ba8dcba7b8 <unknown>
+#15 0x56ba8dccc1de <unknown>
+#16 0x7a438eceab7b <unknown>
+
+2026-07-28 04:30:02 - Program - INFO - Bot iniciado
+2026-07-28 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-28 04:30:04 - Program - ERROR - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 34, in login
+    if (not isLogged[0]):
+            ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2026-07-28 04:30:04 - Program - ERROR - Erro inesperado: 'NoneType' object is not subscriptable
+2026-07-28 04:45:02 - Program - INFO - Bot iniciado
+2026-07-28 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-28 04:45:03 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-07-28 04:45:03 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-07-28 14:10:01 - Program - INFO - Bot iniciado
+2026-07-28 14:10:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-28 14:10:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-28 14:10:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-28 14:10:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-28 14:10:35 - pages.MainPage - INFO - Relatório
+2026-07-28 14:10:57 - Program - INFO - Bot terminou sua tarefa
+2026-07-29 04:30:01 - Program - INFO - Bot iniciado
+2026-07-29 04:30:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-29 04:30:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-29 04:30:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-29 04:30:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-29 04:30:35 - pages.MainPage - INFO - Relatório
+2026-07-29 04:30:57 - Program - INFO - Bot terminou sua tarefa
+2026-07-29 04:45:02 - Program - INFO - Bot iniciado
+2026-07-29 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-29 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-29 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-29 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-29 04:45:35 - pages.MainPage - INFO - Relatório
+2026-07-29 04:45:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-07-29 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-07-30 04:30:02 - Program - INFO - Bot iniciado
+2026-07-30 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-30 04:30:14 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-30 04:30:14 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-30 04:30:14 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-30 04:30:36 - pages.MainPage - INFO - Relatório
+2026-07-30 04:30:58 - Program - INFO - Bot terminou sua tarefa
+2026-07-30 04:45:01 - Program - INFO - Bot iniciado
+2026-07-30 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-30 04:45:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-30 04:45:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-30 04:45:12 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-30 04:45:35 - pages.MainPage - INFO - Relatório
+2026-07-30 04:45:40 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x578e1cb5779a <unknown>
+#1 0x578e1c553020 <unknown>
+#2 0x578e1c5a1531 <unknown>
+#3 0x578e1c59f7eb <unknown>
+#4 0x578e1c59ad97 <unknown>
+#5 0x578e1c5ee7d0 <unknown>
+#6 0x578e1c59955f <unknown>
+#7 0x578e1c59a321 <unknown>
+#8 0x578e1cb1b06b <unknown>
+#9 0x578e1cb1e01d <unknown>
+#10 0x578e1cb07718 <unknown>
+#11 0x578e1cb1ebb0 <unknown>
+#12 0x578e1caee150 <unknown>
+#13 0x578e1cb445e8 <unknown>
+#14 0x578e1cb447b8 <unknown>
+#15 0x578e1cb561de <unknown>
+#16 0x7a69abce1b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-30 04:45:40 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-07-31 04:30:01 - Program - INFO - Bot iniciado
+2026-07-31 04:30:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-31 04:30:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-31 04:30:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-07-31 04:30:12 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-07-31 04:30:34 - pages.MainPage - INFO - Relatório
+2026-07-31 04:30:57 - Program - INFO - Bot terminou sua tarefa
+2026-07-31 04:45:02 - Program - INFO - Bot iniciado
+2026-07-31 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-07-31 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-07-31 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-07-31 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-07-31 04:45:35 - pages.MainPage - INFO - Relatório
+2026-07-31 04:45:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-07-31 04:45:58 - Program - INFO - Bot terminou sua tarefa
+2026-08-03 04:30:19 - Program - INFO - Bot iniciado
+2026-08-03 04:30:19 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-03 04:30:31 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-03 04:30:31 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-08-03 04:30:31 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-08-03 04:30:53 - pages.MainPage - INFO - Relatório
+2026-08-03 04:31:12 - util.EditFile - INFO - arquivo nao encontrado
+2026-08-03 04:31:16 - Program - INFO - Bot terminou sua tarefa
+2026-08-03 04:45:01 - Program - INFO - Bot iniciado
+2026-08-03 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-03 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-03 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-08-03 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-08-03 04:45:35 - pages.MainPage - INFO - Relatório
+2026-08-03 04:45:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-08-03 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-08-04 04:30:21 - Program - INFO - Bot iniciado
+2026-08-04 04:30:21 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-04 04:30:35 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-04 04:30:35 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-08-04 04:30:35 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-08-04 04:30:57 - pages.MainPage - INFO - Relatório
+2026-08-04 04:31:49 - Program - INFO - Bot terminou sua tarefa
+2026-08-04 04:45:01 - Program - INFO - Bot iniciado
+2026-08-04 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-04 04:45:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-04 04:45:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-08-04 04:45:12 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-08-04 04:45:34 - pages.MainPage - INFO - Relatório
+2026-08-04 04:45:52 - util.EditFile - INFO - arquivo nao encontrado
+2026-08-04 04:45:56 - Program - INFO - Bot terminou sua tarefa
+2026-08-05 04:30:04 - Program - INFO - Bot iniciado
+2026-08-05 04:30:04 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-05 04:30:15 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-05 04:30:15 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-08-05 04:30:15 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-08-05 04:30:37 - pages.MainPage - INFO - Relatório
+2026-08-05 04:30:42 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x63930d6aa79a <unknown>
+#1 0x63930d0a6020 <unknown>
+#2 0x63930d0f4531 <unknown>
+#3 0x63930d0f27eb <unknown>
+#4 0x63930d0edd97 <unknown>
+#5 0x63930d1417d0 <unknown>
+#6 0x63930d0ec55f <unknown>
+#7 0x63930d0ed321 <unknown>
+#8 0x63930d66e06b <unknown>
+#9 0x63930d67101d <unknown>
+#10 0x63930d65a718 <unknown>
+#11 0x63930d671bb0 <unknown>
+#12 0x63930d641150 <unknown>
+#13 0x63930d6975e8 <unknown>
+#14 0x63930d6977b8 <unknown>
+#15 0x63930d6a91de <unknown>
+#16 0x7661e8543b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-08-05 04:30:42 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-08-05 04:45:01 - Program - INFO - Bot iniciado
+2026-08-05 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-05 04:45:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-05 04:45:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-08-05 04:45:12 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-08-05 04:45:34 - pages.MainPage - INFO - Relatório
+2026-08-05 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-08-06 04:30:02 - Program - INFO - Bot iniciado
+2026-08-06 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-06 04:30:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-06 04:30:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-08-06 04:30:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-08-06 04:30:35 - pages.MainPage - INFO - Relatório
+2026-08-06 04:30:41 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x560ebb74b79a <unknown>
+#1 0x560ebb147020 <unknown>
+#2 0x560ebb195531 <unknown>
+#3 0x560ebb1937eb <unknown>
+#4 0x560ebb18ed97 <unknown>
+#5 0x560ebb1e27d0 <unknown>
+#6 0x560ebb18d55f <unknown>
+#7 0x560ebb18e321 <unknown>
+#8 0x560ebb70f06b <unknown>
+#9 0x560ebb71201d <unknown>
+#10 0x560ebb6fb718 <unknown>
+#11 0x560ebb712bb0 <unknown>
+#12 0x560ebb6e2150 <unknown>
+#13 0x560ebb7385e8 <unknown>
+#14 0x560ebb7387b8 <unknown>
+#15 0x560ebb74a1de <unknown>
+#16 0x73d3085cdb7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-08-06 04:30:41 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-08-06 04:45:01 - Program - INFO - Bot iniciado
+2026-08-06 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-06 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-06 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-08-06 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-08-06 04:45:35 - pages.MainPage - INFO - Relatório
+2026-08-06 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-08-07 04:30:02 - Program - INFO - Bot iniciado
+2026-08-07 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-07 04:30:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-07 04:30:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-08-07 04:30:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-08-07 04:30:35 - pages.MainPage - INFO - Relatório
+2026-08-07 04:30:57 - Program - INFO - Bot terminou sua tarefa
+2026-08-07 04:45:03 - Program - INFO - Bot iniciado
+2026-08-07 04:45:03 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-07 04:45:14 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-07 04:45:15 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-08-07 04:45:15 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-08-07 04:45:37 - pages.MainPage - INFO - Relatório
+2026-08-07 04:46:26 - util.EditFile - INFO - arquivo nao encontrado
+2026-08-07 04:46:30 - Program - INFO - Bot terminou sua tarefa
+2026-08-10 04:30:10 - Program - INFO - Bot iniciado
+2026-08-10 04:30:10 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-10 04:30:21 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-10 04:30:21 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-08-10 04:30:21 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-08-10 04:30:43 - pages.MainPage - INFO - Relatório
+2026-08-10 04:31:01 - util.EditFile - INFO - arquivo nao encontrado
+2026-08-10 04:31:05 - Program - INFO - Bot terminou sua tarefa
+2026-08-10 04:45:02 - Program - INFO - Bot iniciado
+2026-08-10 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-10 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-10 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-08-10 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-08-10 04:45:35 - pages.MainPage - INFO - 
+2026-08-10 04:45:39 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 36, in enterContract
+    bttMenuBars[1].click()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5e10da12f79a <unknown>
+#1 0x5e10d9b2b020 <unknown>
+#2 0x5e10d9b7f0a5 <unknown>
+#3 0x5e10d9b73452 <unknown>
+#4 0x5e10d9b72d97 <unknown>
+#5 0x5e10d9bc67d0 <unknown>
+#6 0x5e10d9b7155f <unknown>
+#7 0x5e10d9b72321 <unknown>
+#8 0x5e10da0f306b <unknown>
+#9 0x5e10da0f601d <unknown>
+#10 0x5e10da0df718 <unknown>
+#11 0x5e10da0f6bb0 <unknown>
+#12 0x5e10da0c6150 <unknown>
+#13 0x5e10da11c5e8 <unknown>
+#14 0x5e10da11c7b8 <unknown>
+#15 0x5e10da12e1de <unknown>
+#16 0x77ad9688fb7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 45, in downloadArchive
+    self.mainPage.enterContract()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 47, in enterContract
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-08-10 04:45:39 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-08-11 04:30:02 - Program - INFO - Bot iniciado
+2026-08-11 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-11 04:30:14 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-11 04:30:14 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-08-11 04:30:14 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-08-11 04:30:36 - pages.MainPage - INFO - Relatório
+2026-08-11 04:30:58 - Program - INFO - Bot terminou sua tarefa
+2026-08-11 04:45:01 - Program - INFO - Bot iniciado
+2026-08-11 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-11 04:45:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-11 04:45:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-08-11 04:45:12 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-08-11 04:45:34 - pages.MainPage - INFO - Relatório
+2026-08-11 04:45:52 - util.EditFile - INFO - arquivo nao encontrado
+2026-08-11 04:45:56 - Program - INFO - Bot terminou sua tarefa
+2026-08-12 04:30:01 - Program - INFO - Bot iniciado
+2026-08-12 04:30:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-12 04:30:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-12 04:30:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-08-12 04:30:12 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-08-12 04:30:34 - pages.MainPage - INFO - Relatório
+2026-08-12 04:30:40 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x62820f8b479a <unknown>
+#1 0x62820f2b0020 <unknown>
+#2 0x62820f2fe531 <unknown>
+#3 0x62820f2fc7eb <unknown>
+#4 0x62820f2f7d97 <unknown>
+#5 0x62820f34b7d0 <unknown>
+#6 0x62820f2f655f <unknown>
+#7 0x62820f2f7321 <unknown>
+#8 0x62820f87806b <unknown>
+#9 0x62820f87b01d <unknown>
+#10 0x62820f864718 <unknown>
+#11 0x62820f87bbb0 <unknown>
+#12 0x62820f84b150 <unknown>
+#13 0x62820f8a15e8 <unknown>
+#14 0x62820f8a17b8 <unknown>
+#15 0x62820f8b31de <unknown>
+#16 0x72262c7e2b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-08-12 04:30:40 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-08-12 04:45:01 - Program - INFO - Bot iniciado
+2026-08-12 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-12 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-12 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-08-12 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-08-12 04:45:35 - pages.MainPage - INFO - Relatório
+2026-08-12 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-08-13 04:30:01 - Program - INFO - Bot iniciado
+2026-08-13 04:30:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-13 04:30:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-13 04:30:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-08-13 04:30:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-08-13 04:30:35 - pages.MainPage - INFO - Relatório
+2026-08-13 04:30:40 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5ca0a38fa79a <unknown>
+#1 0x5ca0a32f6020 <unknown>
+#2 0x5ca0a3344531 <unknown>
+#3 0x5ca0a33427eb <unknown>
+#4 0x5ca0a333dd97 <unknown>
+#5 0x5ca0a33917d0 <unknown>
+#6 0x5ca0a333c55f <unknown>
+#7 0x5ca0a333d321 <unknown>
+#8 0x5ca0a38be06b <unknown>
+#9 0x5ca0a38c101d <unknown>
+#10 0x5ca0a38aa718 <unknown>
+#11 0x5ca0a38c1bb0 <unknown>
+#12 0x5ca0a3891150 <unknown>
+#13 0x5ca0a38e75e8 <unknown>
+#14 0x5ca0a38e77b8 <unknown>
+#15 0x5ca0a38f91de <unknown>
+#16 0x7d91c1d97b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-08-13 04:30:40 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-08-13 04:45:06 - Program - INFO - Bot iniciado
+2026-08-13 04:45:06 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-13 04:45:17 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-13 04:45:17 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-08-13 04:45:17 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-08-13 04:45:39 - pages.MainPage - INFO - Relatório
+2026-08-13 04:46:31 - Program - INFO - Bot terminou sua tarefa
+2026-08-14 04:30:02 - Program - INFO - Bot iniciado
+2026-08-14 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-14 04:30:14 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-14 04:30:14 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-08-14 04:30:14 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-08-14 04:30:36 - pages.MainPage - INFO - Relatório
+2026-08-14 04:30:58 - Program - INFO - Bot terminou sua tarefa
+2026-08-14 04:45:04 - Program - INFO - Bot iniciado
+2026-08-14 04:45:04 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-14 04:45:17 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-14 04:45:17 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-08-14 04:45:17 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-08-14 04:45:39 - pages.MainPage - INFO - Relatório
+2026-08-14 04:46:27 - util.EditFile - INFO - arquivo nao encontrado
+2026-08-14 04:46:31 - Program - INFO - Bot terminou sua tarefa
+2026-08-17 04:30:08 - Program - INFO - Bot iniciado
+2026-08-17 04:30:08 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-17 04:30:20 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-17 04:30:20 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-08-17 04:30:20 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-08-17 04:30:42 - pages.MainPage - INFO - Relatório
+2026-08-17 04:30:48 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x649134c2f79a <unknown>
+#1 0x64913462b020 <unknown>
+#2 0x649134679531 <unknown>
+#3 0x6491346777eb <unknown>
+#4 0x649134672d97 <unknown>
+#5 0x6491346c67d0 <unknown>
+#6 0x64913467155f <unknown>
+#7 0x649134672321 <unknown>
+#8 0x649134bf306b <unknown>
+#9 0x649134bf601d <unknown>
+#10 0x649134bdf718 <unknown>
+#11 0x649134bf6bb0 <unknown>
+#12 0x649134bc6150 <unknown>
+#13 0x649134c1c5e8 <unknown>
+#14 0x649134c1c7b8 <unknown>
+#15 0x649134c2e1de <unknown>
+#16 0x78b3775c1b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-08-17 04:30:48 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-08-17 04:45:01 - Program - INFO - Bot iniciado
+2026-08-17 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-17 04:45:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-17 04:45:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-08-17 04:45:12 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-08-17 04:45:35 - pages.MainPage - INFO - Relatório
+2026-08-17 04:45:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-08-17 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-08-18 04:30:02 - Program - INFO - Bot iniciado
+2026-08-18 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-18 04:30:14 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-18 04:30:14 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-08-18 04:30:14 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-08-18 04:30:36 - pages.MainPage - INFO - Relatório
+2026-08-18 04:30:41 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5cf87780f79a <unknown>
+#1 0x5cf87720b020 <unknown>
+#2 0x5cf877259531 <unknown>
+#3 0x5cf8772577eb <unknown>
+#4 0x5cf877252d97 <unknown>
+#5 0x5cf8772a67d0 <unknown>
+#6 0x5cf87725155f <unknown>
+#7 0x5cf877252321 <unknown>
+#8 0x5cf8777d306b <unknown>
+#9 0x5cf8777d601d <unknown>
+#10 0x5cf8777bf718 <unknown>
+#11 0x5cf8777d6bb0 <unknown>
+#12 0x5cf8777a6150 <unknown>
+#13 0x5cf8777fc5e8 <unknown>
+#14 0x5cf8777fc7b8 <unknown>
+#15 0x5cf87780e1de <unknown>
+#16 0x744b225cbb7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-08-18 04:30:41 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-08-18 04:45:01 - Program - INFO - Bot iniciado
+2026-08-18 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-18 04:45:12 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-08-18 04:45:12 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-08-18 04:45:12 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-08-18 04:45:34 - pages.MainPage - INFO - Relatório
+2026-08-18 04:45:40 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5a783dfdd79a <unknown>
+#1 0x5a783d9d9020 <unknown>
+#2 0x5a783da27531 <unknown>
+#3 0x5a783da257eb <unknown>
+#4 0x5a783da20d97 <unknown>
+#5 0x5a783da747d0 <unknown>
+#6 0x5a783da1f55f <unknown>
+#7 0x5a783da20321 <unknown>
+#8 0x5a783dfa106b <unknown>
+#9 0x5a783dfa401d <unknown>
+#10 0x5a783df8d718 <unknown>
+#11 0x5a783dfa4bb0 <unknown>
+#12 0x5a783df74150 <unknown>
+#13 0x5a783dfca5e8 <unknown>
+#14 0x5a783dfca7b8 <unknown>
+#15 0x5a783dfdc1de <unknown>
+#16 0x7a8c6cc4eb7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-08-18 04:45:40 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-08-19 04:30:01 - Program - INFO - Bot iniciado
+2026-08-19 04:30:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-19 04:30:14 - Program - ERROR - Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5e647d57179a <unknown>
+#1 0x5e647cf6d020 <unknown>
+#2 0x5e647cfbb531 <unknown>
+#3 0x5e647cfb97eb <unknown>
+#4 0x5e647cfb4d97 <unknown>
+#5 0x5e647d0087d0 <unknown>
+#6 0x5e647cfb355f <unknown>
+#7 0x5e647cfb4321 <unknown>
+#8 0x5e647d53506b <unknown>
+#9 0x5e647d53801d <unknown>
+#10 0x5e647d521718 <unknown>
+#11 0x5e647d538bb0 <unknown>
+#12 0x5e647d508150 <unknown>
+#13 0x5e647d55e5e8 <unknown>
+#14 0x5e647d55e7b8 <unknown>
+#15 0x5e647d5701de <unknown>
+#16 0x79d05f1efb7b <unknown>
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 32, in login
+    self.loginPage.login()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/LoginPage.py", line 29, in login
+    userLogin.send_keys(APP_USER)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5e647d57179a <unknown>
+#1 0x5e647cf6d020 <unknown>
+#2 0x5e647cfbb531 <unknown>
+#3 0x5e647cfb97eb <unknown>
+#4 0x5e647cfb4d97 <unknown>
+#5 0x5e647d0087d0 <unknown>
+#6 0x5e647cfb355f <unknown>
+#7 0x5e647cfb4321 <unknown>
+#8 0x5e647d53506b <unknown>
+#9 0x5e647d53801d <unknown>
+#10 0x5e647d521718 <unknown>
+#11 0x5e647d538bb0 <unknown>
+#12 0x5e647d508150 <unknown>
+#13 0x5e647d55e5e8 <unknown>
+#14 0x5e647d55e7b8 <unknown>
+#15 0x5e647d5701de <unknown>
+#16 0x79d05f1efb7b <unknown>
+
+2026-08-19 04:30:14 - Program - ERROR - Erro inesperado: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5e647d57179a <unknown>
+#1 0x5e647cf6d020 <unknown>
+#2 0x5e647cfbb531 <unknown>
+#3 0x5e647cfb97eb <unknown>
+#4 0x5e647cfb4d97 <unknown>
+#5 0x5e647d0087d0 <unknown>
+#6 0x5e647cfb355f <unknown>
+#7 0x5e647cfb4321 <unknown>
+#8 0x5e647d53506b <unknown>
+#9 0x5e647d53801d <unknown>
+#10 0x5e647d521718 <unknown>
+#11 0x5e647d538bb0 <unknown>
+#12 0x5e647d508150 <unknown>
+#13 0x5e647d55e5e8 <unknown>
+#14 0x5e647d55e7b8 <unknown>
+#15 0x5e647d5701de <unknown>
+#16 0x79d05f1efb7b <unknown>
+
+2026-08-19 04:45:01 - Program - INFO - Bot iniciado
+2026-08-19 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-19 04:45:19 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-08-19 04:45:19 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-08-20 04:30:04 - Program - INFO - Bot iniciado
+2026-08-20 04:30:04 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-20 04:30:07 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-08-20 04:30:07 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-08-20 04:45:01 - Program - INFO - Bot iniciado
+2026-08-20 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-20 04:45:03 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-08-20 04:45:03 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-08-21 04:30:09 - Program - INFO - Bot iniciado
+2026-08-21 04:30:09 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-21 04:30:13 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-08-21 04:30:13 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-08-21 04:45:06 - Program - INFO - Bot iniciado
+2026-08-21 04:45:06 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-21 04:45:09 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-08-21 04:45:09 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-08-24 04:30:08 - Program - INFO - Bot iniciado
+2026-08-24 04:30:08 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-24 04:30:11 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-08-24 04:30:11 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-08-24 04:45:01 - Program - INFO - Bot iniciado
+2026-08-24 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-24 04:45:04 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-08-24 04:45:04 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-08-25 04:30:01 - Program - INFO - Bot iniciado
+2026-08-25 04:30:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-25 04:30:05 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-08-25 04:30:05 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-08-25 04:45:01 - Program - INFO - Bot iniciado
+2026-08-25 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-25 04:45:05 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-08-25 04:45:05 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-08-26 04:30:08 - Program - INFO - Bot iniciado
+2026-08-26 04:30:08 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-26 04:30:20 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-08-26 04:30:20 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-08-26 04:45:01 - Program - INFO - Bot iniciado
+2026-08-26 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-26 04:45:04 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-08-26 04:45:04 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-08-27 04:30:02 - Program - INFO - Bot iniciado
+2026-08-27 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-27 04:30:05 - Program - ERROR - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 34, in login
+    if (not isLogged[0]):
+            ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2026-08-27 04:30:05 - Program - ERROR - Erro inesperado: 'NoneType' object is not subscriptable
+2026-08-27 04:45:02 - Program - INFO - Bot iniciado
+2026-08-27 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-27 04:45:05 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-08-27 04:45:05 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-08-28 04:30:02 - Program - INFO - Bot iniciado
+2026-08-28 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-28 04:30:05 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-08-28 04:30:05 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-08-28 04:45:01 - Program - INFO - Bot iniciado
+2026-08-28 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-28 04:45:04 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-08-28 04:45:04 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-08-31 04:30:15 - Program - INFO - Bot iniciado
+2026-08-31 04:30:15 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-31 04:30:19 - Program - ERROR - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 34, in login
+    if (not isLogged[0]):
+            ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2026-08-31 04:30:19 - Program - ERROR - Erro inesperado: 'NoneType' object is not subscriptable
+2026-08-31 04:45:01 - Program - INFO - Bot iniciado
+2026-08-31 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-08-31 04:45:05 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-08-31 04:45:05 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-01 04:30:03 - Program - INFO - Bot iniciado
+2026-09-01 04:30:03 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-01 04:30:06 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-01 04:30:06 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-01 04:45:02 - Program - INFO - Bot iniciado
+2026-09-01 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-01 04:45:03 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-01 04:45:03 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-02 04:30:03 - Program - INFO - Bot iniciado
+2026-09-02 04:30:03 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-02 04:30:04 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-02 04:30:04 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-02 04:45:02 - Program - INFO - Bot iniciado
+2026-09-02 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-02 04:45:04 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-02 04:45:04 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-03 04:30:04 - Program - INFO - Bot iniciado
+2026-09-03 04:30:04 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-03 04:30:07 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-03 04:30:07 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-03 04:45:01 - Program - INFO - Bot iniciado
+2026-09-03 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-03 04:45:03 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-03 04:45:03 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-04 04:30:02 - Program - INFO - Bot iniciado
+2026-09-04 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-04 04:30:05 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-04 04:30:05 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-04 04:45:01 - Program - INFO - Bot iniciado
+2026-09-04 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-04 04:45:04 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-04 04:45:04 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)
+2026-09-07 04:31:23 - Program - INFO - Bot iniciado
+2026-09-07 04:31:23 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-07 04:31:28 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-07 04:31:28 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-07 04:45:05 - Program - INFO - Bot iniciado
+2026-09-07 04:45:05 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-07 04:45:06 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-07 04:45:06 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-08 04:30:06 - Program - INFO - Bot iniciado
+2026-09-08 04:30:06 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-08 04:30:09 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-08 04:30:09 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-08 04:45:01 - Program - INFO - Bot iniciado
+2026-09-08 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-08 04:45:03 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-08 04:45:03 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-09 04:30:02 - Program - INFO - Bot iniciado
+2026-09-09 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-09 04:30:05 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-09 04:30:05 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-09 04:45:02 - Program - INFO - Bot iniciado
+2026-09-09 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-09 04:45:03 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-09 04:45:03 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-10 04:30:03 - Program - INFO - Bot iniciado
+2026-09-10 04:30:03 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-10 04:30:06 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-10 04:30:06 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-10 04:45:02 - Program - INFO - Bot iniciado
+2026-09-10 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-10 04:45:05 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-10 04:45:05 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-11 04:30:04 - Program - INFO - Bot iniciado
+2026-09-11 04:30:04 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-11 04:30:07 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-11 04:30:07 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-11 04:45:03 - Program - INFO - Bot iniciado
+2026-09-11 04:45:03 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-11 04:45:05 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-11 04:45:05 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-14 04:31:08 - Program - INFO - Bot iniciado
+2026-09-14 04:31:09 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-14 04:31:12 - Program - ERROR - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 34, in login
+    if (not isLogged[0]):
+            ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2026-09-14 04:31:12 - Program - ERROR - Erro inesperado: 'NoneType' object is not subscriptable
+2026-09-14 04:45:01 - Program - INFO - Bot iniciado
+2026-09-14 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-14 04:45:03 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-14 04:45:03 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-16 04:30:16 - Program - INFO - Bot iniciado
+2026-09-16 04:30:16 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-16 04:30:28 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-09-16 04:30:28 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-09-16 04:30:28 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-09-16 04:30:50 - pages.MainPage - INFO - Relatório
+2026-09-16 04:30:55 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x6109b1ad879a <unknown>
+#1 0x6109b14d4020 <unknown>
+#2 0x6109b1522531 <unknown>
+#3 0x6109b15207eb <unknown>
+#4 0x6109b151bd97 <unknown>
+#5 0x6109b156f7d0 <unknown>
+#6 0x6109b151a55f <unknown>
+#7 0x6109b151b321 <unknown>
+#8 0x6109b1a9c06b <unknown>
+#9 0x6109b1a9f01d <unknown>
+#10 0x6109b1a88718 <unknown>
+#11 0x6109b1a9fbb0 <unknown>
+#12 0x6109b1a6f150 <unknown>
+#13 0x6109b1ac55e8 <unknown>
+#14 0x6109b1ac57b8 <unknown>
+#15 0x6109b1ad71de <unknown>
+#16 0x79d543ca2b7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-09-16 04:30:55 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-09-16 04:45:02 - Program - INFO - Bot iniciado
+2026-09-16 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-16 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-09-16 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-09-16 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-09-16 04:45:35 - pages.MainPage - INFO - Relatório
+2026-09-16 04:45:40 - Program - ERROR - Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 63, in downloadExcel
+    exercise[0].send_keys(year)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5e0fe819079a <unknown>
+#1 0x5e0fe7b8c020 <unknown>
+#2 0x5e0fe7bda531 <unknown>
+#3 0x5e0fe7bd87eb <unknown>
+#4 0x5e0fe7bd3d97 <unknown>
+#5 0x5e0fe7c277d0 <unknown>
+#6 0x5e0fe7bd255f <unknown>
+#7 0x5e0fe7bd3321 <unknown>
+#8 0x5e0fe815406b <unknown>
+#9 0x5e0fe815701d <unknown>
+#10 0x5e0fe8140718 <unknown>
+#11 0x5e0fe8157bb0 <unknown>
+#12 0x5e0fe8127150 <unknown>
+#13 0x5e0fe817d5e8 <unknown>
+#14 0x5e0fe817d7b8 <unknown>
+#15 0x5e0fe818f1de <unknown>
+#16 0x78b843d2fb7b <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 46, in downloadArchive
+    self.mainPage.downloadExcel()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/MainPage.py", line 97, in downloadExcel
+    raise ElementNotInteractableException("Não foi possivel interar com o elemento")
+selenium.common.exceptions.ElementNotInteractableException: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-09-16 04:45:40 - Program - ERROR - Erro inesperado: Message: Não foi possivel interar com o elemento; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+
+2026-09-17 04:30:03 - Program - INFO - Bot iniciado
+2026-09-17 04:30:03 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-17 04:30:15 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-09-17 04:30:15 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: []
+2026-09-17 04:30:15 - util.EditFile - INFO - Arquivo SCN009P.csv não encontrado, nada a remover.
+2026-09-17 04:30:37 - pages.MainPage - INFO - Relatório
+2026-09-17 04:30:59 - Program - INFO - Bot terminou sua tarefa
+2026-09-17 04:45:02 - Program - INFO - Bot iniciado
+2026-09-17 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-17 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-09-17 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-09-17 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-09-17 04:45:35 - pages.MainPage - INFO - Relatório
+2026-09-17 04:45:53 - util.EditFile - INFO - arquivo nao encontrado
+2026-09-17 04:45:57 - Program - INFO - Bot terminou sua tarefa
+2026-09-18 04:30:07 - Program - INFO - Bot iniciado
+2026-09-18 04:30:07 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-18 04:30:10 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-18 04:30:10 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-18 04:45:02 - Program - INFO - Bot iniciado
+2026-09-18 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-18 04:45:05 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-18 04:45:05 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-21 04:30:09 - Program - INFO - Bot iniciado
+2026-09-21 04:30:09 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-21 04:30:13 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-21 04:30:13 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-21 04:45:01 - Program - INFO - Bot iniciado
+2026-09-21 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-21 04:45:04 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-21 04:45:04 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-22 04:30:02 - Program - INFO - Bot iniciado
+2026-09-22 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-22 04:30:05 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-22 04:30:05 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-22 04:45:02 - Program - INFO - Bot iniciado
+2026-09-22 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-22 04:45:03 - Program - ERROR - Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x62a36b1dd79a <unknown>
+#1 0x62a36abd9020 <unknown>
+#2 0x62a36ac27531 <unknown>
+#3 0x62a36ac257eb <unknown>
+#4 0x62a36ac20d97 <unknown>
+#5 0x62a36ac747d0 <unknown>
+#6 0x62a36ac1f55f <unknown>
+#7 0x62a36ac20321 <unknown>
+#8 0x62a36b1a106b <unknown>
+#9 0x62a36b1a401d <unknown>
+#10 0x62a36b18d718 <unknown>
+#11 0x62a36b1a4bb0 <unknown>
+#12 0x62a36b174150 <unknown>
+#13 0x62a36b1ca5e8 <unknown>
+#14 0x62a36b1ca7b8 <unknown>
+#15 0x62a36b1dc1de <unknown>
+#16 0x7f75a9800b7b <unknown>
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 32, in login
+    self.loginPage.login()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/LoginPage.py", line 29, in login
+    userLogin.send_keys(APP_USER)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x62a36b1dd79a <unknown>
+#1 0x62a36abd9020 <unknown>
+#2 0x62a36ac27531 <unknown>
+#3 0x62a36ac257eb <unknown>
+#4 0x62a36ac20d97 <unknown>
+#5 0x62a36ac747d0 <unknown>
+#6 0x62a36ac1f55f <unknown>
+#7 0x62a36ac20321 <unknown>
+#8 0x62a36b1a106b <unknown>
+#9 0x62a36b1a401d <unknown>
+#10 0x62a36b18d718 <unknown>
+#11 0x62a36b1a4bb0 <unknown>
+#12 0x62a36b174150 <unknown>
+#13 0x62a36b1ca5e8 <unknown>
+#14 0x62a36b1ca7b8 <unknown>
+#15 0x62a36b1dc1de <unknown>
+#16 0x7f75a9800b7b <unknown>
+
+2026-09-22 04:45:03 - Program - ERROR - Erro inesperado: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x62a36b1dd79a <unknown>
+#1 0x62a36abd9020 <unknown>
+#2 0x62a36ac27531 <unknown>
+#3 0x62a36ac257eb <unknown>
+#4 0x62a36ac20d97 <unknown>
+#5 0x62a36ac747d0 <unknown>
+#6 0x62a36ac1f55f <unknown>
+#7 0x62a36ac20321 <unknown>
+#8 0x62a36b1a106b <unknown>
+#9 0x62a36b1a401d <unknown>
+#10 0x62a36b18d718 <unknown>
+#11 0x62a36b1a4bb0 <unknown>
+#12 0x62a36b174150 <unknown>
+#13 0x62a36b1ca5e8 <unknown>
+#14 0x62a36b1ca7b8 <unknown>
+#15 0x62a36b1dc1de <unknown>
+#16 0x7f75a9800b7b <unknown>
+
+2026-09-23 04:30:02 - Program - INFO - Bot iniciado
+2026-09-23 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-23 04:30:05 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-23 04:30:05 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-23 04:45:02 - Program - INFO - Bot iniciado
+2026-09-23 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-23 04:45:04 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-23 04:45:04 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-24 04:31:03 - Program - INFO - Bot iniciado
+2026-09-24 04:31:05 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-24 04:31:08 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-24 04:31:08 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-24 04:45:02 - Program - INFO - Bot iniciado
+2026-09-24 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-24 04:45:04 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-24 04:45:04 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-25 04:30:07 - Program - INFO - Bot iniciado
+2026-09-25 04:30:07 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-25 04:30:10 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-25 04:30:10 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-25 04:45:02 - Program - INFO - Bot iniciado
+2026-09-25 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-25 04:45:05 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-25 04:45:05 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-28 04:30:10 - Program - INFO - Bot iniciado
+2026-09-28 04:30:10 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-28 04:30:14 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-28 04:30:14 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-28 04:45:01 - Program - INFO - Bot iniciado
+2026-09-28 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-28 04:45:03 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-28 04:45:03 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-29 04:30:02 - Program - INFO - Bot iniciado
+2026-09-29 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-29 04:30:05 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-29 04:30:05 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-29 04:45:01 - Program - INFO - Bot iniciado
+2026-09-29 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-29 04:45:04 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-29 04:45:04 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-30 04:30:02 - Program - INFO - Bot iniciado
+2026-09-30 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-30 04:30:07 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-30 04:30:07 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-09-30 04:45:01 - Program - INFO - Bot iniciado
+2026-09-30 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-09-30 04:45:04 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-09-30 04:45:04 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-10-01 04:30:02 - Program - INFO - Bot iniciado
+2026-10-01 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-10-01 04:30:03 - Program - ERROR - Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x64ebb569579a <unknown>
+#1 0x64ebb5091020 <unknown>
+#2 0x64ebb50df531 <unknown>
+#3 0x64ebb50dd7eb <unknown>
+#4 0x64ebb50d8d97 <unknown>
+#5 0x64ebb512c7d0 <unknown>
+#6 0x64ebb50d755f <unknown>
+#7 0x64ebb50d8321 <unknown>
+#8 0x64ebb565906b <unknown>
+#9 0x64ebb565c01d <unknown>
+#10 0x64ebb5645718 <unknown>
+#11 0x64ebb565cbb0 <unknown>
+#12 0x64ebb562c150 <unknown>
+#13 0x64ebb56825e8 <unknown>
+#14 0x64ebb56827b8 <unknown>
+#15 0x64ebb56941de <unknown>
+#16 0x734142596b7b <unknown>
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 32, in login
+    self.loginPage.login()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/LoginPage.py", line 29, in login
+    userLogin.send_keys(APP_USER)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x64ebb569579a <unknown>
+#1 0x64ebb5091020 <unknown>
+#2 0x64ebb50df531 <unknown>
+#3 0x64ebb50dd7eb <unknown>
+#4 0x64ebb50d8d97 <unknown>
+#5 0x64ebb512c7d0 <unknown>
+#6 0x64ebb50d755f <unknown>
+#7 0x64ebb50d8321 <unknown>
+#8 0x64ebb565906b <unknown>
+#9 0x64ebb565c01d <unknown>
+#10 0x64ebb5645718 <unknown>
+#11 0x64ebb565cbb0 <unknown>
+#12 0x64ebb562c150 <unknown>
+#13 0x64ebb56825e8 <unknown>
+#14 0x64ebb56827b8 <unknown>
+#15 0x64ebb56941de <unknown>
+#16 0x734142596b7b <unknown>
+
+2026-10-01 04:30:03 - Program - ERROR - Erro inesperado: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x64ebb569579a <unknown>
+#1 0x64ebb5091020 <unknown>
+#2 0x64ebb50df531 <unknown>
+#3 0x64ebb50dd7eb <unknown>
+#4 0x64ebb50d8d97 <unknown>
+#5 0x64ebb512c7d0 <unknown>
+#6 0x64ebb50d755f <unknown>
+#7 0x64ebb50d8321 <unknown>
+#8 0x64ebb565906b <unknown>
+#9 0x64ebb565c01d <unknown>
+#10 0x64ebb5645718 <unknown>
+#11 0x64ebb565cbb0 <unknown>
+#12 0x64ebb562c150 <unknown>
+#13 0x64ebb56825e8 <unknown>
+#14 0x64ebb56827b8 <unknown>
+#15 0x64ebb56941de <unknown>
+#16 0x734142596b7b <unknown>
+
+2026-10-01 04:45:01 - Program - INFO - Bot iniciado
+2026-10-01 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-10-01 04:45:04 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-10-01 04:45:04 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-10-02 04:30:03 - Program - INFO - Bot iniciado
+2026-10-02 04:30:03 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-10-02 04:30:07 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-10-02 04:30:07 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-10-02 04:45:10 - Program - INFO - Bot iniciado
+2026-10-02 04:45:10 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-10-02 04:45:14 - Program - ERROR - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 34, in login
+    if (not isLogged[0]):
+            ~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2026-10-02 04:45:14 - Program - ERROR - Erro inesperado: 'NoneType' object is not subscriptable
+2026-10-05 04:30:37 - Program - INFO - Bot iniciado
+2026-10-05 04:30:38 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-10-05 04:30:42 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-10-05 04:30:42 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-10-05 04:45:02 - Program - INFO - Bot iniciado
+2026-10-05 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-10-05 04:45:03 - Program - ERROR - Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5aa8abdca79a <unknown>
+#1 0x5aa8ab7c6020 <unknown>
+#2 0x5aa8ab814531 <unknown>
+#3 0x5aa8ab8127eb <unknown>
+#4 0x5aa8ab80dd97 <unknown>
+#5 0x5aa8ab8617d0 <unknown>
+#6 0x5aa8ab80c55f <unknown>
+#7 0x5aa8ab80d321 <unknown>
+#8 0x5aa8abd8e06b <unknown>
+#9 0x5aa8abd9101d <unknown>
+#10 0x5aa8abd7a718 <unknown>
+#11 0x5aa8abd91bb0 <unknown>
+#12 0x5aa8abd61150 <unknown>
+#13 0x5aa8abdb75e8 <unknown>
+#14 0x5aa8abdb77b8 <unknown>
+#15 0x5aa8abdc91de <unknown>
+#16 0x7f790778bb7b <unknown>
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 32, in login
+    self.loginPage.login()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/LoginPage.py", line 29, in login
+    userLogin.send_keys(APP_USER)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5aa8abdca79a <unknown>
+#1 0x5aa8ab7c6020 <unknown>
+#2 0x5aa8ab814531 <unknown>
+#3 0x5aa8ab8127eb <unknown>
+#4 0x5aa8ab80dd97 <unknown>
+#5 0x5aa8ab8617d0 <unknown>
+#6 0x5aa8ab80c55f <unknown>
+#7 0x5aa8ab80d321 <unknown>
+#8 0x5aa8abd8e06b <unknown>
+#9 0x5aa8abd9101d <unknown>
+#10 0x5aa8abd7a718 <unknown>
+#11 0x5aa8abd91bb0 <unknown>
+#12 0x5aa8abd61150 <unknown>
+#13 0x5aa8abdb75e8 <unknown>
+#14 0x5aa8abdb77b8 <unknown>
+#15 0x5aa8abdc91de <unknown>
+#16 0x7f790778bb7b <unknown>
+
+2026-10-05 04:45:03 - Program - ERROR - Erro inesperado: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5aa8abdca79a <unknown>
+#1 0x5aa8ab7c6020 <unknown>
+#2 0x5aa8ab814531 <unknown>
+#3 0x5aa8ab8127eb <unknown>
+#4 0x5aa8ab80dd97 <unknown>
+#5 0x5aa8ab8617d0 <unknown>
+#6 0x5aa8ab80c55f <unknown>
+#7 0x5aa8ab80d321 <unknown>
+#8 0x5aa8abd8e06b <unknown>
+#9 0x5aa8abd9101d <unknown>
+#10 0x5aa8abd7a718 <unknown>
+#11 0x5aa8abd91bb0 <unknown>
+#12 0x5aa8abd61150 <unknown>
+#13 0x5aa8abdb75e8 <unknown>
+#14 0x5aa8abdb77b8 <unknown>
+#15 0x5aa8abdc91de <unknown>
+#16 0x7f790778bb7b <unknown>
+
+2026-10-06 04:30:02 - Program - INFO - Bot iniciado
+2026-10-06 04:30:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-10-06 04:30:05 - Program - ERROR - Usuário e/ou senha inválido.
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 35, in login
+    raise Exception(isLogged[1])
+Exception: Usuário e/ou senha inválido.
+2026-10-06 04:30:05 - Program - ERROR - Erro inesperado: Usuário e/ou senha inválido.
+2026-10-06 04:45:01 - Program - INFO - Bot iniciado
+2026-10-06 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-10-06 04:45:02 - Program - ERROR - Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x588052f1f79a <unknown>
+#1 0x58805291b020 <unknown>
+#2 0x588052969531 <unknown>
+#3 0x5880529677eb <unknown>
+#4 0x588052962d97 <unknown>
+#5 0x5880529b67d0 <unknown>
+#6 0x58805296155f <unknown>
+#7 0x588052962321 <unknown>
+#8 0x588052ee306b <unknown>
+#9 0x588052ee601d <unknown>
+#10 0x588052ecf718 <unknown>
+#11 0x588052ee6bb0 <unknown>
+#12 0x588052eb6150 <unknown>
+#13 0x588052f0c5e8 <unknown>
+#14 0x588052f0c7b8 <unknown>
+#15 0x588052f1e1de <unknown>
+#16 0x74ff2b30db7b <unknown>
+Traceback (most recent call last):
+  File "/home/siurb-vigencia-sof-bot/Program.py", line 32, in login
+    self.loginPage.login()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/siurb-vigencia-sof-bot/pages/LoginPage.py", line 29, in login
+    userLogin.send_keys(APP_USER)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+    ~~~~~~~~~~~~~^
+        Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/webdriver.py", line 446, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/siurb-vigencia-sof-bot/.venv/lib/python3.13/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x588052f1f79a <unknown>
+#1 0x58805291b020 <unknown>
+#2 0x588052969531 <unknown>
+#3 0x5880529677eb <unknown>
+#4 0x588052962d97 <unknown>
+#5 0x5880529b67d0 <unknown>
+#6 0x58805296155f <unknown>
+#7 0x588052962321 <unknown>
+#8 0x588052ee306b <unknown>
+#9 0x588052ee601d <unknown>
+#10 0x588052ecf718 <unknown>
+#11 0x588052ee6bb0 <unknown>
+#12 0x588052eb6150 <unknown>
+#13 0x588052f0c5e8 <unknown>
+#14 0x588052f0c7b8 <unknown>
+#15 0x588052f1e1de <unknown>
+#16 0x74ff2b30db7b <unknown>
+
+2026-10-06 04:45:02 - Program - ERROR - Erro inesperado: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x588052f1f79a <unknown>
+#1 0x58805291b020 <unknown>
+#2 0x588052969531 <unknown>
+#3 0x5880529677eb <unknown>
+#4 0x588052962d97 <unknown>
+#5 0x5880529b67d0 <unknown>
+#6 0x58805296155f <unknown>
+#7 0x588052962321 <unknown>
+#8 0x588052ee306b <unknown>
+#9 0x588052ee601d <unknown>
+#10 0x588052ecf718 <unknown>
+#11 0x588052ee6bb0 <unknown>
+#12 0x588052eb6150 <unknown>
+#13 0x588052f0c5e8 <unknown>
+#14 0x588052f0c7b8 <unknown>
+#15 0x588052f1e1de <unknown>
+#16 0x74ff2b30db7b <unknown>
+
+2026-10-07 04:30:07 - Program - INFO - Bot iniciado
+2026-10-07 04:30:07 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-10-07 04:30:19 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-10-07 04:30:19 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-10-07 04:30:19 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-10-07 04:30:41 - pages.MainPage - INFO - Relatório
+2026-10-07 04:31:04 - Program - INFO - Bot terminou sua tarefa
+2026-10-07 04:45:01 - Program - INFO - Bot iniciado
+2026-10-07 04:45:01 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-10-07 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-10-07 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-10-07 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-10-07 04:45:35 - pages.MainPage - INFO - Relatório
+2026-10-07 04:45:54 - util.EditFile - INFO - arquivo nao encontrado
+2026-10-07 04:45:58 - Program - INFO - Bot terminou sua tarefa

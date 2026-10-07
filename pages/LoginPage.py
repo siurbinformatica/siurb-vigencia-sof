@@ -2,8 +2,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
+from config.settings import SITE_URL,PATH_PASSWORD,APP_USER
 
-from config.settings import SITE_URL,APP_PASSWD,APP_USER
+import json
 
 class LoginPage():
 
@@ -26,8 +27,11 @@ class LoginPage():
             EC.element_to_be_clickable((By.ID, "confirmar"))
         )
           
+        with open(PATH_PASSWORD, "r") as f:
+            data = json.loads(f.read())
+
         userLogin.send_keys(APP_USER)
-        userPasswd.send_keys(APP_PASSWD)
+        userPasswd.send_keys(data["password"])
         button.click()
 
     def isLogged(self) -> tuple:
