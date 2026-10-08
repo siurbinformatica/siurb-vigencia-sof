@@ -2987,3 +2987,18 @@ Stacktrace:
 2026-10-07 04:45:35 - pages.MainPage - INFO - Relatório
 2026-10-07 04:45:54 - util.EditFile - INFO - arquivo nao encontrado
 2026-10-07 04:45:58 - Program - INFO - Bot terminou sua tarefa
+2026-10-08 04:30:03 - Program - INFO - Bot iniciado
+2026-10-08 04:30:03 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-10-08 04:30:14 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-10-08 04:30:14 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-10-08 04:30:14 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-10-08 04:30:36 - pages.MainPage - INFO - Relatório
+2026-10-08 04:30:58 - Program - INFO - Bot terminou sua tarefa
+2026-10-08 04:45:02 - Program - INFO - Bot iniciado
+2026-10-08 04:45:02 - Program - INFO - PATH_DOWNLOAD: /home/siurb-vigencia-sof/archives/
+2026-10-08 04:45:13 - util.EditFile - INFO - [DEBUG] PATH_DOWNLOAD = '/home/siurb-vigencia-sof/archives/'
+2026-10-08 04:45:13 - util.EditFile - INFO - [DEBUG] Arquivos encontrados: ['/home/siurb-vigencia-sof/archives/SCN009P.csv']
+2026-10-08 04:45:13 - util.EditFile - INFO - Arquivo SCN009P.csv removido com sucesso.
+2026-10-08 04:45:36 - pages.MainPage - INFO - Relatório
+2026-10-08 04:45:54 - util.EditFile - INFO - arquivo nao encontrado
+2026-10-08 04:45:58 - Program - INFO - Bot terminou sua tarefa
