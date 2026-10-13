@@ -5,6 +5,7 @@ from config.settings import LOG_PATH
 import time
 import glob
 import os
+import shutil
 
 class EditFile:
 
@@ -33,16 +34,16 @@ class EditFile:
     
     def remove(self):
         self.logger.info(f"[DEBUG] PATH_DOWNLOAD = '{self.PATH_DOWNLOAD}'")
-        archive = glob.glob(os.path.join(self.PATH_DOWNLOAD, "SCN009P.csv"))
-        self.logger.info(f"[DEBUG] Arquivos encontrados: {archive}")
-        
-        if not archive:
-            self.logger.info("Arquivo SCN009P.csv não encontrado, nada a remover.")
-            return
-        
-        os.remove(archive[0])
-        time.sleep(2)
-        self.logger.info("Arquivo SCN009P.csv removido com sucesso.")
+        shutil.rmtree(self.PATH_DOWNLOAD)
+        time.sleep(1)
+
+        if (os.path.exists(self.PATH_DOWNLOAD)):
+            raise OSError("Not possible delete the " + self.PATH_DOWNLOAD)
+
+        os.makedirs(self.PATH_DOWNLOAD)
+        time.sleep(1)
+
+        self.logger.info("Arquivo SFN064R.csv removido com sucesso.")
 
     def delete_last_log(self):
 
