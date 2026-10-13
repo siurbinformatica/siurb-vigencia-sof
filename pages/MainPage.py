@@ -24,21 +24,21 @@ class MainPage():
 
     def enterContract(self): 
         try:
-
+            sleep(0.5)
             bttExecution = self.wait.until(
                 EC.presence_of_element_located((By.XPATH, "//i[contains(@class, 'fa-file-signature')]"))
             )
             bttExecution.click()
-            
+            sleep(0.5)
             bttMenuBars = self.driver.find_elements(by=By.XPATH, value="//div[contains(text(), 'Relatório') and contains(@class, 'menubaritem')]")
 
             self.logger.info(bttMenuBars[1].text)
             bttMenuBars[1].click()
-
+            sleep(0.5)
             bttMenuCategory = self.driver.find_elements(by=By.XPATH, value="//div[text()='Extrato das Contratações']")
 
             bttMenuCategory[0].click()
-
+            sleep(0.5)
         except TimeoutException as e:
             raise TimeoutException(f"Erro de timeout em enterContract, {e}")
         except ElementClickInterceptedException:
@@ -52,7 +52,7 @@ class MainPage():
 
     def downloadExcel(self):
         try:
-            
+            sleep(0.5)
             year = self.dateutil.year()
             
             exercise = self.wait.until(
@@ -61,7 +61,7 @@ class MainPage():
 
             #Coloca o exercicio
             exercise[0].send_keys(year)
-
+            sleep(0.5)
             self.driver.execute_script("""
                 window._fileBase64 = null;
                 const origOpen = XMLHttpRequest.prototype.open;

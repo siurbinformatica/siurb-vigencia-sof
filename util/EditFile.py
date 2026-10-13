@@ -24,6 +24,7 @@ class EditFile:
             filepath_origin = archive[0]
             filepath_new = os.path.join(self.PATH_DOWNLOAD, "SCN009P.csv")
             os.rename(filepath_origin,filepath_new)
+            time.sleep(1)
             self.delete_last_log()
             self.logger_archive.info("Arquivo criado com sucesso!")
             return
@@ -40,6 +41,7 @@ class EditFile:
             return
         
         os.remove(archive[0])
+        time.sleep(2)
         self.logger.info("Arquivo SCN009P.csv removido com sucesso.")
 
     def delete_last_log(self):

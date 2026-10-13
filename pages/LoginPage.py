@@ -13,8 +13,10 @@ class LoginPage():
         self.wait = WebDriverWait(self.driver,30)
 
     def login(self):
-    
+
         self.driver.get(SITE_URL)
+
+        sleep(5)
 
         userLogin = self.wait.until(
             EC.presence_of_element_located((By.ID, "usuario"))
@@ -29,6 +31,8 @@ class LoginPage():
           
         with open(PATH_PASSWORD, "r") as f:
             data = json.loads(f.read())
+
+        sleep(0.5)
 
         userLogin.send_keys(APP_USER)
         userPasswd.send_keys(data["password"])
